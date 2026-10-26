@@ -31,3 +31,13 @@ Example:
 > Cut-paper v9 scene: a founder in a hoodie sits alone at a laptop at 2am, with a coffee mug.
 > Moving parts: head nods off and snaps up; hand taps the mouse.
 > Feeling: exhausted.
+
+---
+
+# Alternate saved style: "Malevich-lite" (no boil)
+
+Reference scenes: `scenes/malevich-lite-pitch.svg` (video) and `scenes/malevich-lite-cafe.svg` (still). Git tag: `save-malevich-lite`.
+
+- **Look.** Geometric bodies (trapezoid torsos, rectangular limbs) with soft gradients from a light tint to full color on every form, in the manner of Malevich's "Haymaking," toned down for LinkedIn. One skin tone with soft shading, simple calm faces, navy jeans, white sneakers. A plain room: a cream wall, one window, a navy floor. Brand palette plus character colors. A light painted grain over the whole frame.
+- **Motion.** Smooth, 24 fps, with no boil, no jitter, and no paper shadows (root: `data-step="1" data-jitter="0" data-shadow="0"`, no `data-finish`). Slow sine swings: an arm pushes, a head nods, a head tilts.
+- **Prompt.** "Malevich-lite scene: [who] [doing what] [where]. Moving parts: ... Feeling: ..."

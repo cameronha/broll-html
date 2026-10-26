@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <!-- Malevich-lite, scene 2: the founder listens and takes notes; the customer talks (same cast) -->
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6EEDC"/><stop offset="1" stop-color="#E9DCC0"/></linearGradient>
+    <linearGradient id="win" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5E93BC"/><stop offset="1" stop-color="#CFE3EF"/></linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2B4466"/><stop offset="1" stop-color="#182A46"/></linearGradient>
+    <linearGradient id="or" x1="0" x2="1"><stop offset="0" stop-color="#FFC9A6"/><stop offset=".5" stop-color="#FF5600"/><stop offset="1" stop-color="#C2410C"/></linearGradient>
+    <linearGradient id="or2" x1="1" x2="0"><stop offset="0" stop-color="#FFC9A6"/><stop offset=".55" stop-color="#ED7239"/><stop offset="1" stop-color="#B04A1E"/></linearGradient>
+    <linearGradient id="gr" x1="0" x2="1"><stop offset="0" stop-color="#A9D3BC"/><stop offset=".5" stop-color="#2F7D5B"/><stop offset="1" stop-color="#1B4A36"/></linearGradient>
+    <linearGradient id="gr2" x1="1" x2="0"><stop offset="0" stop-color="#9CC9B0"/><stop offset=".6" stop-color="#286C4E"/><stop offset="1" stop-color="#173F2D"/></linearGradient>
+    <linearGradient id="skin" x1="0" x2="1"><stop offset="0" stop-color="#FCE1C8"/><stop offset=".6" stop-color="#F4BE96"/><stop offset="1" stop-color="#D99470"/></linearGradient>
+    <linearGradient id="hand" x1="0" x2="1"><stop offset="0" stop-color="#FAD3B0"/><stop offset="1" stop-color="#D99470"/></linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EBCB9F"/><stop offset="1" stop-color="#B98A5A"/></linearGradient>
+    <linearGradient id="woodS" x1="0" x2="1"><stop offset="0" stop-color="#C99A68"/><stop offset="1" stop-color="#7E5634"/></linearGradient>
+    <linearGradient id="cup" x1="0" x2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#CFC6B4"/></linearGradient>
+    <filter id="paint"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" seed="4"/>
+      <feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer></filter>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#wall)"/>
+  <rect x="240" y="110" width="600" height="320" fill="url(#win)"/>
+  <rect x="534" y="110" width="12" height="320" fill="#E9DCC0"/>
+  <path d="M0 800 L1080 780 L1080 1080 L0 1080 Z" fill="url(#floor)"/>
+
+  <!-- customer (left): talking, one hand up explaining -->
+  <rect x="306" y="375" width="48" height="60" fill="url(#skin)"/>
+  <path d="M210 430 L450 430 L470 720 L190 720 Z" fill="url(#gr)"/>
+  <g transform="translate(330 -118) scale(1.45) translate(-260 0)">
+    <path d="M216 262 L304 262 L304 310 Q304 352 260 354 Q216 352 216 310 Z" fill="url(#skin)"/>
+    <path d="M210 290 Q206 228 260 226 Q314 228 310 290 L300 290 Q298 262 260 260 Q222 262 220 290 Z" fill="#2A2420"/>
+    <path d="M232 300 Q242 292 252 300 Q242 306 232 300 Z" fill="#FFF"/><circle cx="245" cy="300" r="3.6" fill="#182A46"/>
+    <path d="M268 300 Q278 292 288 300 Q278 306 268 300 Z" fill="#FFF"/><circle cx="281" cy="300" r="3.6" fill="#182A46"/>
+    <rect x="230" y="285" width="24" height="4" rx="2" fill="#2A2420" transform="rotate(-4 242 287)"/>
+    <rect x="266" y="285" width="24" height="4" rx="2" fill="#2A2420" transform="rotate(4 278 287)"/>
+    <path d="M258 302 L262 302 L264 322 L256 322 Z" fill="#D99470"/>
+    <ellipse cx="262" cy="335" rx="9" ry="6" fill="#7A3A2A"/>
+  </g>
+
+  <!-- founder (right): head tilted toward the customer, listening -->
+  <rect x="726" y="380" width="48" height="50" fill="url(#skin)"/>
+  <path d="M610 420 L890 420 L920 720 L580 720 Z" fill="url(#or)"/>
+  <rect x="734" y="428" width="7" height="70" rx="3" fill="#F6EEDC"/>
+  <rect x="762" y="428" width="7" height="70" rx="3" fill="#F6EEDC"/>
+  <g transform="translate(50 92) rotate(-6 700 320)">
+    <path d="M636 150 L764 150 L764 250 Q764 318 700 320 Q636 318 636 250 Z" fill="url(#skin)"/>
+    <path d="M628 196 Q624 104 700 102 Q776 104 772 196 L760 196 L756 162 L700 150 L644 162 L640 196 Z" fill="#2A2420"/>
+    <path d="M656 214 Q670 204 684 214 Q670 222 656 214 Z" fill="#FFF"/><circle cx="665" cy="214" r="5.5" fill="#182A46"/>
+    <path d="M716 214 Q730 204 744 214 Q730 222 716 214 Z" fill="#FFF"/><circle cx="725" cy="214" r="5.5" fill="#182A46"/>
+    <rect x="654" y="190" width="32" height="6" rx="3" fill="#2A2420" transform="rotate(-10 670 193)"/>
+    <rect x="714" y="192" width="32" height="6" rx="3" fill="#2A2420"/>
+    <path d="M696 218 L704 218 L708 256 L692 256 Z" fill="#D99470"/>
+    <path d="M678 282 Q700 296 722 282 Q700 290 678 282 Z" fill="#7A3A2A"/>
+  </g>
+
+  <!-- the table, a cup, the notebook -->
+  <ellipse cx="540" cy="712" rx="404" ry="72" fill="url(#woodS)"/>
+  <ellipse cx="540" cy="700" rx="400" ry="68" fill="url(#wood)"/>
+  <rect x="515" y="768" width="50" height="212" fill="url(#woodS)"/>
+  <ellipse cx="540" cy="985" rx="120" ry="22" fill="url(#woodS)"/>
+  <rect x="356" y="650" width="44" height="50" rx="6" fill="url(#cup)"/>
+  <ellipse cx="378" cy="650" rx="22" ry="6" fill="#7A4A2A"/>
+  <path d="M400 662 Q418 666 414 682 Q410 692 400 690" fill="none" stroke="#CFC6B4" stroke-width="6"/>
+  <path d="M690 676 L834 676 L856 726 L700 726 Z" fill="#FFFDF6"/>
+  <g fill="#8CBDDC"><rect x="712" y="688" width="110" height="3"/><rect x="716" y="700" width="116" height="3"/><rect x="720" y="712" width="96" height="3"/></g>
+
+  <!-- arms: the customer rests one arm and gestures with the other; the founder writes -->
+  <rect x="192" y="452" width="54" height="196" fill="url(#gr2)"/>
+  <rect x="200" y="628" width="122" height="48" fill="url(#gr)" transform="rotate(12 200 652)"/>
+  <rect x="306" y="650" width="44" height="40" rx="14" fill="url(#hand)"/>
+  <rect x="425" y="452" width="54" height="160" fill="url(#gr2)" transform="rotate(-8 452 452)"/>
+  <rect x="452" y="470" width="50" height="140" fill="url(#gr)" transform="rotate(14 477 610)"/>
+  <rect x="482" y="420" width="42" height="58" rx="16" fill="url(#hand)" transform="rotate(14 503 449)"/>
+  <ellipse cx="478" cy="452" rx="9" ry="18" fill="url(#hand)" transform="rotate(-30 478 452)"/>
+  <rect x="592" y="442" width="56" height="200" fill="url(#or2)"/>
+  <rect x="600" y="618" width="118" height="50" fill="url(#or)" transform="rotate(16 600 643)"/>
+  <rect x="694" y="664" width="44" height="40" rx="14" fill="url(#hand)"/>
+  <rect x="858" y="442" width="56" height="200" fill="url(#or)"/>
+  <rect x="786" y="624" width="126" height="50" fill="url(#or2)" transform="rotate(-14 912 649)"/>
+  <rect x="768" y="666" width="16" height="64" rx="4" fill="#182A46" transform="rotate(30 776 698)"/>
+  <rect x="770" y="668" width="46" height="40" rx="14" fill="url(#hand)"/>
+
+  <rect width="1080" height="1080" filter="url(#paint)" style="mix-blend-mode:multiply"/>
+</svg>

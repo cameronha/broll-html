@@ -10,6 +10,7 @@ Optional root attributes:
   data-border="0"     no white paper border around each piece
   data-zoom="s,tx,ty" scale and move every non-static group (and its pivot); scenery stays full size
   data-bg-boil="0.5"  how much the background boils, 0..1 (default 1): texture warp and scenery-edge change
+  data-step="1" data-jitter="0" data-shadow="0"   smooth motion for painted styles (rig motion)
   data-boil-step="4"  frames between edge-seed changes (default 2 = on twos)
 Group attribute data-static="1": scenery, flattened into the background (no motion). With data-variants,
 the background gets N versions too: scenery edges boil and the paper texture warps ~1.5px in place.
@@ -101,7 +102,8 @@ def main():
     base = (paper_bg(bg) if finish else Image.new("RGB", (1080, 1080), bg)).convert("RGBA")
     bgs = [base.copy() for _ in range(nvar)]
     manifest = {"bg": "bg.png", "motion": motion, "dur": 4.5, "stagger": 0.3, "dir": 1,
-                "variants": nvar, "boil_step": int(attr(svg, "data-boil-step", 2)), "bg_life": finish == "cut", "pieces": []}
+                "variants": nvar, "boil_step": int(attr(svg, "data-boil-step", 2)), "bg_life": finish == "cut", "step": int(attr(svg, "data-step", 2)),
+                "jitter": float(attr(svg, "data-jitter", 1)), "shadow": float(attr(svg, "data-shadow", 0.6)), "pieces": []}
     if len(sys.argv) > 6:
         manifest.update(pivot=[float(sys.argv[4]), float(sys.argv[5])], hinge=[0, float(sys.argv[6])])
     with sync_playwright() as pw:

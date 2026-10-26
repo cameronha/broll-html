@@ -139,16 +139,17 @@ const motions = {
     const [jx, jy] = boil(999, f);                 // shot frame by frame: the sheet shifts ~1px
     const bgi = BGS[Math.floor(f / (M.boil_step || STEP)) % BGS.length];
     if (M.bg_life) ctx.drawImage(bgi, jx * 1.2 - 4, jy * 1.2 - 4, F + 8, F + 8); else ctx.drawImage(bgi, 0, 0);
-    const k = Math.floor(f / STEP), tq = k * STEP / FPS;
+    const st = M.step || STEP, J = (M.jitter ?? 1) * .5, SH = M.shadow ?? 0.6;
+    const k = Math.floor(f / st), tq = k * st / FPS;
     M.pieces.forEach((p, i) => {
       const img = VARS[i][Math.floor(f / (M.boil_step || STEP)) % VARS[i].length], [bx, by, br] = boil(i, f);
-      if (!p.rig) return drawPiece(img, p, bx * .5, by * .5, br * .5, 1, 0.6);
+      if (!p.rig) return drawPiece(img, p, bx * J, by * J, br * J, 1, SH);
       const R = p.rig, s = Math.sin(2 * Math.PI * (R.freq * tq + R.phase));
       const a = (R.shape === 'sine' ? s : Math.max(0, s) ** 0.6) * R.deg * Math.PI / 180;
       const [hx, hy] = R.pivot;
       ctx.save();
       ctx.translate(hx, hy); ctx.rotate(a); ctx.translate(-hx, -hy);
-      drawPiece(img, p, bx * .5, by * .5, br * .5, 1, 0.6);
+      drawPiece(img, p, bx * J, by * J, br * J, 1, SH);
       ctx.restore();
     });
     if (M.bg_life) {                               // light flicker, on twos
