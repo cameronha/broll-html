@@ -23,11 +23,11 @@ from PIL import Image, ImageDraw, ImageFilter
 from playwright.sync_api import sync_playwright
 
 CUT = """<svg width="0" height="0" style="position:absolute"><defs>
-<filter id="cut" x="-10%" y="-10%" width="120%" height="120%">
+<filter id="cut" filterUnits="userSpaceOnUse" x="-50" y="-50" width="1180" height="1180">
  <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="1" result="n"/>
  <feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/>
  <feDropShadow in="d" dx="2" dy="3" stdDeviation="1.8" flood-color="#182A46" flood-opacity="0.35"/></filter>
-<filter id="cutbg" x="-10%" y="-10%" width="120%" height="120%">
+<filter id="cutbg" filterUnits="userSpaceOnUse" x="-50" y="-50" width="1180" height="1180">
  <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="1" data-fixed="1" result="a"/>
  <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="1" result="b"/>
  <feComposite in="a" in2="b" operator="arithmetic" k1="0" k2="{K2}" k3="{K3}" k4="0" result="n"/>
