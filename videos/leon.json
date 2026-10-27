@@ -23,7 +23,7 @@
       24.0
     ],
     "0": [
-      "beat0-rev24.mp4",
+      "beat0-rev25.mp4",
       6.31,
       8.44
     ],
@@ -33,17 +33,17 @@
       11.2
     ],
     "1a": [
-      "beat1a-rev24.mp4",
+      "beat1a-rev25.mp4",
       11.2,
       12.66
     ],
     "1b": [
-      "beat1b-rev24.mp4",
+      "beat1b-rev25.mp4",
       12.66,
       14.2
     ],
     "2": [
-      "beat2-rev24.mp4",
+      "beat2-rev25.mp4",
       28.28,
       30.84
     ],
@@ -53,7 +53,7 @@
       36.9
     ],
     "3": [
-      "beat3-rev24.mp4",
+      "beat3-rev25.mp4",
       37.07,
       39.72
     ],
@@ -79,7 +79,7 @@
   },
   "thumb": {
     "face_t": 9.1,
-    "panel_file": "beat0-rev24.mp4",
+    "panel_file": "beat0-rev25.mp4",
     "panel_t": -0.3,
     "panel_x": 300,
     "tag": "AI Agent Week"
