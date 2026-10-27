@@ -4,6 +4,7 @@ usage: python3 tools/talkinghead.py videos/NAME.json REV
        -> OUT_DIR/NAME-revREV.mp4  (+ OUT_DIR/NAME-thumbnail.png)
 
 Steps (each one is what Cam approved on the Leon video, rev22, 2026-10-27):
+  (zooms [[t0, t1], ...] in ORIGINAL time, optional: 1.2x jump-cut punch-ins on the footage; zoom_k, zoom_y)
   1. edit       keep cut[0]..cut[1] minus `remove`; 15 ms audio fades at every joint so no cut clicks
   2. composite  center-square crop, the GRADE, then every overlay at its EDITED time (titles = alpha .mov)
   3. voice      VOICE chain: EQ + 3:1 compression + limiter + loudnorm -16 LUFS
@@ -74,6 +75,13 @@ def edit(v, out):
 def composite(v, src, out):
     d = os.path.expanduser(v["out_dir"])
     ins, f, last = ["-i", src], [f"[0:v]crop=1080:1080:{v['crop_x']}:0,{GRADE}[s0]"], "s0"
+    if v.get("zooms"):                                     # jump-cut punch-ins: the footage cuts to a closer frame and back
+        k, y = v.get("zoom_k", 1.2), v.get("zoom_y", 30)   # zoom_y: top of the crop, keeps headroom above Cam's hair
+        w = round(1080 / k / 2) * 2
+        on = "+".join(f"between(t,{edited(v, a):.3f},{edited(v, b):.3f})" for a, b in v["zooms"])
+        f[0] = f[0].replace("[s0]", "[w0]")
+        f += [f"[w0]split[w1][w2]", f"[w2]crop={w}:{w}:{(1080 - w) // 2}:{y},scale=1080:1080[z]",
+              f"[w1][z]overlay=enable='{on}'[s0]"]
     for i, (k, (name, t0, t1)) in enumerate(v["overlays"].items(), 1):
         e0, e1 = edited(v, t0), edited(v, t1)
         ins += ["-i", os.path.join(d, name)]
