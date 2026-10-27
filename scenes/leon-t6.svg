@@ -1,0 +1,35 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="4.2" data-transparent="1">
+  <g id="leave-1.12" data-show="0.32,0.41" data-pivot="277,749" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="23" y="672" width="508" height="77" rx="11" fill="#DE4A30" transform="rotate(-2 277 710)"/>
+    <text x="43" y="731" font-family="Libre Franklin" font-weight="800" font-size="58" fill="#F6EEDC" transform="rotate(-2 277 710)">You’ll leave with</text>
+  </g>
+  <g id="leave-1.0" data-show="0.41,5.20" data-pivot="277,745" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="50" y="676" width="453" height="69" rx="10" fill="#DE4A30" transform="rotate(-2 277 710)"/>
+    <text x="68" y="729" font-family="Libre Franklin" font-weight="800" font-size="52" fill="#F6EEDC" transform="rotate(-2 277 710)">You’ll leave with</text>
+  </g>
+  <g id="chk1" data-show="1.13,5.2" data-pivot="82,832" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="52" y="772" width="60" height="60" rx="8" fill="#DE4A30" transform="rotate(-4 82.0 802.0)"/>
+    <path d="M66 803 L78 814 L99 790" stroke="#F6EEDC" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="item1-1.12" data-show="1.13,1.22" data-pivot="478,852" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="86" y="755" width="784" height="98" rx="11" fill="#182A46" transform="rotate(1 478 804)"/>
+    <text x="112" y="830" font-family="Libre Franklin" font-weight="800" font-size="74" fill="#F6EEDC" transform="rotate(1 478 804)">An agent that works</text>
+  </g>
+  <g id="item1-1.0" data-show="1.22,5.20" data-pivot="478,847" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="128" y="760" width="700" height="87" rx="10" fill="#182A46" transform="rotate(1 478 804)"/>
+    <text x="151" y="827" font-family="Libre Franklin" font-weight="800" font-size="66" fill="#F6EEDC" transform="rotate(1 478 804)">An agent that works</text>
+  </g>
+  <g id="chk2" data-show="2.52,5.2" data-pivot="82,944" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="52" y="884" width="60" height="60" rx="8" fill="#DE4A30" transform="rotate(-4 82.0 914.0)"/>
+    <path d="M66 915 L78 926 L99 902" stroke="#F6EEDC" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="item2-1.12" data-show="2.52,2.61" data-pivot="543,964" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="78" y="867" width="929" height="98" rx="11" fill="#182A46" transform="rotate(-1 543 916)"/>
+    <text x="104" y="942" font-family="Libre Franklin" font-weight="800" font-size="74" fill="#F6EEDC" transform="rotate(-1 543 916)">Knowledge to improve it</text>
+  </g>
+  <g id="item2-1.0" data-show="2.61,5.20" data-pivot="543,959" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="128" y="872" width="829" height="87" rx="10" fill="#182A46" transform="rotate(-1 543 916)"/>
+    <text x="151" y="939" font-family="Libre Franklin" font-weight="800" font-size="66" fill="#F6EEDC" transform="rotate(-1 543 916)">Knowledge to improve it</text>
+  </g>
+</svg>

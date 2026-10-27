@@ -138,10 +138,11 @@ const motions = {
     camera(t, M.dur, 0.04);
     const [jx, jy] = boil(999, f);                 // shot frame by frame: the sheet shifts ~1px
     const bgi = BGS[Math.floor(f / (M.boil_step || STEP)) % BGS.length];
-    if (M.bg_life) ctx.drawImage(bgi, jx * 1.2 - 4, jy * 1.2 - 4, F + 8, F + 8); else ctx.drawImage(bgi, 0, 0);
+    if (M.transparent) {} else if (M.bg_life) ctx.drawImage(bgi, jx * 1.2 * (M.jitter ?? 1) - 4, jy * 1.2 * (M.jitter ?? 1) - 4, F + 8, F + 8); else ctx.drawImage(bgi, 0, 0);
     const st = M.step || STEP, J = (M.jitter ?? 1) * .5, SH = M.shadow ?? 0.6;
     const k = Math.floor(f / st), tq = k * st / FPS;
     M.pieces.forEach((p, i) => {
+      if (p.show && (t < p.show[0] || t >= p.show[1])) return;   // timed group (expression swap)
       const img = VARS[i][Math.floor(f / (M.boil_step || STEP)) % VARS[i].length], [bx, by, br] = boil(i, f);
       if (!p.rig) return drawPiece(img, p, bx * J, by * J, br * J, 1, SH);
       const R = p.rig, s = Math.sin(2 * Math.PI * (R.freq * tq + R.phase));
@@ -152,7 +153,7 @@ const motions = {
       drawPiece(img, p, bx * J, by * J, br * J, 1, SH);
       ctx.restore();
     });
-    if (M.bg_life) {                               // light flicker, on twos
+    if (M.bg_life && !M.transparent) {             // light flicker, on twos
       const fl = (rand(998, k) - .5) * 0.035;
       ctx.setTransform(1, 0, 0, 1, 0, 0);
       ctx.fillStyle = fl > 0 ? `rgba(255,250,240,${fl})` : `rgba(24,42,70,${-fl})`;
@@ -189,7 +190,7 @@ window.setup = async (base) => {
 };
 window.renderAt = f => {
   ctx.setTransform(1, 0, 0, 1, 0, 0);
-  ctx.fillStyle = '#f2efe8'; ctx.fillRect(0, 0, F, F);
+  if (M.transparent) ctx.clearRect(0, 0, F, F); else { ctx.fillStyle = '#f2efe8'; ctx.fillRect(0, 0, F, F); }
   SCENE(f, f / FPS);
   return c.toDataURL('image/png');
 };

@@ -1,0 +1,23 @@
+{
+  "src": "~/Downloads/agentweekin leon2026-10-16 16-35-37.mp4",
+  "out_dir": "~/Claude-files/broll-html/45-leon",
+  "crop_x": 420,
+  "cut": [0.88, 52.85],
+  "overlays": {
+    "t1": ["title-t1-rev10.mov", 3.45, 6.31],
+    "t3": ["title-t3-rev10.mov", 16.6, 19.3],
+    "t2": ["title-t2-rev10.mov", 20.5, 24.0],
+    "0":  ["beat0-rev22.mp4", 6.31, 8.44],
+    "t4": ["title-t4-rev13.mov", 8.9, 11.2],
+    "1a": ["beat1a-rev22.mp4", 11.2, 12.66],
+    "1b": ["beat1b-rev22.mp4", 12.66, 14.2],
+    "2":  ["beat2-rev22.mp4", 28.28, 30.84],
+    "t5": ["title-t5-rev15.mov", 32.2, 36.9],
+    "3":  ["beat3-rev22.mp4", 37.07, 39.72],
+    "t6": ["title-t6-rev15.mov", 39.8, 44.0],
+    "4":  ["beat4-rev12.mp4", 44.0, 46.0]
+  },
+  "music": {"file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/fred.mp3",
+            "start": 93.9, "band": [62.0, 150.7], "under_db": 9},
+  "thumb": {"face_t": 9.1, "panel_file": "beat0-rev22.mp4", "panel_t": -0.3, "panel_x": 300, "tag": "AI Agent Week"}
+}

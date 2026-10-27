@@ -12,6 +12,8 @@ Optional root attributes:
   data-bg-boil="0.5"  how much the background boils, 0..1 (default 1): texture warp and scenery-edge change
   data-step="1" data-jitter="0" data-shadow="0"   smooth motion for painted styles (rig motion)
   data-boil-step="4"  frames between edge-seed changes (default 2 = on twos)
+Root data-transparent="1": no background in the render (titles to lay over footage; render.py writes ProRes 4444).
+Group attribute data-show="t0,t1": draw the group only from t0 to t1 seconds (expression swaps).
 Group attribute data-static="1": scenery, flattened into the background (no motion). With data-variants,
 the background gets N versions too: scenery edges boil and the paper texture warps ~1.5px in place.
 Optional group attributes (motion "rig": every group can swing on its own pivot):
@@ -101,9 +103,9 @@ def main():
     nvar, border = int(attr(svg, "data-variants", 1)), int(attr(svg, "data-border", 5))
     base = (paper_bg(bg) if finish else Image.new("RGB", (1080, 1080), bg)).convert("RGBA")
     bgs = [base.copy() for _ in range(nvar)]
-    manifest = {"bg": "bg.png", "motion": motion, "dur": 4.5, "stagger": 0.3, "dir": 1,
+    manifest = {"bg": "bg.png", "motion": motion, "dur": float(attr(svg, "data-dur", 4.5)), "stagger": 0.3, "dir": 1,
                 "variants": nvar, "boil_step": int(attr(svg, "data-boil-step", 2)), "bg_life": finish == "cut", "step": int(attr(svg, "data-step", 2)),
-                "jitter": float(attr(svg, "data-jitter", 1)), "shadow": float(attr(svg, "data-shadow", 0.6)), "pieces": []}
+                "jitter": float(attr(svg, "data-jitter", 1)), "transparent": attr(svg, "data-transparent", "0") == "1", "shadow": float(attr(svg, "data-shadow", 0.6)), "pieces": []}
     if len(sys.argv) > 6:
         manifest.update(pivot=[float(sys.argv[4]), float(sys.argv[5])], hinge=[0, float(sys.argv[6])])
     with sync_playwright() as pw:
@@ -145,6 +147,9 @@ def main():
                 s.crop(box).save(os.path.join(out, srcs[-1]))
             p = {"src": srcs[0], "srcs": srcs, "id": gid, "x": box[0], "y": box[1],
                  "w": box[2] - box[0], "h": box[3] - box[1]}
+            show = re.search(r'data-show="([^"]+)"', rest)
+            if show:
+                p["show"] = [float(x) for x in show.group(1).split(",")]
             rig = dict(re.findall(r'data-(pivot|deg|freq|phase|shape)="([^"]+)"', rest))
             if "pivot" in rig:
                 px, py = (float(x) for x in rig["pivot"].split(","))

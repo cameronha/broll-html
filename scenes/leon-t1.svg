@@ -1,0 +1,27 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="2.86" data-transparent="1">
+  <g id="cam-1.12" data-show="0.11,0.20" data-pivot="235,858" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="39" y="680" width="392" height="177" rx="11" fill="#182A46" transform="rotate(-4 235 769)"/>
+    <text x="86" y="818" font-family="Libre Franklin" font-weight="800" font-size="134" fill="#F6EEDC" transform="rotate(-4 235 769)">Cam</text>
+  </g>
+  <g id="cam-1.0" data-show="0.20,3.86" data-pivot="235,848" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="690" width="350" height="158" rx="10" fill="#182A46" transform="rotate(-4 235 769)"/>
+    <text x="102" y="812" font-family="Libre Franklin" font-weight="800" font-size="120" fill="#F6EEDC" transform="rotate(-4 235 769)">Cam</text>
+  </g>
+  <g id="houser-1.12" data-show="0.31,0.40" data-pivot="688,868" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="404" y="690" width="568" height="177" rx="11" fill="#182A46" transform="rotate(2 688 779)"/>
+    <text x="451" y="828" font-family="Libre Franklin" font-weight="800" font-size="134" fill="#F6EEDC" transform="rotate(2 688 779)">Houser</text>
+  </g>
+  <g id="houser-1.0" data-show="0.40,3.86" data-pivot="688,858" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="434" y="700" width="507" height="158" rx="10" fill="#182A46" transform="rotate(2 688 779)"/>
+    <text x="476" y="822" font-family="Libre Franklin" font-weight="800" font-size="120" fill="#F6EEDC" transform="rotate(2 688 779)">Houser</text>
+  </g>
+  <g id="aw-1.12" data-show="2.08,2.17" data-pivot="403,986" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="75" y="861" width="656" height="124" rx="11" fill="#DE4A30" transform="rotate(-2 403 923)"/>
+    <text x="108" y="957" font-family="Libre Franklin" font-weight="800" font-size="94" fill="#F6EEDC" transform="rotate(-2 403 923)">Actionworks</text>
+  </g>
+  <g id="aw-1.0" data-show="2.17,3.86" data-pivot="403,979" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="110" y="868" width="586" height="111" rx="10" fill="#DE4A30" transform="rotate(-2 403 923)"/>
+    <text x="139" y="954" font-family="Libre Franklin" font-weight="800" font-size="84" fill="#F6EEDC" transform="rotate(-2 403 923)">Actionworks</text>
+  </g>
+</svg>

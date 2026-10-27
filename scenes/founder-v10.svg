@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-bg-boil="0.5" data-zoom="0.95,48,-12">
+  <!-- v10 "adult editorial cutout": same scene as v9; heads ~1/6 of height, tapered polygons,
+       small geometric faces, emotion carried by posture. Sub-parts are <g data-part> (not pieces). -->
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="chair" fill="#F6EEDC">
+    <rect x="110" y="480" width="44" height="300" rx="14" transform="rotate(-8 132 780)"/>
+    <rect x="140" y="770" width="18" height="170" rx="6"/>
+    <rect x="400" y="770" width="18" height="170" rx="6"/>
+    <rect x="120" y="740" width="320" height="40" rx="14"/>
+  </g>
+
+  <!-- skeptic: slumped back, arms and legs crossed, head turned away -->
+  <g id="customer-legs">
+    <path d="M240 718 L438 742 L442 790 L250 772 Z" fill="#2A3448"/>
+    <path d="M410 770 L446 776 L440 934 L408 934 Z" fill="#2A3448"/>
+    <path d="M396 928 L452 924 L470 946 L392 950 Z" fill="#3B2A20"/>
+  </g>
+  <g id="customer-body">
+    <path d="M178 478 L300 466 L338 560 L342 742 L196 746 L186 600 Z" fill="#5F7466"/>
+    <path d="M222 474 L264 470 L244 508 Z" fill="#F6EEDC"/>
+    <path d="M258 700 L300 694 L470 712 L462 754 L268 750 Z" fill="#33405A"/>
+    <g data-part="arms-crossed">
+      <path d="M176 486 L206 482 L216 606 L186 612 Z" fill="#50634F"/>
+      <path d="M296 474 L326 480 L338 598 L308 604 Z" fill="#50634F"/>
+      <path d="M200 604 L330 596 L332 620 L204 628 Z" fill="#4A5C49"/>
+      <path d="M180 596 L204 594 L206 620 L182 622 Z" fill="#E9B48C"/>
+      <path d="M186 590 L326 572 L330 598 L190 616 Z" fill="#5A6F59"/>
+      <path d="M318 572 L346 568 L348 594 L322 598 Z" fill="#E9B48C"/>
+    </g>
+    <path d="M226 430 L256 430 L258 474 L226 476 Z" fill="#E0A880"/>
+  </g>
+  <g id="customer-head" data-pivot="242,440" data-deg="3" data-freq="0.4" data-shape="sine">
+    <ellipse cx="238" cy="380" rx="48" ry="60" fill="#E9B48C" transform="rotate(-10 238 380)"/>
+    <ellipse cx="280" cy="388" rx="8" ry="13" fill="#D99A72"/>
+    <path d="M190 362 L198 326 L236 310 L280 324 L294 366 L288 404 L276 372 L246 350 L214 352 Z" fill="#3B2A20"/>
+    <path d="M196 366 L222 363 L222 369 L196 372 Z" fill="#3B2A20"/>
+    <path d="M234 360 L258 352 L259 358 L235 366 Z" fill="#3B2A20"/>
+    <path d="M200 382 L222 380 L222 385 L200 387 Z" fill="#182A46"/>
+    <path d="M232 380 L252 378 L252 383 L232 385 Z" fill="#182A46"/>
+    <path d="M198 386 L186 405 L203 407 Z" fill="#CF8E66"/>
+    <path d="M204 421 L230 418 L232 423 L206 426 Z" fill="#7A3A28"/>
+  </g>
+  <g id="customer-foot" data-pivot="466,732" data-deg="-9" data-freq="2.2" data-shape="snap">
+    <path d="M446 714 L484 724 L550 848 L518 862 Z" fill="#33405A"/>
+    <path d="M508 848 L560 840 L586 868 L518 876 Z" fill="#3B2A20"/>
+  </g>
+
+  <!-- salesperson: leans in, hand on hip, tablet pushed close to the customer's face -->
+  <g id="founder">
+    <g data-part="legs">
+      <path d="M712 600 L768 604 L690 936 L650 936 Z" fill="#182A46"/>
+      <path d="M768 604 L822 598 L900 936 L858 938 Z" fill="#182A46"/>
+      <path d="M600 934 L684 928 L694 956 L596 960 Z" fill="#F6EEDC"/>
+      <path d="M842 934 L910 930 L926 956 L838 960 Z" fill="#F6EEDC"/>
+    </g>
+    <g data-part="far-arm">
+      <path d="M816 356 L852 370 L922 480 L896 500 Z" fill="#C9541F"/>
+      <path d="M896 478 L924 498 L850 592 L826 572 Z" fill="#C9541F"/>
+      <path d="M812 566 L840 578 L830 604 L806 592 Z" fill="#E9B48C"/>
+    </g>
+    <g data-part="torso">
+      <path d="M672 336 L836 350 L850 470 L836 628 L704 628 L690 500 Z" fill="#E8692E"/>
+      <path d="M700 598 L838 602 L836 632 L704 632 Z" fill="#C9541F"/>
+      <path d="M716 322 L800 326 L808 354 L760 370 L712 352 Z" fill="#C9541F"/>
+      <rect x="740" y="362" width="7" height="58" fill="#F6EEDC" transform="rotate(4 743 362)"/>
+      <rect x="764" y="364" width="7" height="54" fill="#F6EEDC" transform="rotate(4 767 364)"/>
+    </g>
+    <path d="M738 296 L764 298 L770 336 L734 336 Z" fill="#E0A880"/>
+  </g>
+  <g id="founder-head" data-pivot="752,330" data-deg="-4" data-freq="1.1" data-shape="snap">
+    <ellipse cx="748" cy="250" rx="46" ry="58" fill="#E9B48C" transform="rotate(8 748 250)"/>
+    <ellipse cx="792" cy="258" rx="8" ry="12" fill="#D99A72"/>
+    <path d="M700 238 L708 200 L744 186 L790 196 L800 236 L798 274 L786 262 L782 226 L760 214 L730 218 Z" fill="#182A46"/>
+    <path d="M708 234 L732 232 L732 238 L708 240 Z" fill="#182A46"/>
+    <path d="M742 230 L768 232 L767 238 L742 236 Z" fill="#182A46"/>
+    <ellipse cx="722" cy="250" rx="8" ry="3.5" fill="#182A46"/>
+    <ellipse cx="754" cy="248" rx="8" ry="3.5" fill="#182A46"/>
+    <path d="M708 254 L694 274 L712 276 Z" fill="#CF8E66"/>
+    <path d="M714 288 Q730 298 746 286 L746 291 Q730 303 714 293 Z" fill="#9B3A24"/>
+  </g>
+  <g id="arm" data-pivot="690,370" data-deg="7" data-freq="1.1" data-shape="snap">
+    <g data-part="upper-arm"><path d="M675 352 L705 378 L605 491 L575 465 Z" fill="#D65E27"/></g>
+    <g data-part="forearm"><circle cx="590" cy="478" r="19" fill="#D65E27"/><path d="M600 465 L580 491 L482 413 L502 387 Z" fill="#D65E27"/></g>
+    <g data-part="tablet" transform="rotate(-10 420 380)">
+      <rect x="360" y="300" width="120" height="160" rx="8" fill="#182A46"/>
+      <rect x="370" y="310" width="100" height="140" rx="3" fill="#F6EEDC"/>
+      <rect x="384" y="404" width="18" height="34" fill="#ED7239"/>
+      <rect x="410" y="384" width="18" height="54" fill="#DE4A30"/>
+      <rect x="436" y="350" width="18" height="88" fill="#E8692E"/>
+    </g>
+    <g data-part="hand"><path d="M466 372 L496 368 L502 402 L474 408 Z" fill="#E9B48C"/></g>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.5" data-transparent="1">
+  <g id="fwd-1.12" data-show="0.07,0.16" data-pivot="253,842" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="37" y="724" width="432" height="118" rx="11" fill="#182A46" transform="rotate(-3 253 783)"/>
+    <text x="68" y="815" font-family="Libre Franklin" font-weight="800" font-size="90" fill="#F6EEDC" transform="rotate(-3 253 783)">Forward</text>
+  </g>
+  <g id="fwd-1.0" data-show="0.16,4.50" data-pivot="253,836" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="730" width="386" height="106" rx="10" fill="#182A46" transform="rotate(-3 253 783)"/>
+    <text x="88" y="812" font-family="Libre Franklin" font-weight="800" font-size="80" fill="#F6EEDC" transform="rotate(-3 253 783)">Forward</text>
+  </g>
+  <g id="dep-1.12" data-show="0.51,0.60" data-pivot="342,948" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="104" y="830" width="476" height="118" rx="11" fill="#182A46" transform="rotate(2 342 889)"/>
+    <text x="136" y="921" font-family="Libre Franklin" font-weight="800" font-size="90" fill="#F6EEDC" transform="rotate(2 342 889)">Deployed</text>
+  </g>
+  <g id="dep-1.0" data-show="0.60,4.50" data-pivot="342,942" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="130" y="836" width="425" height="106" rx="10" fill="#182A46" transform="rotate(2 342 889)"/>
+    <text x="158" y="918" font-family="Libre Franklin" font-weight="800" font-size="80" fill="#F6EEDC" transform="rotate(2 342 889)">Deployed</text>
+  </g>
+  <g id="eng-1.12" data-show="1.11,1.20" data-pivot="284,1054" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="55" y="936" width="458" height="118" rx="11" fill="#DE4A30" transform="rotate(-2 284 995)"/>
+    <text x="87" y="1027" font-family="Libre Franklin" font-weight="800" font-size="90" fill="#F6EEDC" transform="rotate(-2 284 995)">Engineer</text>
+  </g>
+  <g id="eng-1.0" data-show="1.20,4.50" data-pivot="284,1048" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="80" y="942" width="409" height="106" rx="10" fill="#DE4A30" transform="rotate(-2 284 995)"/>
+    <text x="108" y="1024" font-family="Libre Franklin" font-weight="800" font-size="80" fill="#F6EEDC" transform="rotate(-2 284 995)">Engineer</text>
+  </g>
+</svg>
