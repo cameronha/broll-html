@@ -76,7 +76,7 @@ def composite(v, src, out):
     d = os.path.expanduser(v["out_dir"])
     ins, f, last = ["-i", src], [f"[0:v]crop=1080:1080:{v['crop_x']}:0,{GRADE}[s0]"], "s0"
     if v.get("zooms"):                                     # jump-cut punch-ins: the footage cuts to a closer frame and back
-        k, y = v.get("zoom_k", 1.2), v.get("zoom_y", 30)   # zoom_y: top of the crop, keeps headroom above Cam's hair
+        k, y = v.get("zoom_k", 1.2), v.get("zoom_y", 140)  # zoom_y: top of the crop; 140 = tight headroom (Cam: 30 had "too much headroom")
         w = round(1080 / k / 2) * 2
         on = "+".join(f"between(t,{edited(v, a):.3f},{edited(v, b):.3f})" for a, b in v["zooms"])
         f[0] = f[0].replace("[s0]", "[w0]")
