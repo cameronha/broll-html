@@ -1,0 +1,11 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="1.6" data-transparent="1">
+  <g id="slop-1.12" data-show="0.05,0.14" data-pivot="342,1032" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="26" y="766" width="633" height="266" rx="11" fill="#DE4A30" transform="rotate(-4 342 899)"/>
+    <text x="97" y="971" font-family="Libre Franklin" font-weight="800" font-size="202" fill="#F6EEDC" transform="rotate(-4 342 899)">Slop.</text>
+  </g>
+  <g id="slop-1.0" data-show="0.14,2.60" data-pivot="342,1018" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="780" width="565" height="238" rx="10" fill="#DE4A30" transform="rotate(-4 342 899)"/>
+    <text x="123" y="964" font-family="Libre Franklin" font-weight="800" font-size="180" fill="#F6EEDC" transform="rotate(-4 342 899)">Slop.</text>
+  </g>
+</svg>

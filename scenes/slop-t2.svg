@@ -1,0 +1,22 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="4.3" data-transparent="1">
+  <g id="five-1.12" data-show="0.30,0.39" data-pivot="376,866" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="22" y="733" width="707" height="133" rx="11" fill="#182A46" transform="rotate(-3 376 799)"/>
+    <text x="57" y="836" font-family="Libre Franklin" font-weight="800" font-size="101" fill="#F6EEDC" transform="rotate(-3 376 799)">5-page email</text>
+  </g>
+  <g id="five-1.0" data-show="0.39,5.30" data-pivot="376,859" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="740" width="631" height="119" rx="10" fill="#182A46" transform="rotate(-3 376 799)"/>
+    <text x="92" y="832" font-family="Libre Franklin" font-weight="800" font-size="90" fill="#F6EEDC" transform="rotate(-3 376 799)">5-page email</text>
+  </g>
+  <g id="one-1.12" data-show="3.80,3.89" data-pivot="351,1006" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="25" y="873" width="652" height="133" rx="11" fill="#DE4A30" transform="rotate(2 351 939)"/>
+    <text x="60" y="976" font-family="Libre Franklin" font-weight="800" font-size="101" fill="#F6EEDC" transform="rotate(2 351 939)">1 paragraph</text>
+  </g>
+  <g id="one-1.0" data-show="3.89,5.30" data-pivot="351,999" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="880" width="582" height="119" rx="10" fill="#DE4A30" transform="rotate(2 351 939)"/>
+    <text x="92" y="972" font-family="Libre Franklin" font-weight="800" font-size="90" fill="#F6EEDC" transform="rotate(2 351 939)">1 paragraph</text>
+  </g>
+  <g id="strike" data-show="3.80,5.30">
+    <line x1="50" y1="800" x2="620" y2="770" stroke="#DE4A30" stroke-width="16" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,106 @@
+{
+  "src": "~/Downloads/slop2026-08-20 12-51-16.mp4",
+  "out_dir": "~/Claude-files/broll-html/48-slop",
+  "crop_x": 492,
+  "cut": [
+    1.9,
+    47.15
+  ],
+  "remove": [
+    [
+      4.6,
+      5.1
+    ]
+  ],
+  "zoom_y": 60,
+  "zooms": [
+    [
+      5.1,
+      7.0
+    ],
+    [
+      16.5,
+      18.4
+    ],
+    [
+      29.2,
+      33.4
+    ],
+    [
+      36.5,
+      38.0
+    ],
+    [
+      41.4,
+      43.9
+    ]
+  ],
+  "overlays": {
+    "t1": [
+      "slop-t1-rev1.mov",
+      1.95,
+      4.55
+    ],
+    "t2": [
+      "slop-t2-rev1.mov",
+      7.0,
+      11.3
+    ],
+    "b1": [
+      "slop-b1-rev1.mp4",
+      11.3,
+      14.6
+    ],
+    "b2": [
+      "slop-b2-rev2.mp4",
+      19.0,
+      22.3
+    ],
+    "b3": [
+      "slop-b3-rev2.mp4",
+      23.3,
+      26.6
+    ],
+    "b4": [
+      "slop-b4-rev1.mp4",
+      26.6,
+      29.6
+    ],
+    "t3": [
+      "slop-t3-rev1.mov",
+      31.9,
+      33.5
+    ],
+    "b5": [
+      "slop-b5-rev2.mp4",
+      33.5,
+      36.5
+    ],
+    "pile": [
+      "slop-pile.mp4",
+      38.0,
+      41.2
+    ],
+    "t4": [
+      "slop-t4-rev2.mov",
+      44.0,
+      46.9
+    ]
+  },
+  "music": {
+    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/fred.mp3",
+    "start": 93.9,
+    "band": [
+      62.0,
+      150.7
+    ],
+    "under_db": 9
+  },
+  "thumb": {
+    "face_t": 22.4,
+    "panel_file": "slop-b2-rev2.mp4",
+    "panel_t": -0.4,
+    "panel_x": 420,
+    "tag": "Slop button?"
+  }
+}

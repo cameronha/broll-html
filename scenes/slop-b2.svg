@@ -1,0 +1,25 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.3">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="bar">
+    <rect x="60" y="360" width="960" height="190" rx="24" fill="#FFFDF6"/>
+  </g>
+  <g id="arch">
+    <rect x="84" y="410" width="300" height="110" rx="20" fill="#ACA69A"/><rect x="84" y="400" width="300" height="110" rx="20" fill="#F6EEDC"/><text x="118" y="474" font-family="Libre Franklin" font-weight="800" font-size="60" fill="#182A46">Archive</text>
+  </g>
+  <g id="spam">
+    <rect x="404" y="410" width="240" height="110" rx="20" fill="#101D31"/><rect x="404" y="400" width="240" height="110" rx="20" fill="#182A46"/><text x="438" y="474" font-family="Libre Franklin" font-weight="800" font-size="60" fill="#F6EEDC">Spam</text>
+  </g>
+  <g id="slop0" data-show="1.40,1.50" data-pivot="784,520" data-deg="0" data-freq="0.9" data-shape="sine">
+    <rect x="674" y="410" width="220" height="110" rx="20" fill="#9B3321"/><rect x="674" y="400" width="220" height="110" rx="20" fill="#DE4A30"/><text x="708" y="474" font-family="Libre Franklin" font-weight="800" font-size="60" fill="#F6EEDC">Slop</text>
+  </g>
+  <g id="slop" data-show="1.50,4.30" data-pivot="784,520" data-deg="3" data-freq="1.2" data-shape="sine">
+    <rect x="664" y="402" width="240" height="110" rx="20" fill="#9B3321"/><rect x="664" y="392" width="240" height="110" rx="20" fill="#DE4A30"/><text x="698" y="466" font-family="Libre Franklin" font-weight="800" font-size="60" fill="#F6EEDC">Slop</text>
+  </g>
+  <g id="new" data-show="1.80,4.30" data-pivot="890,370" data-deg="5" data-freq="1.4" data-shape="sine">
+    <rect x="820" y="310" width="140" height="60" rx="10" fill="#E9B949"/><text x="842" y="354" font-family="Libre Franklin" font-weight="800" font-size="40" fill="#182A46">NEW</text>
+  </g>
+</svg>

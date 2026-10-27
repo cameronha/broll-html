@@ -1,0 +1,19 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="2.6" data-transparent="1">
+  <g id="to-1.12" data-show="0.05,0.14" data-pivot="373,838" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="22" y="734" width="701" height="103" rx="11" fill="#182A46" transform="rotate(-2 373 786)"/>
+    <text x="50" y="814" font-family="Libre Franklin" font-weight="800" font-size="78" fill="#F6EEDC" transform="rotate(-2 373 786)">To the makers of</text>
+  </g>
+  <g id="to-1.0" data-show="0.14,3.60" data-pivot="373,832" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="740" width="626" height="92" rx="10" fill="#182A46" transform="rotate(-2 373 786)"/>
+    <text x="84" y="811" font-family="Libre Franklin" font-weight="800" font-size="70" fill="#F6EEDC" transform="rotate(-2 373 786)">To the makers of</text>
+  </g>
+  <g id="gm-1.12" data-show="0.50,0.59" data-pivot="270,1018" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="35" y="840" width="469" height="177" rx="11" fill="#DE4A30" transform="rotate(2 270 929)"/>
+    <text x="82" y="978" font-family="Libre Franklin" font-weight="800" font-size="134" fill="#F6EEDC" transform="rotate(2 270 929)">Gmail</text>
+  </g>
+  <g id="gm-1.0" data-show="0.59,3.60" data-pivot="270,1008" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="850" width="419" height="158" rx="10" fill="#DE4A30" transform="rotate(2 270 929)"/>
+    <text x="102" y="972" font-family="Libre Franklin" font-weight="800" font-size="120" fill="#F6EEDC" transform="rotate(2 270 929)">Gmail</text>
+  </g>
+</svg>
