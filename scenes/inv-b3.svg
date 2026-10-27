@@ -1,0 +1,52 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.2">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="screen">
+    <rect x="80" y="200" width="520" height="400" rx="16" fill="#182A46"/><rect x="100" y="220" width="480" height="360" rx="6" fill="#F6EEDC"/><rect x="300" y="600" width="80" height="60" fill="#182A46"/><rect x="230" y="650" width="220" height="22" rx="10" fill="#182A46"/>
+  </g>
+  <g id="code0" data-show="0.10,4.20">
+    <rect x="130" y="250" width="300" height="18" rx="9" fill="#9AA0A6"/>
+  </g>
+  <g id="code1" data-show="0.22,4.20">
+    <rect x="170" y="288" width="220" height="18" rx="9" fill="#9AA0A6"/>
+  </g>
+  <g id="code2" data-show="0.34,4.20">
+    <rect x="210" y="326" width="340" height="18" rx="9" fill="#DE4A30"/>
+  </g>
+  <g id="code3" data-show="0.46,4.20">
+    <rect x="130" y="364" width="180" height="18" rx="9" fill="#9AA0A6"/>
+  </g>
+  <g id="code4" data-show="0.58,4.20">
+    <rect x="170" y="402" width="260" height="18" rx="9" fill="#9AA0A6"/>
+  </g>
+  <g id="code5" data-show="0.70,4.20">
+    <rect x="210" y="440" width="320" height="18" rx="9" fill="#9AA0A6"/>
+  </g>
+  <g id="code6" data-show="0.82,4.20">
+    <rect x="130" y="478" width="200" height="18" rx="9" fill="#DE4A30"/>
+  </g>
+  <g id="code7" data-show="0.94,4.20">
+    <rect x="170" y="516" width="280" height="18" rx="9" fill="#9AA0A6"/>
+  </g>
+  <g id="block0" data-show="1.00,4.20">
+    <rect x="670" y="690" width="260" height="58" rx="8" fill="#182A46"/>
+  </g>
+  <g id="block1" data-show="1.22,4.20">
+    <rect x="690" y="624" width="220" height="58" rx="8" fill="#DE4A30"/>
+  </g>
+  <g id="block2" data-show="1.44,4.20">
+    <rect x="680" y="558" width="240" height="58" rx="8" fill="#F6EEDC"/>
+  </g>
+  <g id="block3" data-show="1.66,4.20">
+    <rect x="710" y="492" width="180" height="58" rx="8" fill="#182A46"/>
+  </g>
+  <g id="block4" data-show="1.88,4.20">
+    <rect x="700" y="426" width="200" height="58" rx="8" fill="#5A8BB3"/>
+  </g>
+  <g id="block5" data-show="2.10,4.20">
+    <rect x="730" y="360" width="140" height="58" rx="8" fill="#DE4A30"/>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="5.8" data-transparent="1">
+  <g id="c0" data-show="0.30,6.8" data-pivot="82,762" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="52" y="702" width="60" height="60" rx="8" fill="#DE4A30" transform="rotate(-4 82.0 732.0)"/>
+    <path d="M66 733 L78 744 L99 720" stroke="#F6EEDC" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="i0-1.12" data-show="0.30,0.39" data-pivot="315,780" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="106" y="685" width="420" height="95" rx="11" fill="#182A46" transform="rotate(1 315 732)"/>
+    <text x="131" y="758" font-family="Libre Franklin" font-weight="800" font-size="72" fill="#F6EEDC" transform="rotate(1 315 732)">Autonomy</text>
+  </g>
+  <g id="i0-1.0" data-show="0.39,6.80" data-pivot="315,774" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="128" y="690" width="375" height="84" rx="10" fill="#182A46" transform="rotate(1 315 732)"/>
+    <text x="150" y="755" font-family="Libre Franklin" font-weight="800" font-size="64" fill="#F6EEDC" transform="rotate(1 315 732)">Autonomy</text>
+  </g>
+  <g id="c1" data-show="0.80,6.8" data-pivot="82,874" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="52" y="814" width="60" height="60" rx="8" fill="#DE4A30" transform="rotate(-4 82.0 844.0)"/>
+    <path d="M66 845 L78 856 L99 832" stroke="#F6EEDC" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="i1-1.12" data-show="0.80,0.89" data-pivot="292,892" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="108" y="797" width="367" height="95" rx="11" fill="#182A46" transform="rotate(-1 292 844)"/>
+    <text x="133" y="870" font-family="Libre Franklin" font-weight="800" font-size="72" fill="#F6EEDC" transform="rotate(-1 292 844)">Freedom</text>
+  </g>
+  <g id="i1-1.0" data-show="0.89,6.80" data-pivot="292,886" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="128" y="802" width="328" height="84" rx="10" fill="#182A46" transform="rotate(-1 292 844)"/>
+    <text x="150" y="867" font-family="Libre Franklin" font-weight="800" font-size="64" fill="#F6EEDC" transform="rotate(-1 292 844)">Freedom</text>
+  </g>
+  <g id="c2" data-show="1.90,6.8" data-pivot="82,986" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="52" y="926" width="60" height="60" rx="8" fill="#DE4A30" transform="rotate(-4 82.0 956.0)"/>
+    <path d="M66 957 L78 968 L99 944" stroke="#F6EEDC" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="i2-1.12" data-show="1.90,1.99" data-pivot="611,1004" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="70" y="909" width="1083" height="95" rx="11" fill="#DE4A30" transform="rotate(1 611 956)"/>
+    <text x="95" y="982" font-family="Libre Franklin" font-weight="800" font-size="72" fill="#F6EEDC" transform="rotate(1 611 956)">A business that makes money</text>
+  </g>
+  <g id="i2-1.0" data-show="1.99,6.80" data-pivot="611,998" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="128" y="914" width="967" height="84" rx="10" fill="#DE4A30" transform="rotate(1 611 956)"/>
+    <text x="150" y="979" font-family="Libre Franklin" font-weight="800" font-size="64" fill="#F6EEDC" transform="rotate(1 611 956)">A business that makes money</text>
+  </g>
+</svg>

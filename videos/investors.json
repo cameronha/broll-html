@@ -1,0 +1,123 @@
+{
+  "src": "~/Downloads/dont ask to meet investors 2026-08-20 13-02-30.mp4",
+  "out_dir": "~/Claude-files/broll-html/47-investors",
+  "crop_x": 440,
+  "cut": [
+    9.27,
+    89.95
+  ],
+  "remove": [
+    [
+      16.2,
+      19.6
+    ],
+    [
+      43.96,
+      48.34
+    ],
+    [
+      49.24,
+      54.41
+    ]
+  ],
+  "zooms": [
+    [
+      19.6,
+      23.4
+    ],
+    [
+      28.3,
+      33.9
+    ],
+    [
+      48.34,
+      49.24
+    ],
+    [
+      58.5,
+      62.0
+    ],
+    [
+      77.3,
+      79.0
+    ],
+    [
+      87.5,
+      89.95
+    ]
+  ],
+  "overlays": {
+    "t1": [
+      "inv-t1-rev1.mov",
+      9.9,
+      12.9
+    ],
+    "b1": [
+      "inv-b1-rev1.mp4",
+      13.0,
+      16.2
+    ],
+    "t2": [
+      "inv-t2-rev1.mov",
+      23.4,
+      25.4
+    ],
+    "b2": [
+      "inv-b2-rev1.mp4",
+      25.4,
+      28.4
+    ],
+    "t3": [
+      "inv-t3-rev1.mov",
+      28.9,
+      32.9
+    ],
+    "b3": [
+      "inv-b3-rev1.mp4",
+      34.0,
+      37.2
+    ],
+    "b4": [
+      "inv-b4-rev2.mp4",
+      40.4,
+      43.6
+    ],
+    "b5": [
+      "inv-b5-rev2.mp4",
+      62.0,
+      65.0
+    ],
+    "t4": [
+      "inv-t4-rev1.mov",
+      67.2,
+      73.0
+    ],
+    "b6": [
+      "inv-b6-rev1.mp4",
+      73.0,
+      76.3
+    ],
+    "t5": [
+      "inv-t5-rev1.mov",
+      81.0,
+      87.4
+    ]
+  },
+  "music": {
+    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/fred.mp3",
+    "start": 93.9,
+    "band": [
+      62.0,
+      150.7
+    ],
+    "under_db": 9
+  },
+  "thumb": {
+    "face_t": 78.4,
+    "panel_file": "inv-b4-rev2.mp4",
+    "panel_t": -0.4,
+    "panel_x": 500,
+    "tag": "Customers first"
+  },
+  "zoom_y": 60
+}
