@@ -1,0 +1,17 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="2.4" data-transparent="1">
+  <g id="clock" data-show="0.05,3.40">
+    <circle cx="150" cy="860" r="92" fill="#182A46"/><circle cx="150" cy="860" r="74" fill="#F6EEDC"/><rect x="145" y="816" width="10" height="48" rx="5" fill="#182A46"/>
+  </g>
+  <g id="hand" data-show="0.05,3.40" data-pivot="150,860" data-deg="60" data-freq="0.8" data-shape="snap">
+    <rect x="146" y="796" width="8" height="66" rx="4" fill="#DE4A30" transform="rotate(40 150 860)"/>
+  </g>
+  <g id="hrs-1.12" data-show="0.10,0.19" data-pivot="547,954" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="237" y="791" width="620" height="163" rx="11" fill="#182A46" transform="rotate(-2 547 873)"/>
+    <text x="280" y="917" font-family="Libre Franklin" font-weight="800" font-size="123" fill="#F6EEDC" transform="rotate(-2 547 873)">24 hours</text>
+  </g>
+  <g id="hrs-1.0" data-show="0.19,3.40" data-pivot="547,945" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="270" y="800" width="554" height="145" rx="10" fill="#182A46" transform="rotate(-2 547 873)"/>
+    <text x="308" y="912" font-family="Libre Franklin" font-weight="800" font-size="110" fill="#F6EEDC" transform="rotate(-2 547 873)">24 hours</text>
+  </g>
+</svg>

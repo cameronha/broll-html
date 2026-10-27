@@ -4,15 +4,16 @@ usage: python3 tools/talkinghead.py videos/NAME.json REV
        -> OUT_DIR/NAME-revREV.mp4  (+ OUT_DIR/NAME-thumbnail.png)
 
 Steps (each one is what Cam approved on the Leon video, rev22, 2026-10-27):
-  1. composite  center-square crop of the footage, the GRADE, then every overlay at its time (titles = alpha .mov)
-  2. trim       one segment, cut[0]..cut[1]; short audio fades so the cut does not click
+  1. edit       keep cut[0]..cut[1] minus `remove`; 15 ms audio fades at every joint so no cut clicks
+  2. composite  center-square crop, the GRADE, then every overlay at its EDITED time (titles = alpha .mov)
   3. voice      VOICE chain: EQ + 3:1 compression + limiter + loudnorm -16 LUFS
   4. music      filtered music bed, `under_db` below the voice mean, light ducking, 0.3 s in / 2 s out
   5. thumbnail  split frame: graded face (left half), a b-roll panel (right half), one red paper tag
   6. splice     the thumbnail as the first 3 frames (0.125 s, silent): X uses frame 1 as the preview
 
 The JSON (see videos/leon.json):
-  src, out_dir, crop_x, cut [in, out], overlays {key: [file, t0, t1]} in ORIGINAL footage time,
+  src, out_dir, crop_x, cut [in, out], remove [[a, b], ...] (optional: flubs cut out of the middle),
+  overlays {key: [file, t0, t1]} in ORIGINAL footage time (an overlay may span a removed piece: it plays on, unbroken),
   music {file, start, band [hp, lp], under_db}, thumb {face_t, panel_file, panel_t, panel_x, tag}
 """
 import json, os, subprocess, sys, tempfile
@@ -42,24 +43,49 @@ def duration(path):
     return float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path]))
 
 
-def composite(v, out):
+def keep(v):
+    """The kept pieces of the original footage, in order."""
+    a, b = v["cut"]; out = []
+    for r0, r1 in sorted(v.get("remove", [])):
+        out.append((a, r0)); a = r1
+    return out + [(a, b)]
+
+
+def edited(v, t):
+    """Original footage time -> edited time. A time inside a removed piece maps to the joint."""
+    e = 0.0
+    for a, b in keep(v):
+        if t < a: return e
+        if t <= b: return e + t - a
+        e += b - a
+    return e
+
+
+def edit(v, out):
+    f, parts = [], keep(v)
+    for i, (a, b) in enumerate(parts):
+        f.append(f"[0:v]trim={a}:{b},setpts=PTS-STARTPTS[v{i}]")
+        f.append(f"[0:a]atrim={a}:{b},asetpts=PTS-STARTPTS,afade=t=in:d=0.015,afade=t=out:st={b - a - 0.015:.3f}:d=0.015[a{i}]")
+    f.append("".join(f"[v{i}][a{i}]" for i in range(len(parts))) + f"concat=n={len(parts)}:v=1:a=1[v][a]")
+    ff("-i", os.path.expanduser(v["src"]), "-filter_complex", ";".join(f), "-map", "[v]", "-map", "[a]",
+       "-c:v", "libx264", "-crf", "14", "-pix_fmt", "yuv420p", "-c:a", "pcm_s16le", out)
+
+
+def composite(v, src, out):
     d = os.path.expanduser(v["out_dir"])
-    ins, f, last = ["-i", os.path.expanduser(v["src"])], [f"[0:v]crop=1080:1080:{v['crop_x']}:0,{GRADE}[s0]"], "s0"
+    ins, f, last = ["-i", src], [f"[0:v]crop=1080:1080:{v['crop_x']}:0,{GRADE}[s0]"], "s0"
     for i, (k, (name, t0, t1)) in enumerate(v["overlays"].items(), 1):
+        e0, e1 = edited(v, t0), edited(v, t1)
         ins += ["-i", os.path.join(d, name)]
         fmt = ":format=auto" if name.endswith(".mov") else ""
-        f.append(f"[{i}:v]setpts=PTS-STARTPTS+{t0}/TB[c{i}]")
-        f.append(f"[{last}][c{i}]overlay=eof_action=pass{fmt}:enable='between(t,{t0},{t1})'[s{i}]")
+        f.append(f"[{i}:v]setpts=PTS-STARTPTS+{e0:.3f}/TB[c{i}]")
+        f.append(f"[{last}][c{i}]overlay=eof_action=pass{fmt}:enable='between(t,{e0:.3f},{e1:.3f})'[s{i}]")
         last = f"s{i}"
     ff(*ins, "-filter_complex", ";".join(f), "-map", f"[{last}]", "-map", "0:a", *ENC, out)
 
 
-def trim_voice(src, v, out):
-    a, b = v["cut"]
-    ff("-i", src, "-filter_complex",
-       f"[0:v]trim={a}:{b},setpts=PTS-STARTPTS[v];[0:a]atrim={a}:{b},asetpts=PTS-STARTPTS,"
-       f"afade=t=in:d=0.03,afade=t=out:st={b - a - 0.15:.2f}:d=0.15,{VOICE},aresample=48000[a]",
-       "-map", "[v]", "-map", "[a]", *ENC, out)
+def voice(src, out):
+    ff("-i", src, "-af", f"{VOICE},aresample=48000", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", out)
 
 
 def music(src, v, out):
@@ -103,10 +129,11 @@ if __name__ == "__main__":
     v = json.load(open(cfg)); name = os.path.splitext(os.path.basename(cfg))[0]
     d = os.path.expanduser(v["out_dir"])
     with tempfile.TemporaryDirectory() as tmp:
-        steps = [os.path.join(tmp, n) for n in ("1-comp.mp4", "2-voice.mp4", "3-music.mp4")]
-        composite(v, steps[0]); print("composite")
-        trim_voice(steps[0], v, steps[1]); print("trim + voice")
-        music(steps[1], v, steps[2]); print("music")
+        steps = [os.path.join(tmp, n) for n in ("0-edit.mov", "1-comp.mp4", "2-voice.mp4", "3-music.mp4")]
+        edit(v, steps[0]); print("edit", keep(v))
+        composite(v, steps[0], steps[1]); print("composite")
+        voice(steps[1], steps[2]); print("voice")
+        music(steps[2], v, steps[3]); print("music")
         thumb = os.path.join(d, f"{name}-thumbnail.png"); thumbnail(v, tmp, thumb); print("thumbnail", thumb)
-        out = os.path.join(d, f"{name}-rev{rev}.mp4"); splice(thumb, steps[2], out)
+        out = os.path.join(d, f"{name}-rev{rev}.mp4"); splice(thumb, steps[3], out)
     print(out, f"{duration(out):.2f}s")

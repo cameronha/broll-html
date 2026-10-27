@@ -1,0 +1,27 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="9.4" data-transparent="1">
+  <g id="p0-1.12" data-show="0.30,0.39" data-pivot="391,731" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="-2" y="645" width="786" height="86" rx="11" fill="#182A46" transform="rotate(-2 391 688)"/>
+    <text x="21" y="712" font-family="Libre Franklin" font-weight="800" font-size="65" fill="#F6EEDC" transform="rotate(-2 391 688)">“I need new customers.</text>
+  </g>
+  <g id="p0-1.0" data-show="0.39,10.40" data-pivot="391,727" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="40" y="650" width="702" height="77" rx="10" fill="#182A46" transform="rotate(-2 391 688)"/>
+    <text x="60" y="709" font-family="Libre Franklin" font-weight="800" font-size="58" fill="#F6EEDC" transform="rotate(-2 391 688)">“I need new customers.</text>
+  </g>
+  <g id="p1-1.12" data-show="3.70,3.79" data-pivot="490,841" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="20" y="755" width="940" height="86" rx="11" fill="#182A46" transform="rotate(1 490 798)"/>
+    <text x="42" y="822" font-family="Libre Franklin" font-weight="800" font-size="65" fill="#F6EEDC" transform="rotate(1 490 798)">Go through my connections.</text>
+  </g>
+  <g id="p1-1.0" data-show="3.79,10.40" data-pivot="490,837" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="70" y="760" width="840" height="77" rx="10" fill="#182A46" transform="rotate(1 490 798)"/>
+    <text x="90" y="819" font-family="Libre Franklin" font-weight="800" font-size="58" fill="#F6EEDC" transform="rotate(1 490 798)">Go through my connections.</text>
+  </g>
+  <g id="p2-1.12" data-show="7.80,7.89" data-pivot="451,951" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="-9" y="865" width="920" height="86" rx="11" fill="#DE4A30" transform="rotate(-1 451 908)"/>
+    <text x="13" y="932" font-family="Libre Franklin" font-weight="800" font-size="65" fill="#F6EEDC" transform="rotate(-1 451 908)">Who should I reach out to?”</text>
+  </g>
+  <g id="p2-1.0" data-show="7.89,10.40" data-pivot="451,947" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="40" y="870" width="822" height="77" rx="10" fill="#DE4A30" transform="rotate(-1 451 908)"/>
+    <text x="60" y="929" font-family="Libre Franklin" font-weight="800" font-size="58" fill="#F6EEDC" transform="rotate(-1 451 908)">Who should I reach out to?”</text>
+  </g>
+</svg>

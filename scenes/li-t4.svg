@@ -1,0 +1,27 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="5.4" data-transparent="1">
+  <g id="c1" data-show="0.10,6.4" data-pivot="82,840" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="52" y="780" width="60" height="60" rx="8" fill="#DE4A30" transform="rotate(-4 82.0 810.0)"/>
+    <path d="M66 811 L78 822 L99 798" stroke="#F6EEDC" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="i1-1.12" data-show="0.10,0.19" data-pivot="358,866" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="100" y="762" width="515" height="103" rx="11" fill="#182A46" transform="rotate(1 358 814)"/>
+    <text x="128" y="842" font-family="Libre Franklin" font-weight="800" font-size="78" fill="#F6EEDC" transform="rotate(1 358 814)">Direct leads</text>
+  </g>
+  <g id="i1-1.0" data-show="0.19,6.40" data-pivot="358,860" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="128" y="768" width="460" height="92" rx="10" fill="#182A46" transform="rotate(1 358 814)"/>
+    <text x="152" y="839" font-family="Libre Franklin" font-weight="800" font-size="70" fill="#F6EEDC" transform="rotate(1 358 814)">Direct leads</text>
+  </g>
+  <g id="c2" data-show="4.20,6.4" data-pivot="82,956" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="52" y="896" width="60" height="60" rx="8" fill="#DE4A30" transform="rotate(-4 82.0 926.0)"/>
+    <path d="M66 927 L78 938 L99 914" stroke="#F6EEDC" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="i2-1.12" data-show="4.20,4.29" data-pivot="422,982" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="93" y="878" width="659" height="103" rx="11" fill="#182A46" transform="rotate(-1 422 930)"/>
+    <text x="120" y="958" font-family="Libre Franklin" font-weight="800" font-size="78" fill="#F6EEDC" transform="rotate(-1 422 930)">Creative angles</text>
+  </g>
+  <g id="i2-1.0" data-show="4.29,6.40" data-pivot="422,976" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="128" y="884" width="588" height="92" rx="10" fill="#182A46" transform="rotate(-1 422 930)"/>
+    <text x="152" y="955" font-family="Libre Franklin" font-weight="800" font-size="70" fill="#F6EEDC" transform="rotate(-1 422 930)">Creative angles</text>
+  </g>
+</svg>
