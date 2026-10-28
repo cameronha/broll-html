@@ -1,0 +1,27 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="2.8" data-transparent="1">
+  <g id="chief-1.12" data-show="0.10,0.19" data-pivot="199,798" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="43" y="673" width="312" height="124" rx="11" fill="#182A46" transform="rotate(-3 199 735)"/>
+    <text x="76" y="769" font-family="Libre Franklin" font-weight="800" font-size="94" fill="#F6EEDC" transform="rotate(-3 199 735)">Chief</text>
+  </g>
+  <g id="chief-1.0" data-show="0.19,3.80" data-pivot="199,791" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="680" width="279" height="111" rx="10" fill="#182A46" transform="rotate(-3 199 735)"/>
+    <text x="89" y="766" font-family="Libre Franklin" font-weight="800" font-size="84" fill="#F6EEDC" transform="rotate(-3 199 735)">Chief</text>
+  </g>
+  <g id="trash-1.12" data-show="0.45,0.54" data-pivot="524,908" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="4" y="783" width="1039" height="124" rx="11" fill="#DE4A30" transform="rotate(2 524 845)"/>
+    <text x="37" y="879" font-family="Libre Franklin" font-weight="800" font-size="94" fill="#F6EEDC" transform="rotate(2 524 845)">Taking the Trash Out</text>
+  </g>
+  <g id="trash-1.0" data-show="0.54,3.80" data-pivot="524,901" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="790" width="928" height="111" rx="10" fill="#DE4A30" transform="rotate(2 524 845)"/>
+    <text x="89" y="876" font-family="Libre Franklin" font-weight="800" font-size="84" fill="#F6EEDC" transform="rotate(2 524 845)">Taking the Trash Out</text>
+  </g>
+  <g id="off-1.12" data-show="1.45,1.54" data-pivot="234,1018" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="39" y="893" width="391" height="124" rx="11" fill="#182A46" transform="rotate(-2 234 955)"/>
+    <text x="72" y="989" font-family="Libre Franklin" font-weight="800" font-size="94" fill="#F6EEDC" transform="rotate(-2 234 955)">Officer</text>
+  </g>
+  <g id="off-1.0" data-show="1.54,3.80" data-pivot="234,1011" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="900" width="349" height="111" rx="10" fill="#182A46" transform="rotate(-2 234 955)"/>
+    <text x="89" y="986" font-family="Libre Franklin" font-weight="800" font-size="84" fill="#F6EEDC" transform="rotate(-2 234 955)">Officer</text>
+  </g>
+</svg>

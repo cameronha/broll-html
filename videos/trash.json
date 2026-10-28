@@ -1,0 +1,21 @@
+{
+  "src": "~/Downloads/chief taking the trash our officer 2026-08-11 15-06-262026-08-11 15-10-06.mp4",
+  "out_dir": "~/Claude-files/broll-html/51-trash",
+  "crop_x": 390,
+  "cut": [3.1, 46.15],
+  "remove": [],
+  "zoom_y": 60,
+  "zooms": [[8.6, 11.8], [17.4, 20.1], [23.2, 27.4], [31.3, 35.0]],
+  "overlays": {
+    "b0": ["trash-b0-rev1.mp4", 3.3, 5.8],
+    "t1": ["trash-t1-rev1.mov", 5.8, 8.6],
+    "b1": ["trash-b1-rev1.mp4", 12.4, 15.9],
+    "b2": ["trash-b2-rev2.mp4", 20.1, 23.3],
+    "b3": ["trash-b3-rev1.mp4", 27.6, 30.8],
+    "t2": ["trash-t2-rev1.mov", 38.3, 41.2],
+    "b4": ["trash-b4-rev1.mp4", 41.6, 45.0]
+  },
+  "music": {"file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/fred.mp3",
+            "start": 93.9, "band": [62.0, 150.7], "under_db": 9},
+  "thumb": {"face_t": 8.5, "panel_file": "trash-b2-rev2.mp4", "panel_t": -0.4, "panel_x": 400, "tag": "Chief Trash Officer"}
+}

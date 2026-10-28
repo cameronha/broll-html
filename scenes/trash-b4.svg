@@ -1,0 +1,19 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.4">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="card">
+    <rect x="150" y="250" width="780" height="520" rx="26" fill="#FFFDF6"/><rect x="150" y="250" width="780" height="150" rx="26" fill="#DE4A30"/><rect x="150" y="350" width="780" height="50" fill="#DE4A30"/><text x="220" y="350" font-family="Libre Franklin" font-weight="800" font-size="64" fill="#F6EEDC">HELLO, my title is</text>
+  </g>
+  <g id="ceo" data-show="0.00,1.60">
+    <text x="450" y="600" font-family="Libre Franklin" font-weight="800" font-size="120" fill="#182A46">CEO</text>
+  </g>
+  <g id="strike" data-show="1.00,1.60">
+    <text x="450" y="600" font-family="Libre Franklin" font-weight="800" font-size="120" fill="#9AA0A6">CEO</text><line x1="430" y1="560" x2="700" y2="540" stroke="#DE4A30" stroke-width="18" stroke-linecap="round"/>
+  </g>
+  <g id="new" data-show="1.60,4.40" data-pivot="540,700" data-deg="2" data-freq="0.6" data-shape="sine">
+    <text x="200" y="520" font-family="Libre Franklin" font-weight="800" font-size="76" fill="#182A46">Chief Taking the</text><text x="200" y="610" font-family="Libre Franklin" font-weight="800" font-size="76" fill="#182A46">Trash Out Officer</text>
+  </g>
+</svg>
