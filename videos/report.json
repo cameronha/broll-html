@@ -1,18 +1,13 @@
 {
-  "src": "~/Downloads/good report announcement 2026-10-09 11-41-32.mp4",
+  "src": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/new report announcement leon oct 28 second try doing more - 1080WebShareName.mov",
   "out_dir": "~/Claude-files/broll-html/50-report",
-  "crop_x": 420,
+  "crop_x": 0,
   "cut": [
-    0.0,
+    1.14,
     67.85
   ],
-  "remove": [
-    [
-      0.6,
-      1.1
-    ]
-  ],
-  "grade": "fixed",
+  "remove": [],
+  "grade": "none",
   "zoom_y": 60,
   "zooms": [
     [
@@ -103,5 +98,6 @@
     "panel_t": -0.3,
     "panel_x": 300,
     "tag": "Next up: León"
-  }
+  },
+  "voice": "light"
 }

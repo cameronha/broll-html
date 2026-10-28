@@ -127,8 +127,10 @@ def composite(v, src, out):
     ff(*ins, "-filter_complex", ";".join(f), "-map", f"[{last}]", "-map", "0:a", *ENC, out)
 
 
-def voice(src, out):
-    ff("-i", src, "-af", f"{VOICE},aresample=48000", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", out)
+def voice(src, out, v=None):
+    # "voice": "light" when Cam already did EQ/compression in Final Cut: loudness only, so the music level math still holds
+    chain = "loudnorm=I=-16:TP=-1.5:LRA=11" if (v or {}).get("voice") == "light" else VOICE
+    ff("-i", src, "-af", f"{chain},aresample=48000", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", out)
 
 
 def music(src, v, out):
@@ -175,7 +177,7 @@ if __name__ == "__main__":
         steps = [os.path.join(tmp, n) for n in ("0-edit.mov", "1-comp.mp4", "2-voice.mp4", "3-music.mp4")]
         edit(v, steps[0]); print("edit", keep(v))
         composite(v, steps[0], steps[1]); print("composite")
-        voice(steps[1], steps[2]); print("voice")
+        voice(steps[1], steps[2], v); print("voice")
         music(steps[2], v, steps[3]); print("music")
         thumb = os.path.join(d, f"{name}-thumbnail.png"); thumbnail(v, tmp, thumb); print("thumbnail", thumb)
         out = os.path.join(d, f"{name}-rev{rev}.mp4"); splice(thumb, steps[3], out)
