@@ -1,0 +1,19 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="4.5" data-transparent="1">
+  <g id="adm-1.12" data-show="1.70,1.79" data-pivot="339,866" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="27" y="733" width="625" height="133" rx="11" fill="#182A46" transform="rotate(-2 339 799)"/>
+    <text x="62" y="836" font-family="Libre Franklin" font-weight="800" font-size="101" fill="#F6EEDC" transform="rotate(-2 339 799)">They admit</text>
+  </g>
+  <g id="adm-1.0" data-show="1.79,5.50" data-pivot="339,859" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="740" width="558" height="119" rx="10" fill="#182A46" transform="rotate(-2 339 799)"/>
+    <text x="92" y="832" font-family="Libre Franklin" font-weight="800" font-size="90" fill="#F6EEDC" transform="rotate(-2 339 799)">They admit</text>
+  </g>
+  <g id="idk-1.12" data-show="3.00,3.09" data-pivot="453,1010" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="13" y="862" width="880" height="148" rx="11" fill="#DE4A30" transform="rotate(2 453 936)"/>
+    <text x="52" y="976" font-family="Libre Franklin" font-weight="800" font-size="112" fill="#F6EEDC" transform="rotate(2 453 936)">“I don’t know.”</text>
+  </g>
+  <g id="idk-1.0" data-show="3.09,5.50" data-pivot="453,1002" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="870" width="786" height="132" rx="10" fill="#DE4A30" transform="rotate(2 453 936)"/>
+    <text x="95" y="972" font-family="Libre Franklin" font-weight="800" font-size="100" fill="#F6EEDC" transform="rotate(2 453 936)">“I don’t know.”</text>
+  </g>
+</svg>
