@@ -8,7 +8,7 @@ import os, re, subprocess, sys, tempfile
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 FONT = "/Library/Fonts/LibreFranklin-Medium.ttf"
-SIZE, TOP, MAXC, W = 58, 48, 26, 1080
+SIZE, TOP, MAXC, W = 29, 26, 26, 1080                  # half size, in the dark strip above the background panel (Cam, rev3)
 NAVY = (24, 42, 70, 255)                               # outline keeps white text legible on the light-blue b-roll
 FIXES = {"gonna": "going to"}
 
@@ -61,9 +61,9 @@ def card(text, path):
     im = Image.new("RGBA", (W, TOP + SIZE * 2), (0, 0, 0, 0))
     x = (W - f.getlength(text)) / 2
     sh = Image.new("RGBA", im.size, (0, 0, 0, 0))
-    ImageDraw.Draw(sh).text((x + 2, TOP + 4), text, font=f, fill=(0, 0, 0, 190), stroke_width=4, stroke_fill=(0, 0, 0, 190))
-    im = Image.alpha_composite(im, sh.filter(ImageFilter.GaussianBlur(5)))
-    ImageDraw.Draw(im).text((x, TOP), text, font=f, fill=(255, 255, 255, 255), stroke_width=3, stroke_fill=NAVY)
+    ImageDraw.Draw(sh).text((x + 1, TOP + 2), text, font=f, fill=(0, 0, 0, 190), stroke_width=2, stroke_fill=(0, 0, 0, 190))
+    im = Image.alpha_composite(im, sh.filter(ImageFilter.GaussianBlur(3)))
+    ImageDraw.Draw(im).text((x, TOP), text, font=f, fill=(255, 255, 255, 255), stroke_width=2, stroke_fill=NAVY)
     im.save(path)
 
 
