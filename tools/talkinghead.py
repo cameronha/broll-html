@@ -6,7 +6,7 @@ usage: python3 tools/talkinghead.py videos/NAME.json REV
 Steps (each one is what Cam approved on the Leon video, rev22, 2026-10-27):
   (zooms [[t0, t1], ...] in ORIGINAL time, optional: 1.2x jump-cut punch-ins on the footage; zoom_k, zoom_y)
   1. edit       keep cut[0]..cut[1] minus `remove`; 15 ms audio fades at every joint so no cut clicks
-  2. composite  center-square crop, the GRADE, then every overlay at its EDITED time (titles = alpha .mov)
+  2. composite  center-square crop, grade(v) (per-clip levels + LOOK), then every overlay at its EDITED time (titles = alpha .mov)
   3. voice      VOICE chain: EQ + 3:1 compression + limiter + loudnorm -16 LUFS
   4. music      filtered music bed, `under_db` below the voice mean, light ducking, 0.3 s in / 2 s out
   5. thumbnail  split frame: graded face (left half), a b-roll panel (right half), one red paper tag
@@ -20,9 +20,35 @@ The JSON (see videos/leon.json):
 import json, os, subprocess, sys, tempfile
 from PIL import Image, ImageDraw, ImageFont
 
-GRADE = ("eq=gamma=1.09:contrast=1.025:brightness=0.0075:saturation=1.06,"        # half of rev19 (Cam: full was "pale and washed out")
-         "colorbalance=rs=0.015:bs=-0.015:rm=0.015:gm=-0.0025:bm=-0.015:rh=0.005:bh=-0.005,"
-         "curves=all='0/0.01 0.25/0.255 0.5/0.525 0.75/0.775 1/1'")
+# GRADE = look C (Cam picked it 2026-10-28 over "now", "expose + WB" and "+ clean + vignette"): per-clip levels + S-curve + warm mids.
+# The footage comes in 1 to 1.5 stops dark (brightest 1% at 117-140 of 255), so a fixed grade cannot fix it; grade(v) measures each clip.
+LOOK = "eq=gamma=1.1:saturation=1.08,curves=all='0/0 0.15/0.12 0.5/0.52 0.85/0.88 1/1',colorbalance=rm={rm:.3f}:bm=-0.02"
+WB_BOX = (800, 900, 300, 420)                              # y0, y1, x0, x1 in the 1080 square: the shirt, a near-neutral reference
+FACE_BOX = (180, 420, 420, 660)
+
+
+def grade(v):
+    """colorlevels (black point, white point, white balance from the shirt) + LOOK, from 5 frames inside the cut. Override with v["grade"]."""
+    if v.get("grade"):
+        return v["grade"]
+    import numpy as np
+    a, b = v["cut"]; px = []
+    for i in range(5):
+        r = subprocess.run(["ffmpeg", "-loglevel", "error", "-ss", f"{a + (b - a) * (i + 0.5) / 5:.2f}", "-i", os.path.expanduser(v["src"]),
+                            "-frames:v", "1", "-vf", f"crop=1080:1080:{v['crop_x']}:0", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"],
+                           capture_output=True, check=True)
+        px.append(np.frombuffer(r.stdout, np.uint8).reshape(1080, 1080, 3).astype(float))
+    px = np.stack(px); lum = px.mean(3)
+    y0, y1, x0, x1 = v.get("wb_box", WB_BOX); shirt = px[:, y0:y1, x0:x1].reshape(-1, 3).mean(0)
+    wb = shirt.mean() / shirt
+    hi = min(np.percentile(lum, 99.5) / 255 * 1.02, 1.0); lo = np.percentile(lum, 0.5) / 255 * 0.9
+    y0, y1, x0, x1 = v.get("face_box", FACE_BOX); face = px[:, y0:y1, x0:x1].reshape(-1, 3).mean(0) * wb
+    rm = max(0.0, min(0.03, 0.03 - 0.1 * (face[0] / face[1] - 1.28)))   # less warmth when the face is already red (slop clip)
+    m = [min(hi / w, 1.0) for w in wb]
+    return (f"colorlevels=rimin={lo:.3f}:gimin={lo:.3f}:bimin={lo:.3f}:rimax={m[0]:.3f}:gimax={m[1]:.3f}:bimax={m[2]:.3f},"
+            + LOOK.format(rm=rm))
+
+
 VOICE = ("highpass=f=80,equalizer=f=300:t=q:w=1:g=-2,equalizer=f=3500:t=q:w=1.2:g=3,highshelf=f=10000:g=2,"
          "acompressor=threshold=-20dB:ratio=3:attack=10:release=150:makeup=3,alimiter=limit=0.89:level=false,"
          "loudnorm=I=-16:TP=-1.5:LRA=11")
@@ -73,8 +99,8 @@ def edit(v, out):
 
 
 def composite(v, src, out):
-    d = os.path.expanduser(v["out_dir"])
-    ins, f, last = ["-i", src], [f"[0:v]crop=1080:1080:{v['crop_x']}:0,{GRADE}[s0]"], "s0"
+    d = os.path.expanduser(v["out_dir"]); v["_grade"] = grade(v); print("grade", v["_grade"])
+    ins, f, last = ["-i", src], [f"[0:v]crop=1080:1080:{v['crop_x']}:0,{v['_grade']}[s0]"], "s0"
     if v.get("zooms"):                                     # jump-cut punch-ins: the footage cuts to a closer frame and back
         k, y = v.get("zoom_k", 1.2), v.get("zoom_y", 140)  # zoom_y: top of the crop; 140 = tight headroom (Cam: 30 had "too much headroom")
         w = round(1080 / k / 2) * 2
@@ -112,7 +138,7 @@ def thumbnail(v, tmp, out):
     t = v["thumb"]; d = os.path.expanduser(v["out_dir"])
     face, panel = os.path.join(tmp, "face.png"), os.path.join(tmp, "panel.png")
     ff("-ss", str(t["face_t"]), "-i", os.path.expanduser(v["src"]), "-frames:v", "1",
-       "-vf", f"crop=1080:1080:{v['crop_x']}:0,{GRADE}", face)
+       "-vf", f"crop=1080:1080:{v['crop_x']}:0,{v['_grade']}", face)
     seek = ["-sseof", str(t["panel_t"])] if t["panel_t"] < 0 else ["-ss", str(t["panel_t"])]
     ff(*seek, "-i", os.path.join(d, t["panel_file"]), "-frames:v", "1", panel)
     im = Image.new("RGBA", (1080, 1080), CREAM)
@@ -135,7 +161,7 @@ def splice(thumb, src, out):
 if __name__ == "__main__":
     cfg, rev = sys.argv[1], sys.argv[2]
     v = json.load(open(cfg)); name = os.path.splitext(os.path.basename(cfg))[0]
-    d = os.path.expanduser(v["out_dir"])
+    d = os.path.expanduser(v["out_dir"]); v["_grade"] = grade(v); print("grade", v["_grade"])
     with tempfile.TemporaryDirectory() as tmp:
         steps = [os.path.join(tmp, n) for n in ("0-edit.mov", "1-comp.mp4", "2-voice.mp4", "3-music.mp4")]
         edit(v, steps[0]); print("edit", keep(v))
