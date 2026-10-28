@@ -128,25 +128,32 @@ def globe(c, fills):
 
 
 def regions():
-    """Matches t2's window (13.7-19.2): CARICOM 0.4, Guatemala 2.2, Mexico 2.7, spin 3.0-3.7, Southeast Asia 3.7."""
+    """Matches the window 13.7-19.2. Real word times (2026-10-28 check): CARICOM 15.0, Guatemala 16.0, Mexico 16.6, Southeast Asia 17.85.
+    A red pin drops on the country he names, so the small ones (Guatemala next to gold Belize) read clearly."""
     dur = 5.5
     s = root(dur, "1,0,0").split('  <g id="floor"')[0]
     A, B = (-78, 14), (112, 6)
+    tc, tg, tm, t0s, t1s, ta = 1.3, 2.3, 2.9, 3.3, 4.0, 4.15
     past = lambda names: {n: GOLD for n in names}
-    steps = [(0, 0.4, A, {}), (0.4, 2.2, A, {n: ORANGE for n in CARICOM}),
-             (2.2, 2.7, A, {**past(CARICOM), "Guatemala": ORANGE}), (2.7, 3.0, A, {**past(CARICOM + ["Guatemala"]), "Mexico": ORANGE})]
+    steps = [(0, tc, A, {}), (tc, tg, A, {n: ORANGE for n in CARICOM}),
+             (tg, tm, A, {**past(CARICOM), "Guatemala": ORANGE}), (tm, t0s, A, {**past(CARICOM + ["Guatemala"]), "Mexico": ORANGE})]
     done = past(CARICOM + ["Guatemala", "Mexico"])
     n = 8
     for i in range(1, n):                                     # the spin west across the Pacific, eased
         k = (1 - math.cos(math.pi * i / n)) / 2
-        steps.append((3.0 + 0.7 * (i - 1) / (n - 1), 3.0 + 0.7 * i / (n - 1), (A[0] - (A[0] + 360 - B[0]) * k, A[1] + (B[1] - A[1]) * k), done))
-    steps.append((3.7, dur + 1, B, {**done, **{x: ORANGE for x in SEA}}))
-    for i, (t0, t1, c, fills) in enumerate(steps):
-        s += g(f"globe{i}", globe(c, fills), (t0, t1))
-    for i, (word, t0, t1) in enumerate((("CARICOM", 0.4, 2.2), ("Guatemala", 2.2, 2.7), ("Mexico", 2.7, 3.0), ("Southeast Asia", 3.7, dur + 1))):
+        steps.append((t0s + (t1s - t0s) * (i - 1) / (n - 1), t0s + (t1s - t0s) * i / (n - 1), (A[0] - (A[0] + 360 - B[0]) * k, A[1] + (B[1] - A[1]) * k), done))
+    steps.append((t1s, ta, B, done))
+    steps.append((ta, dur + 1, B, {**done, **{x: ORANGE for x in SEA}}))
+    for i, (a, b, c, fills) in enumerate(steps):
+        s += g(f"globe{i}", globe(c, fills), (a, b))
+    for i, (lonlat, c, a, b) in enumerate((((-62.5, 11.5), A, tc, tg), ((-90.3, 15.6), A, tg, tm), ((-102.5, 23.5), A, tm, t0s), ((110, 6), B, ta, dur + 1))):
+        x, y, _ = ortho(*lonlat, c)
+        s += g(f"pin{i}", f'<path d="M{x:.0f} {y:.0f} Q{x - 22:.0f} {y - 30:.0f} {x - 20:.0f} {y - 44:.0f} A21 21 0 1 1 {x + 20:.0f} {y - 44:.0f} Q{x + 22:.0f} {y - 30:.0f} {x:.0f} {y:.0f}Z" '
+                           f'fill="{ORANGE}" stroke="{CREAM}" stroke-width="4"/><circle cx="{x:.0f}" cy="{y - 47:.0f}" r="8" fill="{CREAM}"/>', (a + 0.05, b), rig(x, y, 4, 1.0))
+    for i, (word, a, b) in enumerate((("CARICOM", tc, tg), ("Guatemala", tg, tm), ("Mexico", tm, t0s), ("Southeast Asia", ta, dur + 1))):
         w = ImageFont.truetype(FONT, 64).getlength(word) + 60
         s += g(f"name{i}", f'<rect x="{540 - w / 2:.0f}" y="880" width="{w:.0f}" height="100" rx="14" fill="{ORANGE}"/>' + centered(540, 952, word, 64, CREAM),
-               (t0, t1), rig(540, 980, 2, 0.6))
+               (a, b), rig(540, 980, 2, 0.6))
     return s + "</svg>\n"
 
 

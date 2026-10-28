@@ -1,5 +1,5 @@
 {
-  "src": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/new report announcement leon oct 28 second try doing more - 1080WebShareName.mov",
+  "src": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/annoucing color corrected - 1080WebShareName.mov",
   "out_dir": "~/Claude-files/broll-html/50-report",
   "crop_x": 0,
   "cut": [
@@ -78,7 +78,7 @@
       62.9
     ],
     "b2": [
-      "rep-b2-rev1.mp4",
+      "rep-b2-rev2.mp4",
       13.7,
       19.2
     ]
@@ -99,6 +99,5 @@
     "panel_x": 300,
     "tag": "Next up: León",
     "face_file": "thumb-face.png"
-  },
-  "voice": "light"
+  }
 }
