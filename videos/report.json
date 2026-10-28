@@ -1,0 +1,25 @@
+{
+  "src": "~/Downloads/good report announcement 2026-10-09 11-41-32.mp4",
+  "out_dir": "~/Claude-files/broll-html/50-report",
+  "crop_x": 420,
+  "cut": [0.0, 67.85],
+  "remove": [[0.6, 1.1]],
+  "grade": "colorlevels=rimin=0.000:gimin=0.000:bimin=0.000:rimax=0.488:gimax=0.488:bimax=0.488,eq=gamma=1.1:saturation=1.08,curves=all='0/0 0.15/0.12 0.5/0.52 0.85/0.88 1/1',colorbalance=rm=0:bm=0",
+  "zoom_y": 60,
+  "zooms": [[3.3, 5.6], [29.4, 33.6], [41.9, 43.8], [52.9, 56.4], [63.0, 66.3]],
+  "overlays": {
+    "t1": ["rep-t1-rev1.mov", 1.2, 3.3],
+    "b1": ["rep-b1-rev2.mp4", 9.8, 13.0],
+    "t2": ["rep-t2-rev1.mov", 13.7, 19.2],
+    "map": ["rep-map.mp4", 19.4, 21.52],
+    "t3": ["rep-t3-rev1.mov", 21.7, 24.4],
+    "b3": ["rep-b3-rev2.mp4", 24.5, 29.3],
+    "t4": ["rep-t4-rev1.mov", 36.6, 40.4],
+    "b4": ["rep-b4-rev2.mp4", 43.9, 47.1],
+    "b5": ["rep-b5-rev1.mp4", 47.2, 50.5],
+    "t5": ["rep-t5-rev1.mov", 56.5, 62.9]
+  },
+  "music": {"file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/fred.mp3",
+            "start": 93.9, "band": [62.0, 150.7], "under_db": 9},
+  "thumb": {"face_t": 20.3, "panel_file": "rep-map.mp4", "panel_t": -0.3, "panel_x": 300, "tag": "Next up: León"}
+}

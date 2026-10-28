@@ -40,7 +40,7 @@ def grade(v):
         px.append(np.frombuffer(r.stdout, np.uint8).reshape(1080, 1080, 3).astype(float))
     px = np.stack(px); lum = px.mean(3)
     y0, y1, x0, x1 = v.get("wb_box", WB_BOX); shirt = px[:, y0:y1, x0:x1].reshape(-1, 3).mean(0)
-    wb = shirt.mean() / shirt
+    wb = shirt.mean() / shirt if v.get("wb", True) else np.ones(3)   # wb: false when the shirt is not neutral (orange shirt, León report)
     hi = min(np.percentile(lum, 99.5) / 255 * 1.02, 1.0); lo = np.percentile(lum, 0.5) / 255 * 0.9
     y0, y1, x0, x1 = v.get("face_box", FACE_BOX); face = px[:, y0:y1, x0:x1].reshape(-1, 3).mean(0) * wb
     rm = max(0.0, min(0.03, 0.03 - 0.1 * (face[0] / face[1] - 1.28)))   # less warmth when the face is already red (slop clip)

@@ -1,0 +1,19 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="6.4" data-transparent="1">
+  <g id="know-1.12" data-show="1.10,1.19" data-pivot="498,866" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="7" y="754" width="981" height="112" rx="11" fill="#182A46" transform="rotate(-2 498 810)"/>
+    <text x="37" y="841" font-family="Libre Franklin" font-weight="800" font-size="85" fill="#F6EEDC" transform="rotate(-2 498 810)">Know anyone in León?</text>
+  </g>
+  <g id="know-1.0" data-show="1.19,7.40" data-pivot="498,860" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="760" width="876" height="100" rx="10" fill="#182A46" transform="rotate(-2 498 810)"/>
+    <text x="87" y="838" font-family="Libre Franklin" font-weight="800" font-size="76" fill="#F6EEDC" transform="rotate(-2 498 810)">Know anyone in León?</text>
+  </g>
+  <g id="dm-1.12" data-show="5.50,5.59" data-pivot="288,1034" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="33" y="871" width="512" height="163" rx="11" fill="#DE4A30" transform="rotate(2 288 953)"/>
+    <text x="76" y="997" font-family="Libre Franklin" font-weight="800" font-size="123" fill="#F6EEDC" transform="rotate(2 288 953)">DM me</text>
+  </g>
+  <g id="dm-1.0" data-show="5.59,7.40" data-pivot="288,1025" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="880" width="457" height="145" rx="10" fill="#DE4A30" transform="rotate(2 288 953)"/>
+    <text x="98" y="992" font-family="Libre Franklin" font-weight="800" font-size="110" fill="#F6EEDC" transform="rotate(2 288 953)">DM me</text>
+  </g>
+</svg>

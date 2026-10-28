@@ -1,0 +1,19 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="2.7" data-transparent="1">
+  <g id="wk-1.12" data-show="0.70,0.79" data-pivot="286,894" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="33" y="752" width="505" height="142" rx="11" fill="#182A46" transform="rotate(-2 286 823)"/>
+    <text x="71" y="862" font-family="Libre Franklin" font-weight="800" font-size="108" fill="#F6EEDC" transform="rotate(-2 286 823)">2 weeks</text>
+  </g>
+  <g id="wk-1.0" data-show="0.79,3.70" data-pivot="286,887" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="760" width="451" height="127" rx="10" fill="#182A46" transform="rotate(-2 286 823)"/>
+    <text x="94" y="858" font-family="Libre Franklin" font-weight="800" font-size="96" fill="#F6EEDC" transform="rotate(-2 286 823)">2 weeks</text>
+  </g>
+  <g id="le-1.12" data-show="2.15,2.24" data-pivot="262,1024" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="36" y="882" width="452" height="142" rx="11" fill="#DE4A30" transform="rotate(2 262 953)"/>
+    <text x="73" y="992" font-family="Libre Franklin" font-weight="800" font-size="108" fill="#F6EEDC" transform="rotate(2 262 953)">in León</text>
+  </g>
+  <g id="le-1.0" data-show="2.24,3.70" data-pivot="262,1017" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="890" width="403" height="127" rx="10" fill="#DE4A30" transform="rotate(2 262 953)"/>
+    <text x="94" y="988" font-family="Libre Franklin" font-weight="800" font-size="96" fill="#F6EEDC" transform="rotate(2 262 953)">in León</text>
+  </g>
+</svg>
