@@ -1,0 +1,22 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="4.4">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="mic" data-show="0.05,5.40" data-pivot="360,900" data-deg="2" data-freq="0.7" data-shape="sine">
+    <rect x="346" y="704" width="28" height="196" fill="#182A46"/><rect x="234" y="875" width="252" height="34" rx="17" fill="#182A46"/><rect x="283" y="438" width="154" height="266" rx="77" fill="#182A46"/><line x1="303" y1="494" x2="417" y2="494" stroke="#8CBDDC" stroke-width="8" stroke-linecap="round"/><line x1="303" y1="530" x2="417" y2="530" stroke="#8CBDDC" stroke-width="8" stroke-linecap="round"/><line x1="303" y1="567" x2="417" y2="567" stroke="#8CBDDC" stroke-width="8" stroke-linecap="round"/><line x1="303" y1="603" x2="417" y2="603" stroke="#8CBDDC" stroke-width="8" stroke-linecap="round"/><line x1="303" y1="640" x2="417" y2="640" stroke="#8CBDDC" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g id="card" data-show="1.60,5.40" data-pivot="770,600" data-deg="2" data-freq="0.7" data-shape="sine">
+    <rect x="580" y="300" width="380" height="300" rx="20" fill="#FFFDF6"/><text x="676" y="370" font-family="Libre Franklin" font-weight="800" font-size="52" fill="#9AA0A6">Listens</text>
+  </g>
+  <g id="n0" data-show="1.80,2.40">
+    <text x="720" y="540" font-family="Libre Franklin" font-weight="800" font-size="150" fill="#182A46">3</text>
+  </g>
+  <g id="n1" data-show="2.40,3.00">
+    <text x="718" y="540" font-family="Libre Franklin" font-weight="800" font-size="150" fill="#182A46">9</text>
+  </g>
+  <g id="n2" data-show="3.00,5.40">
+    <text x="681" y="540" font-family="Libre Franklin" font-weight="800" font-size="150" fill="#DE4A30">12</text>
+  </g>
+</svg>
