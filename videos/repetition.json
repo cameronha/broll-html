@@ -1,0 +1,22 @@
+{
+  "src": "~/Downloads/repetition 2026-08-06 11-59-30.mp4",
+  "out_dir": "~/Claude-files/broll-html/52-repetition",
+  "crop_x": 450,
+  "cut": [1.9, 58.95],
+  "remove": [],
+  "zoom_y": 60,
+  "zooms": [[10.0, 12.6], [16.4, 21.0], [41.2, 45.6], [51.2, 54.2]],
+  "overlays": {
+    "t1": ["rpt-t1-rev1.mov", 2.0, 5.1],
+    "b1": ["rpt-b1-rev1.mp4", 6.0, 9.6],
+    "b2": ["rpt-b2-rev1.mp4", 12.8, 16.2],
+    "t2": ["rpt-t2-rev1.mov", 22.2, 24.7],
+    "b3": ["rpt-b3-rev1.mp4", 25.4, 28.9],
+    "b4": ["rpt-b4-rev1.mp4", 34.8, 38.3],
+    "t3": ["rpt-t3-rev1.mov", 48.2, 51.2],
+    "b5": ["rpt-b5-rev1.mp4", 54.2, 57.5]
+  },
+  "music": {"file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/fred.mp3",
+            "start": 93.9, "band": [62.0, 150.7], "under_db": 9},
+  "thumb": {"face_t": 20.6, "panel_file": "rpt-b3-rev1.mp4", "panel_t": -0.3, "panel_x": 270, "tag": "Say it 7 times"}
+}

@@ -1,0 +1,31 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.6">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="b0" data-show="0.15,4.60" data-pivot="300,360" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="121" y="240" width="358" height="119" rx="60" fill="#182A46" transform="rotate(-4 300 300)"/><path d="M228 356 L262 356 L222 394Z" fill="#182A46" transform="rotate(-4 300 300)"/><text x="163" y="325" font-family="Libre Franklin" font-weight="800" font-size="70" fill="#F6EEDC" transform="rotate(-4 300 300)">Big idea</text>
+  </g>
+  <g id="b1" data-show="0.53,4.60" data-pivot="760,304" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="627" y="216" width="266" height="88" rx="44" fill="#DE4A30" transform="rotate(3 760 260)"/><path d="M707 300 L741 300 L701 338Z" fill="#DE4A30" transform="rotate(3 760 260)"/><text x="658" y="279" font-family="Libre Franklin" font-weight="800" font-size="52" fill="#F6EEDC" transform="rotate(3 760 260)">Big idea</text>
+  </g>
+  <g id="b2" data-show="0.91,4.60" data-pivot="540,602" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="294" y="438" width="491" height="163" rx="82" fill="#F6EEDC"/><path d="M442 598 L476 598 L436 636Z" fill="#F6EEDC"/><text x="352" y="555" font-family="Libre Franklin" font-weight="800" font-size="96" fill="#182A46">Big idea</text>
+  </g>
+  <g id="b3" data-show="1.29,4.60" data-pivot="220,677" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="107" y="603" width="226" height="75" rx="37" fill="#E9B949" transform="rotate(5 220 640)"/><path d="M175 673 L209 673 L169 711Z" fill="#E9B949" transform="rotate(5 220 640)"/><text x="134" y="656" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#182A46" transform="rotate(5 220 640)">Big idea</text>
+  </g>
+  <g id="b4" data-show="1.67,4.60" data-pivot="820,611" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="666" y="509" width="309" height="102" rx="51" fill="#5E7A94" transform="rotate(-3 820 560)"/><path d="M758 607 L792 607 L752 645Z" fill="#5E7A94" transform="rotate(-3 820 560)"/><text x="702" y="582" font-family="Libre Franklin" font-weight="800" font-size="60" fill="#F6EEDC" transform="rotate(-3 820 560)">Big idea</text>
+  </g>
+  <g id="b5" data-show="2.05,4.60" data-pivot="380,866" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="242" y="774" width="277" height="92" rx="46" fill="#DE4A30" transform="rotate(2 380 820)"/><path d="M325 862 L359 862 L319 900Z" fill="#DE4A30" transform="rotate(2 380 820)"/><text x="274" y="839" font-family="Libre Franklin" font-weight="800" font-size="54" fill="#F6EEDC" transform="rotate(2 380 820)">Big idea</text>
+  </g>
+  <g id="b6" data-show="2.43,4.60" data-pivot="760,834" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="658" y="766" width="204" height="68" rx="34" fill="#182A46" transform="rotate(-5 760 800)"/><path d="M719 830 L753 830 L713 868Z" fill="#182A46" transform="rotate(-5 760 800)"/><text x="682" y="814" font-family="Libre Franklin" font-weight="800" font-size="40" fill="#F6EEDC" transform="rotate(-5 760 800)">Big idea</text>
+  </g>
+  <g id="b7" data-show="2.81,4.60" data-pivot="560,212" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="462" y="148" width="197" height="65" rx="32" fill="#5E7A94" transform="rotate(4 560 180)"/><path d="M521 208 L555 208 L515 246Z" fill="#5E7A94" transform="rotate(4 560 180)"/><text x="484" y="194" font-family="Libre Franklin" font-weight="800" font-size="38" fill="#F6EEDC" transform="rotate(4 560 180)">Big idea</text>
+  </g>
+</svg>

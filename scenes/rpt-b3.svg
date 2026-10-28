@@ -1,0 +1,31 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.5">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="rule" data-show="0.05,4.50" data-pivot="540,270" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="300" y="140" width="480" height="130" rx="18" fill="#182A46"/><text x="371" y="232" font-family="Libre Franklin" font-weight="800" font-size="80" fill="#F6EEDC">Rule of 7</text>
+  </g>
+  <g id="s0" data-show="0.50,4.50" data-pivot="170,504" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="115" y="396" width="110" height="109" rx="54" fill="#F6EEDC"/><path d="M148 500 L182 500 L142 538Z" fill="#F6EEDC"/><text x="154" y="473" font-family="Libre Franklin" font-weight="800" font-size="64" fill="#182A46">1</text>
+  </g>
+  <g id="s1" data-show="0.88,4.50" data-pivot="415,504" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="356" y="396" width="119" height="109" rx="54" fill="#F6EEDC"/><path d="M391 500 L425 500 L385 538Z" fill="#F6EEDC"/><text x="394" y="473" font-family="Libre Franklin" font-weight="800" font-size="64" fill="#182A46">2</text>
+  </g>
+  <g id="s2" data-show="1.26,4.50" data-pivot="660,504" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="600" y="396" width="120" height="109" rx="54" fill="#F6EEDC"/><path d="M636 500 L670 500 L630 538Z" fill="#F6EEDC"/><text x="638" y="473" font-family="Libre Franklin" font-weight="800" font-size="64" fill="#182A46">3</text>
+  </g>
+  <g id="s3" data-show="1.64,4.50" data-pivot="905,504" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="844" y="396" width="122" height="109" rx="54" fill="#F6EEDC"/><path d="M881 500 L915 500 L875 538Z" fill="#F6EEDC"/><text x="882" y="473" font-family="Libre Franklin" font-weight="800" font-size="64" fill="#182A46">4</text>
+  </g>
+  <g id="s4" data-show="2.02,4.50" data-pivot="290,734" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="230" y="626" width="121" height="109" rx="54" fill="#F6EEDC"/><path d="M266 730 L300 730 L260 768Z" fill="#F6EEDC"/><text x="268" y="703" font-family="Libre Franklin" font-weight="800" font-size="64" fill="#182A46">5</text>
+  </g>
+  <g id="s5" data-show="2.40,4.50" data-pivot="535,734" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="475" y="626" width="121" height="109" rx="54" fill="#F6EEDC"/><path d="M511 730 L545 730 L505 768Z" fill="#F6EEDC"/><text x="513" y="703" font-family="Libre Franklin" font-weight="800" font-size="64" fill="#182A46">6</text>
+  </g>
+  <g id="s6" data-show="2.78,4.50" data-pivot="780,734" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="721" y="626" width="118" height="109" rx="54" fill="#DE4A30"/><path d="M756 730 L790 730 L750 768Z" fill="#DE4A30"/><text x="760" y="703" font-family="Libre Franklin" font-weight="800" font-size="64" fill="#F6EEDC">7</text>
+  </g>
+</svg>
