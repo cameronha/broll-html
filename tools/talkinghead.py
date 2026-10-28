@@ -148,8 +148,11 @@ def music(src, v, out):
 def thumbnail(v, tmp, out):
     t = v["thumb"]; d = os.path.expanduser(v["out_dir"])
     face, panel = os.path.join(tmp, "face.png"), os.path.join(tmp, "panel.png")
-    ff("-ss", str(t["face_t"]), "-i", os.path.expanduser(v["src"]), "-frames:v", "1",
-       "-vf", f"crop=1080:1080:{v['crop_x']}:0,{v['_grade']}", face)
+    if t.get("face_file"):                                 # a still Cam picked (e.g. from another video): square, 1080, used as is
+        face = os.path.join(d, t["face_file"])
+    else:
+        ff("-ss", str(t["face_t"]), "-i", os.path.expanduser(v["src"]), "-frames:v", "1",
+           "-vf", f"crop=1080:1080:{v['crop_x']}:0,{v['_grade']}", face)
     seek = ["-sseof", str(t["panel_t"])] if t["panel_t"] < 0 else ["-ss", str(t["panel_t"])]
     ff(*seek, "-i", os.path.join(d, t["panel_file"]), "-frames:v", "1", panel)
     im = Image.new("RGBA", (1080, 1080), CREAM)

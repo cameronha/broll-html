@@ -97,7 +97,8 @@
     "panel_file": "rep-map.mp4",
     "panel_t": -0.3,
     "panel_x": 300,
-    "tag": "Next up: León"
+    "tag": "Next up: León",
+    "face_file": "thumb-face.png"
   },
   "voice": "light"
 }
