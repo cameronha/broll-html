@@ -88,7 +88,7 @@ def loyalty():
     s += head(CEO, [(0, "happy")], (540, 520), 0.55, False, "ceo")
     s += g("badge", f'<rect x="420" y="700" width="240" height="80" rx="10" fill="{CREAM}"/><rect x="420" y="700" width="240" height="26" rx="10" fill="{ORANGE}"/>'
                     + label(438, 768, "Trash Officer", 34), None, rig(540, 700, 2, 0.6))
-    for i, (p, x, y, t) in enumerate(((1, 170, 420, 0.8), (3, 910, 420, 1.0), (5, 220, 820, 1.2), (7, 860, 820, 1.4))):
+    for i, (p, x, y, t) in enumerate(((1, 170, 420, 0.8), (3, 910, 420, 1.0), (5, 220, 820, 1.2), (6, 860, 820, 1.4))):
         s += head(p, [(0, "neutral"), (t, "happy")], (x, y), 0.36, x < 540, f"team{i}")
         s += heart(f"h{i}", x + (70 if x < 540 else -70), y - 150, (2.4 + 0.12 * i, dur + 1), 0.9)
     return s + "</svg>\n"
