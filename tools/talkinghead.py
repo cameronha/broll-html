@@ -20,7 +20,12 @@ The JSON (see videos/leon.json):
 import json, os, subprocess, sys, tempfile
 from PIL import Image, ImageDraw, ImageFont
 
-# GRADE = look C (Cam picked it 2026-10-28 over "now", "expose + WB" and "+ clean + vignette"): per-clip levels + S-curve + warm mids.
+# GRADE: the fixed half-strength grade of the first five videos. It is the DEFAULT again (Cam, 2026-10-28: the measured look C
+# was "not great" on the stupid video and "bad" on the León video; "do it the way u did before"). "grade": "auto" in the json = grade(v).
+GRADE = ("eq=gamma=1.09:contrast=1.025:brightness=0.0075:saturation=1.06,"
+         "colorbalance=rs=0.015:bs=-0.015:rm=0.015:gm=-0.0025:bm=-0.015:rh=0.005:bh=-0.005,"
+         "curves=all='0/0.01 0.25/0.255 0.5/0.525 0.75/0.775 1/1'")
+# grade(v) "auto" = look C (Cam picked it 2026-10-28 over "now", "expose + WB" and "+ clean + vignette"): per-clip levels + S-curve + warm mids.
 # The footage comes in 1 to 1.5 stops dark (brightest 1% at 117-140 of 255), so a fixed grade cannot fix it; grade(v) measures each clip.
 LOOK = "eq=gamma=1.1:saturation=1.08,curves=all='0/0 0.15/0.12 0.5/0.52 0.85/0.88 1/1',colorbalance=rm={rm:.3f}:bm=-0.02"
 WB_BOX = (800, 900, 300, 420)                              # y0, y1, x0, x1 in the 1080 square: the shirt, a near-neutral reference
@@ -29,7 +34,11 @@ FACE_BOX = (180, 420, 420, 660)
 
 def grade(v):
     """colorlevels (black point, white point, white balance from the shirt) + LOOK, from 5 frames inside the cut. Override with v["grade"]."""
-    if v.get("grade"):
+    if v.get("grade", "fixed") == "fixed":
+        return GRADE
+    if v["grade"] == "none":                                 # Cam graded the source himself (Final Cut / Resolve): no second grade
+        return "null"
+    if v["grade"] != "auto":
         return v["grade"]
     import numpy as np
     a, b = v["cut"]; px = []
