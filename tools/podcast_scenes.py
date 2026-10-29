@@ -2,7 +2,7 @@
 
 usage: python3 tools/podcast_scenes.py
 Reuses the Leon / LinkedIn / investors / repetition parts. Times in ORIGINAL footage time live in videos/podcast.json.
-Cast: p4 = the host (services firm owner), p3 = the guest (middle manager), p6 = the person she introduces.
+Cast: p9 = the host (services firm owner), p3 = the guest (middle manager), p6 = the person she introduces.
 t1 title     The fake / podcast
 b0 firm      the host pops in next to his small "Services firm" building
 b1 listens   a podcast mic; the listen counter ticks up to 12
@@ -24,7 +24,7 @@ from investors_scenes import head, label, bill, GOLD
 from repetition_scenes import pill
 from report_scenes import centered
 
-HOST, GUEST, BOSS = 4, 3, 6
+HOST, GUEST, BOSS = 9, 3, 6                       # host is Brazilian (Cam): p9, not p4 (p4 reads as Cam)
 BLUE = "#8CBDDC"
 
 

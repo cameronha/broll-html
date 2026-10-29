@@ -139,7 +139,7 @@ def composite(v, src, out):
         e0, e1 = edited(v, t0), edited(v, t1)
         ins += ["-i", os.path.join(d, name)]
         fmt = ":format=auto" if name.endswith(".mov") else ""
-        f.append(f"[{i}:v]setpts=PTS-STARTPTS+{e0:.3f}/TB[c{i}]")
+        f.append(f"[{i}:v]tpad=stop_mode=clone:stop_duration=2,setpts=PTS-STARTPTS+{e0:.3f}/TB[c{i}]")   # hold the last frame: a clip a few frames short of its window flashed the footage (rev4, 1:32)
         f.append(f"[{last}][c{i}]overlay=eof_action=pass{fmt}:enable='between(t,{e0:.3f},{e1:.3f})'[s{i}]")
         last = f"s{i}"
     ff(*ins, "-filter_complex", ";".join(f), "-map", f"[{last}]", "-map", "0:a", *ENC, out)
