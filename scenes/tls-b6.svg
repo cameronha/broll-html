@@ -1,0 +1,19 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="4.0">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="board" data-show="0.05,5.00" data-pivot="540,780" data-deg="1" data-freq="0.5" data-shape="sine">
+    <rect x="240" y="160" width="195" height="195" rx="14" fill="#182A46"/><rect x="445" y="160" width="195" height="195" rx="14" fill="#5E7A94"/><rect x="650" y="160" width="195" height="195" rx="14" fill="#F6EEDC"/><rect x="240" y="365" width="195" height="195" rx="14" fill="#5E7A94"/><rect x="650" y="365" width="195" height="195" rx="14" fill="#182A46"/><rect x="240" y="570" width="195" height="195" rx="14" fill="#F6EEDC"/><rect x="445" y="570" width="195" height="195" rx="14" fill="#182A46"/><rect x="650" y="570" width="195" height="195" rx="14" fill="#5E7A94"/><text x="423" y="830" font-family="Libre Franklin" font-weight="800" font-size="48" fill="#182A46">your work</text>
+  </g>
+  <g id="pc0" data-show="0.40,1.60" data-pivot="857,835" data-deg="6" data-freq="1.2" data-shape="sine">
+    <rect x="760" y="640" width="195" height="195" rx="14" fill="#DE4A30"/><text x="810" y="765" font-family="Libre Franklin" font-weight="800" font-size="84" fill="#F6EEDC">AI</text>
+  </g>
+  <g id="pc1" data-show="1.60,2.00">
+    <rect x="600" y="470" width="195" height="195" rx="14" fill="#DE4A30"/><text x="650" y="595" font-family="Libre Franklin" font-weight="800" font-size="84" fill="#F6EEDC">AI</text>
+  </g>
+  <g id="pc2" data-show="2.00,5.00" data-pivot="542,560" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="445" y="365" width="195" height="195" rx="14" fill="#DE4A30"/><text x="496" y="490" font-family="Libre Franklin" font-weight="800" font-size="84" fill="#F6EEDC">AI</text>
+  </g>
+</svg>

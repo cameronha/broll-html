@@ -1,0 +1,93 @@
+{
+  "src": "~/Downloads/use the tools2025-04-29 08-33-13.mov",
+  "out_dir": "~/Claude-files/broll-html/54-tools",
+  "crop_x": 420,
+  "cut": [
+    0.45,
+    50.4
+  ],
+  "remove": [],
+  "zoom_y": 0,
+  "zooms": [
+    [
+      9.98,
+      11.8
+    ],
+    [
+      23.3,
+      28.4
+    ],
+    [
+      37.3,
+      39.4
+    ],
+    [
+      47.22,
+      50.4
+    ]
+  ],
+  "overlays": {
+    "t1": [
+      "tls-t1-rev1.mov",
+      0.6,
+      3.7
+    ],
+    "b1": [
+      "tls-b1-rev1.mp4",
+      4.0,
+      7.3
+    ],
+    "b2": [
+      "tls-b2-rev1.mp4",
+      11.8,
+      15.2
+    ],
+    "b3": [
+      "tls-b3-rev1.mp4",
+      16.9,
+      20.8
+    ],
+    "t2": [
+      "tls-t2-rev1.mov",
+      20.9,
+      22.9
+    ],
+    "b4": [
+      "tls-b4-rev1.mp4",
+      29.0,
+      32.8
+    ],
+    "b5": [
+      "tls-b5-rev1.mp4",
+      32.8,
+      36.0
+    ],
+    "t3": [
+      "tls-t3-rev1.mov",
+      39.4,
+      42.3
+    ],
+    "b6": [
+      "tls-b6-rev1.mp4",
+      42.8,
+      46.8
+    ]
+  },
+  "music": {
+    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/fred.mp3",
+    "start": 93.9,
+    "band": [
+      62.0,
+      150.7
+    ],
+    "under_db": 9
+  },
+  "thumb": {
+    "face_t": 12.0,
+    "panel_file": "tls-b6-rev1.mp4",
+    "panel_t": -0.3,
+    "panel_x": 270,
+    "tag": "Use the tools"
+  },
+  "grade": "fixed"
+}

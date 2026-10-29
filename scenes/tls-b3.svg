@@ -1,0 +1,16 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.9">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="bot" data-show="0.05,4.90" data-pivot="700,520" data-deg="5" data-freq="1.1" data-shape="sine">
+    <rect x="590.8" y="327.6" width="218.4" height="184.8" rx="46.2" fill="#DE4A30"/><circle cx="653.8" cy="411.6" r="25.200000000000003" fill="#182A46"/><circle cx="746.2" cy="411.6" r="25.200000000000003" fill="#182A46"/><rect x="689.5" y="260.4" width="21.0" height="67.2" fill="#182A46"/><circle cx="700" cy="252.0" r="29.400000000000002" fill="#E9B949"/>
+  </g>
+  <g id="pg" data-show="0.05,4.90" data-pivot="405,800" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="170" y="200" width="470" height="600" rx="8" fill="#FFFDF6" transform="rotate(-3 405.0 500.0)"/><text x="200" y="280" font-family="Libre Franklin" font-weight="800" font-size="52" fill="#182A46" transform="rotate(-3 405.0 500.0)">What AI is</text><rect x="200" y="320" width="410" height="12" rx="6" fill="#9AA0A6" transform="rotate(-3 405.0 500.0)"/><rect x="200" y="354" width="360" height="12" rx="6" fill="#9AA0A6" transform="rotate(-3 405.0 500.0)"/><rect x="200" y="388" width="310" height="12" rx="6" fill="#9AA0A6" transform="rotate(-3 405.0 500.0)"/><rect x="200" y="422" width="410" height="12" rx="6" fill="#9AA0A6" transform="rotate(-3 405.0 500.0)"/><rect x="200" y="456" width="360" height="12" rx="6" fill="#9AA0A6" transform="rotate(-3 405.0 500.0)"/><rect x="200" y="490" width="310" height="12" rx="6" fill="#9AA0A6" transform="rotate(-3 405.0 500.0)"/><rect x="200" y="524" width="410" height="12" rx="6" fill="#9AA0A6" transform="rotate(-3 405.0 500.0)"/><rect x="200" y="558" width="360" height="12" rx="6" fill="#9AA0A6" transform="rotate(-3 405.0 500.0)"/><rect x="200" y="592" width="310" height="12" rx="6" fill="#9AA0A6" transform="rotate(-3 405.0 500.0)"/><rect x="200" y="626" width="410" height="12" rx="6" fill="#9AA0A6" transform="rotate(-3 405.0 500.0)"/><rect x="200" y="660" width="360" height="12" rx="6" fill="#9AA0A6" transform="rotate(-3 405.0 500.0)"/><rect x="200" y="694" width="310" height="12" rx="6" fill="#9AA0A6" transform="rotate(-3 405.0 500.0)"/><rect x="200" y="728" width="410" height="12" rx="6" fill="#9AA0A6" transform="rotate(-3 405.0 500.0)"/>
+  </g>
+  <g id="real" data-show="1.60,4.90" data-pivot="800,647" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="631" y="573" width="339" height="75" rx="37" fill="#DE4A30"/><path d="M732 643 L766 643 L726 681Z" fill="#DE4A30"/><text x="657" y="626" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#F6EEDC">the real thing</text>
+  </g>
+</svg>

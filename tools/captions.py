@@ -21,7 +21,7 @@ def words(path):
         s, e, w = a[0] * 3600 + a[1] * 60 + a[2] + a[3] / 1000, a[4] * 3600 + a[5] * 60 + a[6] + a[7] / 1000, m.group(9).strip()
         if not w:
             continue
-        glue = out and (w[0] in ".,?!'-" or out[-1][2] in ("$", "-") or out[-1][2].endswith("-") or (out[-1][2][-1] == "," and w[0].isdigit()))
+        glue = out and (w[0] in ".,?!'-" or out[-1][2] in ("$", "-") or out[-1][2].endswith("-") or out[-1][2].endswith("'") or (out[-1][2][-1] == "," and w[0].isdigit()))
         if glue:
             out[-1][1], out[-1][2] = e, out[-1][2] + w
         else:

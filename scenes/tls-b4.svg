@@ -1,0 +1,40 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.8">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="t0" data-show="0.10,4.80" data-pivot="260,360" data-deg="3" data-freq="0.8" data-shape="sine">
+    <rect x="160" y="160" width="200" height="200" rx="44" fill="#182A46"/><path d="M210 230 h100 a20 20 0 0 1 20 20 v50 a20 20 0 0 1 -20 20 h-60 l-30 26 v-26 h-10 a20 20 0 0 1 -20 -20 v-50 a20 20 0 0 1 20 -20 z" fill="#F6EEDC"/>
+  </g>
+  <g id="f0" data-show="0.40,4.80" data-pivot="260,419" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="201" y="361" width="118" height="58" rx="29" fill="#F6EEDC"/><path d="M236 415 L270 415 L230 453Z" fill="#F6EEDC"/><text x="222" y="402" font-family="Libre Franklin" font-weight="800" font-size="34" fill="#182A46">Free</text>
+  </g>
+  <g id="t1" data-show="0.40,4.80" data-pivot="540,360" data-deg="3" data-freq="0.8" data-shape="sine">
+    <rect x="440" y="160" width="200" height="200" rx="44" fill="#DE4A30"/><path d="M490 230 h100 a20 20 0 0 1 20 20 v50 a20 20 0 0 1 -20 20 h-60 l-30 26 v-26 h-10 a20 20 0 0 1 -20 -20 v-50 a20 20 0 0 1 20 -20 z" fill="#F6EEDC"/>
+  </g>
+  <g id="f1" data-show="0.70,4.80" data-pivot="540,419" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="481" y="361" width="118" height="58" rx="29" fill="#F6EEDC"/><path d="M516 415 L550 415 L510 453Z" fill="#F6EEDC"/><text x="502" y="402" font-family="Libre Franklin" font-weight="800" font-size="34" fill="#182A46">Free</text>
+  </g>
+  <g id="t2" data-show="0.70,4.80" data-pivot="820,360" data-deg="3" data-freq="0.8" data-shape="sine">
+    <rect x="720" y="160" width="200" height="200" rx="44" fill="#5E7A94"/><path d="M770 230 h100 a20 20 0 0 1 20 20 v50 a20 20 0 0 1 -20 20 h-60 l-30 26 v-26 h-10 a20 20 0 0 1 -20 -20 v-50 a20 20 0 0 1 20 -20 z" fill="#F6EEDC"/>
+  </g>
+  <g id="f2" data-show="1.00,4.80" data-pivot="820,419" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="761" y="361" width="118" height="58" rx="29" fill="#F6EEDC"/><path d="M796 415 L830 415 L790 453Z" fill="#F6EEDC"/><text x="782" y="402" font-family="Libre Franklin" font-weight="800" font-size="34" fill="#182A46">Free</text>
+  </g>
+  <g id="t3" data-show="1.00,4.80" data-pivot="400,660" data-deg="3" data-freq="0.8" data-shape="sine">
+    <rect x="300" y="460" width="200" height="200" rx="44" fill="#E9B949"/><path d="M350 530 h100 a20 20 0 0 1 20 20 v50 a20 20 0 0 1 -20 20 h-60 l-30 26 v-26 h-10 a20 20 0 0 1 -20 -20 v-50 a20 20 0 0 1 20 -20 z" fill="#F6EEDC"/>
+  </g>
+  <g id="f3" data-show="1.30,4.80" data-pivot="400,719" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="341" y="661" width="118" height="58" rx="29" fill="#F6EEDC"/><path d="M376 715 L410 715 L370 753Z" fill="#F6EEDC"/><text x="362" y="702" font-family="Libre Franklin" font-weight="800" font-size="34" fill="#182A46">Free</text>
+  </g>
+  <g id="t4" data-show="1.30,4.80" data-pivot="680,660" data-deg="3" data-freq="0.8" data-shape="sine">
+    <rect x="580" y="460" width="200" height="200" rx="44" fill="#182A46"/><path d="M630 530 h100 a20 20 0 0 1 20 20 v50 a20 20 0 0 1 -20 20 h-60 l-30 26 v-26 h-10 a20 20 0 0 1 -20 -20 v-50 a20 20 0 0 1 20 -20 z" fill="#F6EEDC"/>
+  </g>
+  <g id="f4" data-show="1.60,4.80" data-pivot="680,719" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="621" y="661" width="118" height="58" rx="29" fill="#F6EEDC"/><path d="M656 715 L690 715 L650 753Z" fill="#F6EEDC"/><text x="642" y="702" font-family="Libre Franklin" font-weight="800" font-size="34" fill="#182A46">Free</text>
+  </g>
+  <g id="price" data-show="2.40,4.80" data-pivot="540,920" data-deg="6" data-freq="1.1" data-shape="sine">
+    <rect x="420" y="790" width="240" height="130" rx="18" fill="#DE4A30"/><circle cx="455" cy="855" r="14" fill="#F6EEDC"/><text x="502" y="885" font-family="Libre Franklin" font-weight="800" font-size="84" fill="#F6EEDC">$0</text>
+  </g>
+</svg>
