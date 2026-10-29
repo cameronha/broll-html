@@ -1,0 +1,6 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="2.2" data-transparent="1">
+  <g id="r" data-show="0.05,3.20" data-pivot="470,725" data-deg="3" data-freq="0.8" data-shape="sine">
+    <path d="M551 619 C559 708 410 734 385 648 C376 564 521 542 559 636" fill="none" stroke="#DE4A30" stroke-width="14" stroke-linecap="round"/>
+  </g>
+</svg>

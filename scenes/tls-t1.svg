@@ -1,19 +1,19 @@
 <svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
      data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.1" data-transparent="1">
-  <g id="use-1.12" data-show="0.15,0.24" data-pivot="270,894" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="35" y="752" width="471" height="142" rx="11" fill="#182A46" transform="rotate(-2 270 823)"/>
-    <text x="72" y="862" font-family="Libre Franklin" font-weight="800" font-size="108" fill="#F6EEDC" transform="rotate(-2 270 823)">Use the</text>
+  <g id="read-1.12" data-show="0.15,0.24" data-pivot="397,880" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="20" y="753" width="754" height="127" rx="11" fill="#182A46" transform="rotate(-2 397 817)"/>
+    <text x="53" y="851" font-family="Libre Franklin" font-weight="800" font-size="96" fill="#F6EEDC" transform="rotate(-2 397 817)">Don't just read</text>
   </g>
-  <g id="use-1.0" data-show="0.24,4.10" data-pivot="270,887" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="60" y="760" width="420" height="127" rx="10" fill="#182A46" transform="rotate(-2 270 823)"/>
-    <text x="94" y="858" font-family="Libre Franklin" font-weight="800" font-size="96" fill="#F6EEDC" transform="rotate(-2 270 823)">Use the</text>
+  <g id="read-1.0" data-show="0.24,4.10" data-pivot="397,874" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="760" width="673" height="114" rx="10" fill="#182A46" transform="rotate(-2 397 817)"/>
+    <text x="90" y="848" font-family="Libre Franklin" font-weight="800" font-size="86" fill="#F6EEDC" transform="rotate(-2 397 817)">Don't just read</text>
   </g>
-  <g id="tools-1.12" data-show="1.20,1.29" data-pivot="234,1044" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="39" y="881" width="389" height="163" rx="11" fill="#DE4A30" transform="rotate(2 234 963)"/>
-    <text x="82" y="1007" font-family="Libre Franklin" font-weight="800" font-size="123" fill="#F6EEDC" transform="rotate(2 234 963)">tools</text>
+  <g id="ai-1.12" data-show="1.20,1.29" data-pivot="302,1020" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="31" y="872" width="543" height="148" rx="11" fill="#DE4A30" transform="rotate(2 302 946)"/>
+    <text x="70" y="986" font-family="Libre Franklin" font-weight="800" font-size="112" fill="#F6EEDC" transform="rotate(2 302 946)">about AI</text>
   </g>
-  <g id="tools-1.0" data-show="1.29,4.10" data-pivot="234,1035" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="60" y="890" width="347" height="145" rx="10" fill="#DE4A30" transform="rotate(2 234 963)"/>
-    <text x="98" y="1002" font-family="Libre Franklin" font-weight="800" font-size="110" fill="#F6EEDC" transform="rotate(2 234 963)">tools</text>
+  <g id="ai-1.0" data-show="1.29,4.10" data-pivot="302,1012" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="880" width="485" height="132" rx="10" fill="#DE4A30" transform="rotate(2 302 946)"/>
+    <text x="95" y="982" font-family="Libre Franklin" font-weight="800" font-size="100" fill="#F6EEDC" transform="rotate(2 302 946)">about AI</text>
   </g>
 </svg>

@@ -4,7 +4,7 @@
   "crop_x": 420,
   "cut": [
     0.45,
-    50.4
+    49.72
   ],
   "remove": [],
   "zoom_y": 0,
@@ -23,12 +23,12 @@
     ],
     [
       47.22,
-      50.4
+      49.72
     ]
   ],
   "overlays": {
     "t1": [
-      "tls-t1-rev1.mov",
+      "tls-t1-rev2.mov",
       0.6,
       3.7
     ],
@@ -87,7 +87,7 @@
     "panel_file": "tls-b6-rev1.mp4",
     "panel_t": -0.3,
     "panel_x": 270,
-    "tag": "Use the tools"
+    "tag": "Don't just read about AI"
   },
   "grade": "fixed"
 }

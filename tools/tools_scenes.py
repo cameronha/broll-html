@@ -2,7 +2,7 @@
 
 usage: python3 tools/tools_scenes.py
 Reuses the Leon / LinkedIn / investors / repetition / report parts. Times in ORIGINAL footage time live in videos/tools.json.
-t1 title     Use the / tools
+t1 title     Don't just read / about AI   (rev2: "Use the tools" did not make sense as a title)
 b1 hype      a "Hype" gauge; the needle swings up; Cam nods ("which I do")
 b2 articles  article pages about AI stack up; Cam reads them, gets tired
 b3 gloss     a big article page covers the real thing: a robot peeks out behind it
@@ -110,8 +110,8 @@ def fit():
 def t_title():
     dur = 3.1
     s = title_root(dur)
-    s += tag("use", "Use the", 60, 760, 96, -2, 0.15, dur + 1)[0]
-    s += tag("tools", "tools", 60, 890, 110, 2, 1.2, dur + 1, ORANGE, PAPER)[0]
+    s += tag("read", "Don't just read", 60, 760, 86, -2, 0.15, dur + 1)[0]
+    s += tag("ai", "about AI", 60, 880, 100, 2, 1.2, dur + 1, ORANGE, PAPER)[0]
     return s + "</svg>\n"
 
 

@@ -1,0 +1,101 @@
+{
+  "src": "~/Downloads/spotlight effect2025-04-24 09-01-19.mov",
+  "out_dir": "~/Claude-files/broll-html/55-spotlight",
+  "crop_x": 420,
+  "cut": [
+    1.0,
+    58.2
+  ],
+  "remove": [],
+  "zoom_y": 0,
+  "zooms": [
+    [
+      7.12,
+      11.5
+    ],
+    [
+      21.5,
+      24.0
+    ],
+    [
+      30.66,
+      35.4
+    ],
+    [
+      40.3,
+      44.5
+    ],
+    [
+      51.2,
+      54.5
+    ],
+    [
+      55.9,
+      58.2
+    ]
+  ],
+  "overlays": {
+    "o1": [
+      "spt-o1-rev1.mov",
+      4.3,
+      6.5
+    ],
+    "t1": [
+      "spt-t1-rev1.mov",
+      11.6,
+      14.2
+    ],
+    "b1": [
+      "spt-b1-rev1.mp4",
+      14.6,
+      18.1
+    ],
+    "b2": [
+      "spt-b2-rev1.mp4",
+      18.1,
+      21.2
+    ],
+    "b3": [
+      "spt-b3-rev1.mp4",
+      24.0,
+      27.08
+    ],
+    "b4": [
+      "spt-b4-rev1.mp4",
+      27.08,
+      30.28
+    ],
+    "b5": [
+      "spt-b5-rev1.mp4",
+      36.6,
+      40.3
+    ],
+    "t2": [
+      "spt-t2-rev1.mov",
+      42.1,
+      44.5
+    ],
+    "b6": [
+      "spt-b6-rev1.mp4",
+      46.5,
+      50.9
+    ]
+  },
+  "music": {
+    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/fred.mp3",
+    "start": 93.9,
+    "band": [
+      62.0,
+      150.7
+    ],
+    "under_db": 9
+  },
+  "thumb": {
+    "face_t": 47.0,
+    "panel_file": "spt-b1-rev1.mp4",
+    "panel_t": -0.3,
+    "panel_x": 270,
+    "tag": "The spotlight effect"
+  },
+  "grade": "fixed"
+}

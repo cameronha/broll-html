@@ -1,0 +1,28 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="4.4">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="v1" data-show="0.05,2.40" data-pivot="340,440" data-deg="2" data-freq="0.7" data-shape="sine">
+    <rect x="150" y="200" width="380" height="240" rx="16" fill="#182A46"/><rect x="164" y="214" width="352" height="170" rx="8" fill="#5E7A94"/><path d="M314 260 L374 299 L314 338 Z" fill="#F6EEDC"/><rect x="174" y="402" width="332" height="10" rx="5" fill="#F6EEDC"/><rect x="174" y="402" width="116" height="10" rx="5" fill="#DE4A30"/>
+  </g>
+  <g id="pub" data-show="0.30,1.00">
+    <rect x="600" y="310" width="330" height="110" rx="20" fill="#9B3321"/><rect x="600" y="300" width="330" height="110" rx="20" fill="#DE4A30"/><text x="634" y="374" font-family="Libre Franklin" font-weight="800" font-size="60" fill="#F6EEDC">Publish</text>
+  </g>
+  <g id="pubdown" data-show="1.00,1.30">
+    <rect x="600" y="310" width="330" height="110" rx="20" fill="#BC3E28"/><text x="634" y="384" font-family="Libre Franklin" font-weight="800" font-size="60" fill="#F6EEDC">Publish</text>
+  </g>
+  <g id="pub2" data-show="1.30,5.40">
+    <rect x="600" y="310" width="330" height="110" rx="20" fill="#9B3321"/><rect x="600" y="300" width="330" height="110" rx="20" fill="#DE4A30"/><text x="634" y="374" font-family="Libre Franklin" font-weight="800" font-size="60" fill="#F6EEDC">Publish</text>
+  </g>
+  <g id="v1up" data-show="2.40,5.40" data-pivot="340,360" data-deg="2" data-freq="0.7" data-shape="sine">
+    <rect x="150" y="120" width="380" height="240" rx="16" fill="#182A46"/><rect x="164" y="134" width="352" height="170" rx="8" fill="#5E7A94"/><path d="M314 180 L374 219 L314 258 Z" fill="#F6EEDC"/><rect x="174" y="322" width="332" height="10" rx="5" fill="#F6EEDC"/><rect x="174" y="322" width="116" height="10" rx="5" fill="#DE4A30"/>
+  </g>
+  <g id="live" data-show="1.30,5.40">
+    <rect x="170" y="390" width="120" height="50" rx="10" fill="#DE4A30"/><text x="186" y="428" font-family="Libre Franklin" font-weight="800" font-size="36" fill="#F6EEDC">Live</text>
+  </g>
+  <g id="v2" data-show="3.10,5.40" data-pivot="540,800" data-deg="3" data-freq="0.8" data-shape="sine">
+    <rect x="350" y="560" width="380" height="240" rx="16" fill="#182A46"/><rect x="364" y="574" width="352" height="170" rx="8" fill="#5E7A94"/><path d="M514 620 L574 659 L514 698 Z" fill="#F6EEDC"/><rect x="374" y="762" width="332" height="10" rx="5" fill="#F6EEDC"/><rect x="374" y="762" width="116" height="10" rx="5" fill="#DE4A30"/><text x="380" y="860" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#182A46">Next one</text>
+  </g>
+</svg>
