@@ -2,7 +2,7 @@
 
 usage: python3 tools/tools_scenes.py
 Reuses the Leon / LinkedIn / investors / repetition / report parts. Times in ORIGINAL footage time live in videos/tools.json.
-t1 title     Don't just read / about AI   (rev2: "Use the tools" did not make sense as a title)
+t1 title     Don't just read / about AI   (rev2: "Use the tools" did not make sense as a title; rev3: all titles flush right, off the cat)
 b1 hype      a "Hype" gauge; the needle swings up; Cam nods ("which I do")
 b2 articles  article pages about AI stack up; Cam reads them, gets tired
 b3 gloss     a big article page covers the real thing: a robot peeks out behind it
@@ -109,27 +109,33 @@ def fit():
 
 # ---- titles ----
 
+def rtag(gid, text, y, size, rot, t0, t1, fill=None, ink=None):
+    """A tag set flush right (60 px margin): the cat sits on Cam's lap at the lower left of this take."""
+    w = tag(gid, text, 0, y, size, rot, t0, t1, fill, ink)[1]
+    return tag(gid, text, 1020 - w, y, size, rot, t0, t1, fill, ink)[0]
+
+
 def t_title():
     dur = 3.1
     s = title_root(dur)
-    s += tag("read", "Don't just read", 60, 760, 86, -2, 0.15, dur + 1)[0]
-    s += tag("ai", "about AI", 60, 880, 100, 2, 1.2, dur + 1, ORANGE, PAPER)[0]
+    s += rtag("read", "Don't just read", 760, 86, -2, 0.15, dur + 1)
+    s += rtag("ai", "about AI", 880, 100, 2, 1.2, dur + 1, ORANGE, PAPER)
     return s + "</svg>\n"
 
 
 def t_other():
     dur = 2.0
     s = title_root(dur)
-    s += tag("some", "Someone else's", 60, 780, 80, -2, 0.05, dur + 1)[0]
-    s += tag("per", "perspective", 60, 890, 90, 2, 0.6, dur + 1, ORANGE, PAPER)[0]
+    s += rtag("some", "Someone else's", 780, 80, -2, 0.05, dur + 1)
+    s += rtag("per", "perspective", 890, 90, 2, 0.6, dur + 1, ORANGE, PAPER)
     return s + "</svg>\n"
 
 
 def t_play():
     dur = 2.9
     s = title_root(dur)
-    s += tag("act", "Actually", 60, 760, 86, -2, 0.1, dur + 1)[0]
-    s += tag("play", "play with the tools", 60, 880, 80, 2, 0.9, dur + 1, ORANGE, PAPER)[0]
+    s += rtag("act", "Actually", 760, 86, -2, 0.1, dur + 1)
+    s += rtag("play", "play with the tools", 880, 80, 2, 0.9, dur + 1, ORANGE, PAPER)
     return s + "</svg>\n"
 
 

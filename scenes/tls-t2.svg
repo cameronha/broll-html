@@ -1,19 +1,19 @@
 <svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
      data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="2.0" data-transparent="1">
-  <g id="some-1.12" data-show="0.05,0.14" data-pivot="390,892" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="20" y="774" width="740" height="118" rx="11" fill="#182A46" transform="rotate(-2 390 833)"/>
-    <text x="52" y="865" font-family="Libre Franklin" font-weight="800" font-size="90" fill="#F6EEDC" transform="rotate(-2 390 833)">Someone else's</text>
+  <g id="some-1.12" data-show="0.05,0.14" data-pivot="690,892" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="319" y="774" width="740" height="118" rx="11" fill="#182A46" transform="rotate(-2 690 833)"/>
+    <text x="351" y="865" font-family="Libre Franklin" font-weight="800" font-size="90" fill="#F6EEDC" transform="rotate(-2 690 833)">Someone else's</text>
   </g>
-  <g id="some-1.0" data-show="0.14,3.00" data-pivot="390,886" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="60" y="780" width="661" height="106" rx="10" fill="#182A46" transform="rotate(-2 390 833)"/>
-    <text x="88" y="862" font-family="Libre Franklin" font-weight="800" font-size="80" fill="#F6EEDC" transform="rotate(-2 390 833)">Someone else's</text>
+  <g id="some-1.0" data-show="0.14,3.00" data-pivot="690,886" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="359" y="780" width="661" height="106" rx="10" fill="#182A46" transform="rotate(-2 690 833)"/>
+    <text x="387" y="862" font-family="Libre Franklin" font-weight="800" font-size="80" fill="#F6EEDC" transform="rotate(-2 690 833)">Someone else's</text>
   </g>
-  <g id="per-1.12" data-show="0.60,0.69" data-pivot="354,1016" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="25" y="883" width="657" height="133" rx="11" fill="#DE4A30" transform="rotate(2 354 949)"/>
-    <text x="60" y="986" font-family="Libre Franklin" font-weight="800" font-size="101" fill="#F6EEDC" transform="rotate(2 354 949)">perspective</text>
+  <g id="per-1.12" data-show="0.60,0.69" data-pivot="726,1016" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="398" y="883" width="657" height="133" rx="11" fill="#DE4A30" transform="rotate(2 726 949)"/>
+    <text x="433" y="986" font-family="Libre Franklin" font-weight="800" font-size="101" fill="#F6EEDC" transform="rotate(2 726 949)">perspective</text>
   </g>
-  <g id="per-1.0" data-show="0.69,3.00" data-pivot="354,1009" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="60" y="890" width="587" height="119" rx="10" fill="#DE4A30" transform="rotate(2 354 949)"/>
-    <text x="92" y="982" font-family="Libre Franklin" font-weight="800" font-size="90" fill="#F6EEDC" transform="rotate(2 354 949)">perspective</text>
+  <g id="per-1.0" data-show="0.69,3.00" data-pivot="726,1009" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="433" y="890" width="587" height="119" rx="10" fill="#DE4A30" transform="rotate(2 726 949)"/>
+    <text x="464" y="982" font-family="Libre Franklin" font-weight="800" font-size="90" fill="#F6EEDC" transform="rotate(2 726 949)">perspective</text>
   </g>
 </svg>

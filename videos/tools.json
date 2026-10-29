@@ -28,7 +28,7 @@
   ],
   "overlays": {
     "t1": [
-      "tls-t1-rev2.mov",
+      "tls-t1-rev3.mov",
       0.6,
       3.7
     ],
@@ -48,7 +48,7 @@
       20.8
     ],
     "t2": [
-      "tls-t2-rev1.mov",
+      "tls-t2-rev3.mov",
       20.9,
       22.9
     ],
@@ -63,7 +63,7 @@
       36.0
     ],
     "t3": [
-      "tls-t3-rev1.mov",
+      "tls-t3-rev3.mov",
       39.4,
       42.3
     ],

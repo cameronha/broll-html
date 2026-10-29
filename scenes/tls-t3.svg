@@ -1,19 +1,19 @@
 <svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
      data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="2.9" data-transparent="1">
-  <g id="act-1.12" data-show="0.10,0.19" data-pivot="266,880" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="35" y="753" width="462" height="127" rx="11" fill="#182A46" transform="rotate(-2 266 817)"/>
-    <text x="69" y="851" font-family="Libre Franklin" font-weight="800" font-size="96" fill="#F6EEDC" transform="rotate(-2 266 817)">Actually</text>
+  <g id="act-1.12" data-show="0.10,0.19" data-pivot="814,880" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="583" y="753" width="462" height="127" rx="11" fill="#182A46" transform="rotate(-2 814 817)"/>
+    <text x="617" y="851" font-family="Libre Franklin" font-weight="800" font-size="96" fill="#F6EEDC" transform="rotate(-2 814 817)">Actually</text>
   </g>
-  <g id="act-1.0" data-show="0.19,3.90" data-pivot="266,874" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="60" y="760" width="412" height="114" rx="10" fill="#182A46" transform="rotate(-2 266 817)"/>
-    <text x="90" y="848" font-family="Libre Franklin" font-weight="800" font-size="86" fill="#F6EEDC" transform="rotate(-2 266 817)">Actually</text>
+  <g id="act-1.0" data-show="0.19,3.90" data-pivot="814,874" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="608" y="760" width="412" height="114" rx="10" fill="#182A46" transform="rotate(-2 814 817)"/>
+    <text x="638" y="848" font-family="Libre Franklin" font-weight="800" font-size="86" fill="#F6EEDC" transform="rotate(-2 814 817)">Actually</text>
   </g>
-  <g id="play-1.12" data-show="0.90,0.99" data-pivot="443,992" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="14" y="874" width="858" height="118" rx="11" fill="#DE4A30" transform="rotate(2 443 933)"/>
-    <text x="45" y="965" font-family="Libre Franklin" font-weight="800" font-size="90" fill="#F6EEDC" transform="rotate(2 443 933)">play with the tools</text>
+  <g id="play-1.12" data-show="0.90,0.99" data-pivot="637,992" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="208" y="874" width="858" height="118" rx="11" fill="#DE4A30" transform="rotate(2 637 933)"/>
+    <text x="239" y="965" font-family="Libre Franklin" font-weight="800" font-size="90" fill="#F6EEDC" transform="rotate(2 637 933)">play with the tools</text>
   </g>
-  <g id="play-1.0" data-show="0.99,3.90" data-pivot="443,986" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="60" y="880" width="766" height="106" rx="10" fill="#DE4A30" transform="rotate(2 443 933)"/>
-    <text x="88" y="962" font-family="Libre Franklin" font-weight="800" font-size="80" fill="#F6EEDC" transform="rotate(2 443 933)">play with the tools</text>
+  <g id="play-1.0" data-show="0.99,3.90" data-pivot="637,986" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="254" y="880" width="766" height="106" rx="10" fill="#DE4A30" transform="rotate(2 637 933)"/>
+    <text x="282" y="962" font-family="Libre Franklin" font-weight="800" font-size="80" fill="#F6EEDC" transform="rotate(2 637 933)">play with the tools</text>
   </g>
 </svg>
