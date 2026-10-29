@@ -1,0 +1,16 @@
+<svg data-bg-boil="0.2" data-jitter="0.4" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#D9A94A" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="1.3">
+  <g id="ch" data-show="0.05,2.30">
+    <text x="540" y="470" text-anchor="middle" font-family="Futura" font-weight="500" font-size="44" letter-spacing="14" fill="#182A46">CHAPTER TWO</text>
+  </g>
+  <g id="rule" data-show="0.05,2.30">
+    <rect x="390" y="510" width="300" height="6" fill="#182A46"/>
+  </g>
+  <g id="name" data-show="0.05,2.30" data-pivot="540,610" data-deg="1" data-freq="0.5" data-shape="sine">
+    <text x="540" y="610" text-anchor="middle" font-family="Futura" font-weight="bold" font-size="78" letter-spacing="10" fill="#F6EEDC">THE INTERVIEW</text>
+  </g>
+  <g id="frame" data-static="1">
+    <path d="M0 0H1080V1080H0Z M60 60V1020H1020V60Z" fill="#F6EEDC" fill-rule="evenodd"/>
+    <rect x="74" y="74" width="932" height="932" fill="none" stroke="#182A46" stroke-width="6"/>
+  </g>
+</svg>
