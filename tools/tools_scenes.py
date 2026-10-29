@@ -58,8 +58,10 @@ def articles():
 def gloss():
     dur = 3.9
     s = root(dur, "1,0,0")
-    s += g("bot", robot(700, 420, 4.2), (0.05, dur + 1), rig(700, 520, 5, 1.1))
-    s += g("pg", page(170, 200, 470, 600, "What AI is", -3), (0.05, dur + 1), rig(405, 800, 2, 0.6))
+    s += g("bot", robot(700, 420, 4.2), (0.05, 2.3), rig(700, 520, 5, 1.1))
+    s += g("bot2", robot(620, 420, 4.6), (2.3, dur + 1), rig(620, 530, 9, 1.6))     # second half: the robot steps out and waves, so the beat keeps moving
+    s += g("pg", page(170, 200, 470, 600, "What AI is", -3), (0.05, 2.3), rig(405, 800, 2, 0.6))
+    s += g("pg2", page(60, 330, 470, 600, "What AI is", -14), (2.3, dur + 1), rig(295, 930, 2, 0.6))
     s += pill("real", 800, 610, "the real thing", 44, ORANGE, CREAM, (1.6, dur + 1))
     return s + "</svg>\n"
 
