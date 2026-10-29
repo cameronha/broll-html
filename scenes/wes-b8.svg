@@ -1,0 +1,47 @@
+<svg data-bg-boil="0.2" data-jitter="0.4" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#BCD6DE" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.8">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="640" width="1160" height="40" fill="#A9CDB8"/>
+    <rect x="-40" y="680" width="1160" height="440" fill="#D9A94A"/>
+  </g>
+  <g id="pedl" data-show="0.05,4.80">
+    <rect x="190" y="740" width="220" height="30" fill="#182A46"/><rect x="210" y="770" width="180" height="250" fill="#F6EEDC"/>
+  </g>
+  <g id="pedr" data-show="0.05,4.80">
+    <rect x="670" y="740" width="220" height="30" fill="#182A46"/><rect x="690" y="770" width="180" height="250" fill="#F6EEDC"/>
+  </g>
+  <g id="adsl" data-show="0.05,4.80">
+    <text x="300" y="880" text-anchor="middle" font-family="Futura" font-weight="bold" font-size="40" letter-spacing="8" fill="#182A46">ADS</text>
+  </g>
+  <g id="cll" data-show="0.05,4.80">
+    <text x="780" y="880" text-anchor="middle" font-family="Futura" font-weight="bold" font-size="25" letter-spacing="3" fill="#DE4A30">CLIENTS</text>
+  </g>
+  <g id="coin" data-show="0.30,4.80" data-pivot="300,740" data-deg="4" data-freq="1.0" data-shape="sine">
+    <circle cx="300" cy="712" r="28" fill="#E9B949"/><text x="300" y="724" text-anchor="middle" font-family="Futura" font-weight="bold" font-size="32" letter-spacing="0" fill="#182A46">$</text>
+  </g>
+  <g id="b0" data-show="1.60,4.80" data-pivot="780,740" data-deg="6" data-freq="1.2" data-shape="sine">
+    <rect x="705" y="660" width="150" height="80" rx="8" fill="#182A46"/><rect x="713" y="668" width="134" height="64" rx="5" fill="#F6EEDC"/><circle cx="780" cy="700" r="24" fill="#E9B949"/><text x="767" y="716" font-family="Libre Franklin" font-weight="800" font-size="42" fill="#182A46">$</text>
+  </g>
+  <g id="b1" data-show="1.80,4.80" data-pivot="780,670" data-deg="6" data-freq="1.2" data-shape="sine">
+    <rect x="705" y="590" width="150" height="80" rx="8" fill="#182A46"/><rect x="713" y="598" width="134" height="64" rx="5" fill="#F6EEDC"/><circle cx="780" cy="630" r="24" fill="#E9B949"/><text x="767" y="646" font-family="Libre Franklin" font-weight="800" font-size="42" fill="#182A46">$</text>
+  </g>
+  <g id="b2" data-show="2.00,4.80" data-pivot="780,600" data-deg="6" data-freq="1.2" data-shape="sine">
+    <rect x="705" y="520" width="150" height="80" rx="8" fill="#182A46"/><rect x="713" y="528" width="134" height="64" rx="5" fill="#F6EEDC"/><circle cx="780" cy="560" r="24" fill="#E9B949"/><text x="767" y="576" font-family="Libre Franklin" font-weight="800" font-size="42" fill="#182A46">$</text>
+  </g>
+  <g id="b3" data-show="2.20,4.80" data-pivot="780,530" data-deg="6" data-freq="1.2" data-shape="sine">
+    <rect x="705" y="450" width="150" height="80" rx="8" fill="#182A46"/><rect x="713" y="458" width="134" height="64" rx="5" fill="#F6EEDC"/><circle cx="780" cy="490" r="24" fill="#E9B949"/><text x="767" y="506" font-family="Libre Franklin" font-weight="800" font-size="42" fill="#182A46">$</text>
+  </g>
+  <g id="b4" data-show="2.40,4.80" data-pivot="780,460" data-deg="6" data-freq="1.2" data-shape="sine">
+    <rect x="705" y="380" width="150" height="80" rx="8" fill="#182A46"/><rect x="713" y="388" width="134" height="64" rx="5" fill="#F6EEDC"/><circle cx="780" cy="420" r="24" fill="#E9B949"/><text x="767" y="436" font-family="Libre Franklin" font-weight="800" font-size="42" fill="#182A46">$</text>
+  </g>
+  <g id="b5" data-show="2.60,4.80" data-pivot="780,390" data-deg="6" data-freq="1.2" data-shape="sine">
+    <rect x="705" y="310" width="150" height="80" rx="8" fill="#182A46"/><rect x="713" y="318" width="134" height="64" rx="5" fill="#F6EEDC"/><circle cx="780" cy="350" r="24" fill="#E9B949"/><text x="767" y="366" font-family="Libre Franklin" font-weight="800" font-size="42" fill="#182A46">$</text>
+  </g>
+  <g id="b6" data-show="2.80,4.80" data-pivot="780,320" data-deg="6" data-freq="1.2" data-shape="sine">
+    <rect x="705" y="240" width="150" height="80" rx="8" fill="#182A46"/><rect x="713" y="248" width="134" height="64" rx="5" fill="#F6EEDC"/><circle cx="780" cy="280" r="24" fill="#E9B949"/><text x="767" y="296" font-family="Libre Franklin" font-weight="800" font-size="42" fill="#182A46">$</text>
+  </g>
+  <g id="frame" data-static="1">
+    <path d="M0 0H1080V1080H0Z M60 60V1020H1020V60Z" fill="#F6EEDC" fill-rule="evenodd"/>
+    <rect x="74" y="74" width="932" height="932" fill="none" stroke="#182A46" stroke-width="6"/>
+  </g>
+</svg>

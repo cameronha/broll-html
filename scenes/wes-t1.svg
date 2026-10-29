@@ -1,0 +1,6 @@
+<svg data-bg-boil="0.2" data-jitter="0.4" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.0" data-transparent="1">
+  <g id="pl" data-show="0.15,4.00" data-pivot="540,966" data-deg="1" data-freq="0.5" data-shape="sine">
+    <rect x="105" y="794" width="870" height="172" fill="#F6EEDC"/><rect x="117" y="806" width="846" height="148" fill="none" stroke="#182A46" stroke-width="4"/><text x="540" y="850" text-anchor="middle" font-family="Futura" font-weight="bold" font-size="26" letter-spacing="8" fill="#DE4A30">A TRUE STORY</text><text x="540" y="914" text-anchor="middle" font-family="Futura" font-weight="bold" font-size="54" letter-spacing="8" fill="#182A46">THE FAKE PODCAST</text>
+  </g>
+</svg>

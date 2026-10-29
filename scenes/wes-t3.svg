@@ -1,0 +1,15 @@
+<svg data-bg-boil="0.2" data-jitter="0.4" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.6" data-transparent="1">
+  <g id="pl" data-show="0.05,4.60" data-pivot="540,950" data-deg="1" data-freq="0.5" data-shape="sine">
+    <rect x="150" y="830" width="780" height="120" fill="#F6EEDC"/><rect x="162" y="842" width="756" height="96" fill="none" stroke="#182A46" stroke-width="4"/>
+  </g>
+  <g id="w0" data-show="0.10,4.60">
+    <text x="300" y="908" text-anchor="middle" font-family="Futura" font-weight="bold" font-size="40" letter-spacing="6" fill="#182A46">CAREFUL</text>
+  </g>
+  <g id="w1" data-show="1.50,4.60">
+    <text x="540" y="908" text-anchor="middle" font-family="Futura" font-weight="bold" font-size="40" letter-spacing="6" fill="#182A46">KIND</text>
+  </g>
+  <g id="w2" data-show="2.60,4.60">
+    <text x="780" y="908" text-anchor="middle" font-family="Futura" font-weight="bold" font-size="40" letter-spacing="6" fill="#DE4A30">ATTENTIVE</text>
+  </g>
+</svg>

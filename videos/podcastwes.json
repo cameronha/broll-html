@@ -1,0 +1,146 @@
+{
+  "src": "~/Downloads/the fake podcast 2025-04-29 09-19-31.mov",
+  "out_dir": "~/Claude-files/broll-html/53-podcast",
+  "crop_x": 420,
+  "cut": [
+    0.45,
+    129.1
+  ],
+  "remove": [
+    [
+      68.74,
+      69.18
+    ],
+    [
+      97.56,
+      104.0
+    ]
+  ],
+  "zoom_y": 0,
+  "zooms": [
+    [
+      10.2,
+      13.1
+    ],
+    [
+      19.7,
+      23.6
+    ],
+    [
+      34.3,
+      37.6
+    ],
+    [
+      45.0,
+      48.0
+    ],
+    [
+      62.0,
+      65.9
+    ],
+    [
+      70.9,
+      76.1
+    ],
+    [
+      83.4,
+      88.0
+    ],
+    [
+      104.0,
+      109.4
+    ],
+    [
+      115.4,
+      119.7
+    ],
+    [
+      128.0,
+      129.1
+    ]
+  ],
+  "overlays": {
+    "t1": [
+      "wes/wes-t1.mov",
+      0.6,
+      3.6
+    ],
+    "b0": [
+      "wes/wes-b0.mp4",
+      6.7,
+      10.0
+    ],
+    "b1": [
+      "wes/wes-b1.mp4",
+      15.2,
+      19.6
+    ],
+    "b2": [
+      "wes/wes-b2-joined.mp4",
+      28.3,
+      31.9
+    ],
+    "b3": [
+      "wes/wes-b3.mp4",
+      42.1,
+      45.0
+    ],
+    "t2": [
+      "wes/wes-t2.mov",
+      51.1,
+      53.3
+    ],
+    "b4": [
+      "wes/wes-b4-joined.mp4",
+      56.7,
+      60.9
+    ],
+    "b5": [
+      "wes/wes-b5.mp4",
+      67.1,
+      70.9
+    ],
+    "t3": [
+      "wes/wes-t3.mov",
+      78.4,
+      82.0
+    ],
+    "b6": [
+      "wes/wes-b6-joined.mp4",
+      89.3,
+      92.9
+    ],
+    "b7": [
+      "wes/wes-b7.mp4",
+      93.2,
+      97.0
+    ],
+    "b8": [
+      "wes/wes-b8.mp4",
+      109.5,
+      113.3
+    ],
+    "t4": [
+      "wes/wes-t4.mov",
+      121.6,
+      124.6
+    ]
+  },
+  "music": {
+    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/fred.mp3",
+    "start": 93.9,
+    "band": [
+      62.0,
+      150.7
+    ],
+    "under_db": 9
+  },
+  "thumb": {
+    "face_t": 22.5,
+    "panel_file": "wes/wes-b1.mp4",
+    "panel_t": 1.0,
+    "panel_x": 270,
+    "tag": "The fake podcast"
+  },
+  "grade": "fixed"
+}

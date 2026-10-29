@@ -1,0 +1,9 @@
+<svg data-bg-boil="0.2" data-jitter="0.4" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.0" data-transparent="1">
+  <g id="pl" data-show="0.10,4.00" data-pivot="540,1010" data-deg="1" data-freq="0.5" data-shape="sine">
+    <rect x="200" y="790" width="680" height="220" fill="#F6EEDC"/><rect x="212" y="802" width="656" height="196" fill="none" stroke="#182A46" stroke-width="4"/><text x="540" y="870" text-anchor="middle" font-family="Futura" font-weight="bold" font-size="34" letter-spacing="8" fill="#182A46">A NEW WAY</text>
+  </g>
+  <g id="cust" data-show="1.40,4.00">
+    <text x="540" y="955" text-anchor="middle" font-family="Futura" font-weight="bold" font-size="50" letter-spacing="8" fill="#DE4A30">TO GET CUSTOMERS</text>
+  </g>
+</svg>

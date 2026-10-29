@@ -1,0 +1,32 @@
+<svg data-bg-boil="0.2" data-jitter="0.4" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#A9CDB8" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="4.4">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="640" width="1160" height="40" fill="#A9CDB8"/>
+    <rect x="-40" y="680" width="1160" height="440" fill="#D9A94A"/>
+  </g>
+  <g id="board" data-show="0.05,5.40" data-pivot="540,460" data-deg="1" data-freq="0.5" data-shape="sine">
+    <rect x="330" y="160" width="420" height="300" fill="#182A46"/><text x="540" y="225" text-anchor="middle" font-family="Futura" font-weight="bold" font-size="36" letter-spacing="12" fill="#F6EEDC">LISTENERS</text><rect x="430" y="260" width="220" height="160" fill="#F6EEDC"/>
+  </g>
+  <g id="n0" data-show="1.60,2.30">
+    <text x="540" y="385" text-anchor="middle" font-family="Futura" font-weight="bold" font-size="120" letter-spacing="4" fill="#182A46">3</text>
+  </g>
+  <g id="n1" data-show="2.30,3.00">
+    <text x="540" y="385" text-anchor="middle" font-family="Futura" font-weight="bold" font-size="120" letter-spacing="4" fill="#182A46">9</text>
+  </g>
+  <g id="n2" data-show="3.00,5.40">
+    <text x="540" y="385" text-anchor="middle" font-family="Futura" font-weight="bold" font-size="120" letter-spacing="4" fill="#DE4A30">12</text>
+  </g>
+  <g id="mic" data-show="0.05,5.40" data-pivot="540,940" data-deg="2" data-freq="0.7" data-shape="sine">
+    <rect x="530" y="800" width="20" height="140" fill="#182A46"/><rect x="450" y="922" width="180" height="24" rx="12" fill="#182A46"/><rect x="485" y="610" width="110" height="190" rx="55" fill="#182A46"/><line x1="499" y1="650" x2="581" y2="650" stroke="#8CBDDC" stroke-width="6" stroke-linecap="round"/><line x1="499" y1="676" x2="581" y2="676" stroke="#8CBDDC" stroke-width="6" stroke-linecap="round"/><line x1="499" y1="702" x2="581" y2="702" stroke="#8CBDDC" stroke-width="6" stroke-linecap="round"/><line x1="499" y1="728" x2="581" y2="728" stroke="#8CBDDC" stroke-width="6" stroke-linecap="round"/><line x1="499" y1="754" x2="581" y2="754" stroke="#8CBDDC" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g id="p1" data-pivot="190,940" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="160" y="870" width="60" height="70" fill="#182A46"/><circle cx="190" cy="810" r="70" fill="#6FA58A"/>
+  </g>
+  <g id="p2" data-pivot="890,940" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="860" y="870" width="60" height="70" fill="#182A46"/><circle cx="890" cy="810" r="70" fill="#6FA58A"/>
+  </g>
+  <g id="frame" data-static="1">
+    <path d="M0 0H1080V1080H0Z M60 60V1020H1020V60Z" fill="#F6EEDC" fill-rule="evenodd"/>
+    <rect x="74" y="74" width="932" height="932" fill="none" stroke="#182A46" stroke-width="6"/>
+  </g>
+</svg>
