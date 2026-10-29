@@ -121,7 +121,7 @@ def intro():
 
 
 def deals():
-    dur = 3.8
+    dur = 4.7
     s = root(dur, "1,0,0")
     for i in range(8):
         s += bill(f"b{i}", 300 + (i % 2) * 300, 820 - (i // 2) * 100, (0.2 + 0.22 * i, dur + 1))

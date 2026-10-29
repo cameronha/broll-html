@@ -1,34 +1,34 @@
 <svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
-     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.8">
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="4.7">
   <g id="floor" data-static="1">
     <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
     <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
   </g>
-  <g id="b0" data-show="0.20,4.80" data-pivot="375,900" data-deg="6" data-freq="1.2" data-shape="sine">
+  <g id="b0" data-show="0.20,5.70" data-pivot="375,900" data-deg="6" data-freq="1.2" data-shape="sine">
     <rect x="300" y="820" width="150" height="80" rx="8" fill="#182A46"/><rect x="308" y="828" width="134" height="64" rx="5" fill="#F6EEDC"/><circle cx="375" cy="860" r="24" fill="#E9B949"/><text x="362" y="876" font-family="Libre Franklin" font-weight="800" font-size="42" fill="#182A46">$</text>
   </g>
-  <g id="b1" data-show="0.42,4.80" data-pivot="675,900" data-deg="6" data-freq="1.2" data-shape="sine">
+  <g id="b1" data-show="0.42,5.70" data-pivot="675,900" data-deg="6" data-freq="1.2" data-shape="sine">
     <rect x="600" y="820" width="150" height="80" rx="8" fill="#182A46"/><rect x="608" y="828" width="134" height="64" rx="5" fill="#F6EEDC"/><circle cx="675" cy="860" r="24" fill="#E9B949"/><text x="662" y="876" font-family="Libre Franklin" font-weight="800" font-size="42" fill="#182A46">$</text>
   </g>
-  <g id="b2" data-show="0.64,4.80" data-pivot="375,800" data-deg="6" data-freq="1.2" data-shape="sine">
+  <g id="b2" data-show="0.64,5.70" data-pivot="375,800" data-deg="6" data-freq="1.2" data-shape="sine">
     <rect x="300" y="720" width="150" height="80" rx="8" fill="#182A46"/><rect x="308" y="728" width="134" height="64" rx="5" fill="#F6EEDC"/><circle cx="375" cy="760" r="24" fill="#E9B949"/><text x="362" y="776" font-family="Libre Franklin" font-weight="800" font-size="42" fill="#182A46">$</text>
   </g>
-  <g id="b3" data-show="0.86,4.80" data-pivot="675,800" data-deg="6" data-freq="1.2" data-shape="sine">
+  <g id="b3" data-show="0.86,5.70" data-pivot="675,800" data-deg="6" data-freq="1.2" data-shape="sine">
     <rect x="600" y="720" width="150" height="80" rx="8" fill="#182A46"/><rect x="608" y="728" width="134" height="64" rx="5" fill="#F6EEDC"/><circle cx="675" cy="760" r="24" fill="#E9B949"/><text x="662" y="776" font-family="Libre Franklin" font-weight="800" font-size="42" fill="#182A46">$</text>
   </g>
-  <g id="b4" data-show="1.08,4.80" data-pivot="375,700" data-deg="6" data-freq="1.2" data-shape="sine">
+  <g id="b4" data-show="1.08,5.70" data-pivot="375,700" data-deg="6" data-freq="1.2" data-shape="sine">
     <rect x="300" y="620" width="150" height="80" rx="8" fill="#182A46"/><rect x="308" y="628" width="134" height="64" rx="5" fill="#F6EEDC"/><circle cx="375" cy="660" r="24" fill="#E9B949"/><text x="362" y="676" font-family="Libre Franklin" font-weight="800" font-size="42" fill="#182A46">$</text>
   </g>
-  <g id="b5" data-show="1.30,4.80" data-pivot="675,700" data-deg="6" data-freq="1.2" data-shape="sine">
+  <g id="b5" data-show="1.30,5.70" data-pivot="675,700" data-deg="6" data-freq="1.2" data-shape="sine">
     <rect x="600" y="620" width="150" height="80" rx="8" fill="#182A46"/><rect x="608" y="628" width="134" height="64" rx="5" fill="#F6EEDC"/><circle cx="675" cy="660" r="24" fill="#E9B949"/><text x="662" y="676" font-family="Libre Franklin" font-weight="800" font-size="42" fill="#182A46">$</text>
   </g>
-  <g id="b6" data-show="1.52,4.80" data-pivot="375,600" data-deg="6" data-freq="1.2" data-shape="sine">
+  <g id="b6" data-show="1.52,5.70" data-pivot="375,600" data-deg="6" data-freq="1.2" data-shape="sine">
     <rect x="300" y="520" width="150" height="80" rx="8" fill="#182A46"/><rect x="308" y="528" width="134" height="64" rx="5" fill="#F6EEDC"/><circle cx="375" cy="560" r="24" fill="#E9B949"/><text x="362" y="576" font-family="Libre Franklin" font-weight="800" font-size="42" fill="#182A46">$</text>
   </g>
-  <g id="b7" data-show="1.74,4.80" data-pivot="675,600" data-deg="6" data-freq="1.2" data-shape="sine">
+  <g id="b7" data-show="1.74,5.70" data-pivot="675,600" data-deg="6" data-freq="1.2" data-shape="sine">
     <rect x="600" y="520" width="150" height="80" rx="8" fill="#182A46"/><rect x="608" y="528" width="134" height="64" rx="5" fill="#F6EEDC"/><circle cx="675" cy="560" r="24" fill="#E9B949"/><text x="662" y="576" font-family="Libre Franklin" font-weight="800" font-size="42" fill="#182A46">$</text>
   </g>
-  <g id="amt" data-show="2.30,4.80" data-pivot="540,380" data-deg="2" data-freq="0.6" data-shape="sine">
+  <g id="amt" data-show="2.30,5.70" data-pivot="540,380" data-deg="2" data-freq="0.6" data-shape="sine">
     <rect x="250" y="230" width="580" height="150" rx="18" fill="#182A46"/><text x="288" y="335" font-family="Libre Franklin" font-weight="800" font-size="96" fill="#F6EEDC">$200,000</text>
   </g>
 </svg>

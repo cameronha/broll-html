@@ -107,13 +107,31 @@ def edit(v, out):
        "-c:v", "libx264", "-crf", "14", "-pix_fmt", "yuv420p", "-c:a", "pcm_s16le", out)
 
 
+SNAP = 0.6   # a framing shorter than this reads as a glitch (Cam, 2026-10-29: a 0.2 s flash before a punch-in)
+
+
+def snapped_zooms(v):
+    """Zooms in edited time, each edge moved onto a b-roll edge or cut joint within SNAP. Prints any framing still under SNAP."""
+    edges = [edited(v, t) for n, t0, t1 in v["overlays"].values() if n.endswith(".mp4") for t in (t0, t1)]
+    edges += [edited(v, b) for a, b in keep(v)[:-1]]
+    snap = lambda t: min(edges, key=lambda e: abs(e - t)) if edges and min(abs(e - t) for e in edges) <= SNAP else t
+    zs = [(snap(edited(v, a)), snap(edited(v, b))) for a, b in v["zooms"]]
+    total = edited(v, v["cut"][1])
+    marks = sorted(set([0.0, total] + [t for z in zs for t in z]
+                       + [edited(v, t) for n, t0, t1 in v["overlays"].values() if n.endswith(".mp4") for t in (t0, t1)]))
+    for a, b in zip(marks, marks[1:]):
+        if 0.001 < b - a < SNAP:
+            print(f"  short framing {a:.2f}-{b:.2f} ({b - a:.2f} s)")
+    return zs
+
+
 def composite(v, src, out):
     d = os.path.expanduser(v["out_dir"]); v["_grade"] = grade(v); print("grade", v["_grade"])
     ins, f, last = ["-i", src], [f"[0:v]crop=1080:1080:{v['crop_x']}:0,{v['_grade']}[s0]"], "s0"
     if v.get("zooms"):                                     # jump-cut punch-ins: the footage cuts to a closer frame and back
         k, y = v.get("zoom_k", 1.2), v.get("zoom_y", 140)  # zoom_y: top of the crop; 140 = tight headroom (Cam: 30 had "too much headroom")
         w = round(1080 / k / 2) * 2
-        on = "+".join(f"between(t,{edited(v, a):.3f},{edited(v, b):.3f})" for a, b in v["zooms"])
+        on = "+".join(f"between(t,{a:.3f},{b:.3f})" for a, b in snapped_zooms(v))
         f[0] = f[0].replace("[s0]", "[w0]")
         f += [f"[w0]split[w1][w2]", f"[w2]crop={w}:{w}:{(1080 - w) // 2}:{y},scale=1080:1080[z]",
               f"[w1][z]overlay=enable='{on}'[s0]"]
