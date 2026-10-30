@@ -3,14 +3,14 @@
 usage: python3 tools/lunch_scenes.py
 Times in ORIGINAL footage time (the five-video file) live in videos/lunch.json. Cat at the lower right: titles left, under 500 px wide.
 b1 unsure    a company tower; the boss looks confused; a big "?"
-b2 lunch     a "$0" tag ("costs nothing"); a calendar page "Monthly / Lunch & Learn"; a plate
+b2 lunch     a "$0" tag ("costs nothing"); a calendar page "Monthly / AI Lunch & Learn"; a plate
 b3 table     three coworkers at a table; one gets a gold star and a robot ("interesting work with AI"); "Here's what I do"
 b4 share     a sheet: what works (check), what doesn't (X), tools (wrench); "Shared"
 b5 champs    a crowd of small heads; red rings find the champion and a key player
 b6 impact    the champion under a spotlight; impact bars grow
 b7 nobig     Vision deck / 5-year plan / Tech bet, each crossed out
 b8 grass     grass sprouts; coworkers pop up out of it; an up arrow
-t1 start     Not sure / where to start?
+t1 start     A simple / starting point   (rev2: the video now starts on "if you're a leader"; title moved onto "one good starting point")
 t2 speed     Everyone / up to speed
 """
 import os
@@ -57,7 +57,7 @@ def lunch():
     s += g("tag", f'<rect x="90" y="300" width="300" height="160" rx="22" fill="{ORANGE}"/><circle cx="135" cy="380" r="18" fill="{CREAM}"/>'
                   + centered(260, 420, "$0", 110, CREAM), (0.9, dur + 1), rig(240, 460, 5, 1.0))
     s += g("cal", f'<rect x="490" y="160" width="480" height="560" rx="20" fill="#FFFDF6"/><rect x="490" y="160" width="480" height="120" rx="20" fill="{ORANGE}"/>'
-                  + centered(730, 245, "Monthly", 64, CREAM) + centered(730, 380, "Lunch &", 70, NAVY) + centered(730, 470, "Learn", 70, NAVY),
+                  + centered(730, 245, "Monthly", 64, CREAM) + centered(730, 370, "AI Lunch", 70, NAVY) + centered(730, 460, "& Learn", 70, NAVY),
            (2.4, dur + 1), rig(730, 720, 2, 0.6))
     s += g("plate", f'<ellipse cx="730" cy="600" rx="140" ry="50" fill="{CREAM}" stroke="{NAVY}" stroke-width="8"/>'
                     f'<path d="M650 590 Q730 520 810 590 Z" fill="{GOLD}"/>', (3.3, dur + 1), rig(730, 650, 4, 1.0))
@@ -142,10 +142,10 @@ def grass():
 # ---- titles (left, narrow: the cat sits at the lower right) ----
 
 def t_start():
-    dur = 2.5
+    dur = 2.9
     s = title_root(dur)
-    s += tag("ns", "Not sure", 60, 770, 80, -2, 0.05, dur + 1)[0]
-    s += tag("ws", "where to start?", 60, 885, 66, 2, 0.9, dur + 1, ORANGE, PAPER)[0]
+    s += tag("ns", "A simple", 60, 770, 80, -2, 0.05, dur + 1)[0]
+    s += tag("ws", "starting point", 60, 885, 70, 2, 0.4, dur + 1, ORANGE, PAPER)[0]
     return s + "</svg>\n"
 
 

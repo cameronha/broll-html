@@ -7,7 +7,7 @@
     130
   ],
   "cut": [
-    43.4,
+    45.35,
     100.5
   ],
   "remove": [],
@@ -32,9 +32,9 @@
   ],
   "overlays": {
     "t1": [
-      "lnl-t1-rev1.mov",
-      43.6,
-      46.1
+      "lnl-t1-rev2.mov",
+      49.7,
+      52.6
     ],
     "b1": [
       "lnl-b1-rev1.mp4",
@@ -42,7 +42,7 @@
       49.4
     ],
     "b2": [
-      "lnl-b2-rev1.mp4",
+      "lnl-b2-rev2.mp4",
       52.9,
       57.3
     ],
@@ -93,10 +93,10 @@
   },
   "thumb": {
     "face_t": 60.0,
-    "panel_file": "lnl-b2-rev1.mp4",
+    "panel_file": "lnl-b2-rev2.mp4",
     "panel_t": -0.3,
     "panel_x": 270,
-    "tag": "Host a lunch and learn"
+    "tag": "Host an AI lunch and learn"
   },
   "grade": "none"
 }
