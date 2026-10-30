@@ -1,0 +1,44 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.25">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="sheet" data-show="0.05,4.25" data-pivot="540,910" data-deg="1" data-freq="0.5" data-shape="sine">
+    <rect x="200" y="110" width="680" height="800" rx="18" fill="#FFFDF6"/><text x="411" y="200" font-family="Libre Franklin" font-weight="800" font-size="60" fill="#182A46">Answers</text>
+  </g>
+  <g id="l0" data-show="0.10,4.25">
+    <rect x="260" y="290" width="440" height="20" rx="10" fill="#9AA0A6"/>
+  </g>
+  <g id="c0" data-show="1.50,4.25" data-pivot="825,370" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="790" y="300" width="70" height="70" rx="8" fill="#DE4A30" transform="rotate(-4 825.0 335.0)"/>
+    <path d="M807 336 L820 349 L845 321" stroke="#F6EEDC" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="l1" data-show="0.20,4.25">
+    <rect x="260" y="410" width="380" height="20" rx="10" fill="#9AA0A6"/>
+  </g>
+  <g id="x" data-show="0.60,4.25">
+    <line x1="746" y1="376" x2="834" y2="464" stroke="#DE4A30" stroke-width="26" stroke-linecap="round"/><line x1="834" y1="376" x2="746" y2="464" stroke="#DE4A30" stroke-width="26" stroke-linecap="round"/>
+  </g>
+  <g id="l2" data-show="0.30,4.25">
+    <rect x="260" y="530" width="320" height="20" rx="10" fill="#9AA0A6"/>
+  </g>
+  <g id="c2" data-show="1.80,4.25" data-pivot="825,610" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="790" y="540" width="70" height="70" rx="8" fill="#DE4A30" transform="rotate(-4 825.0 575.0)"/>
+    <path d="M807 576 L820 589 L845 561" stroke="#F6EEDC" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="l3" data-show="0.40,4.25">
+    <rect x="260" y="650" width="440" height="20" rx="10" fill="#9AA0A6"/>
+  </g>
+  <g id="c3" data-show="2.10,4.25" data-pivot="825,730" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="790" y="660" width="70" height="70" rx="8" fill="#DE4A30" transform="rotate(-4 825.0 695.0)"/>
+    <path d="M807 696 L820 709 L845 681" stroke="#F6EEDC" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="l4" data-show="0.50,4.25">
+    <rect x="260" y="770" width="380" height="20" rx="10" fill="#9AA0A6"/>
+  </g>
+  <g id="c4" data-show="2.40,4.25" data-pivot="825,850" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="790" y="780" width="70" height="70" rx="8" fill="#DE4A30" transform="rotate(-4 825.0 815.0)"/>
+    <path d="M807 816 L820 829 L845 801" stroke="#F6EEDC" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

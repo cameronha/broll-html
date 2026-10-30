@@ -1,0 +1,119 @@
+{
+  "src": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/five different videos to edit - 1080WebShareName.mov",
+  "out_dir": "~/Claude-files/broll-html/57-five",
+  "crop_x": -20,
+  "base": [
+    1.15,
+    130
+  ],
+  "cut": [
+    157.05,
+    208.6
+  ],
+  "remove": [
+    [
+      159.0,
+      160.4
+    ],
+    [
+      175.65,
+      176.15
+    ],
+    [
+      188.72,
+      189.12
+    ],
+    [
+      189.85,
+      190.48
+    ],
+    [
+      194.7,
+      195.3
+    ],
+    [
+      201.38,
+      201.72
+    ]
+  ],
+  "zoom_y": 0,
+  "zooms": [
+    [
+      169.4,
+      171.4
+    ],
+    [
+      179.6,
+      182.7
+    ],
+    [
+      195.3,
+      198.3
+    ]
+  ],
+  "overlays": {
+    "b1": [
+      "tch-b1-rev1.mp4",
+      160.4,
+      164.6
+    ],
+    "t1": [
+      "tch-t1-rev1.mov",
+      166.7,
+      169.4
+    ],
+    "b2": [
+      "tch-b2-rev2.mp4",
+      171.4,
+      175.65
+    ],
+    "b3": [
+      "tch-b3-rev1.mp4",
+      176.15,
+      179.6
+    ],
+    "b4": [
+      "tch-b4-rev1.mp4",
+      182.7,
+      188.72
+    ],
+    "b5": [
+      "tch-b5-rev1.mp4",
+      190.48,
+      194.7
+    ],
+    "t2": [
+      "tch-t2-rev1.mov",
+      198.3,
+      201.38
+    ],
+    "b6": [
+      "tch-b6-rev1.mp4",
+      201.72,
+      204.95
+    ],
+    "b7": [
+      "tch-b7-rev2.mp4",
+      204.95,
+      208.6
+    ]
+  },
+  "music": {
+    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/fred.mp3",
+    "start": 93.9,
+    "band": [
+      62.0,
+      150.7
+    ],
+    "under_db": 9
+  },
+  "thumb": {
+    "face_t": 167.5,
+    "panel_file": "tch-b5-rev1.mp4",
+    "panel_t": -0.3,
+    "panel_x": 330,
+    "tag": "AI is the teacher"
+  },
+  "grade": "none",
+  "voice_lufs": -18
+}

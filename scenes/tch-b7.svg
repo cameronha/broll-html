@@ -1,0 +1,28 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.35">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="fall0" data-show="0.60,0.80">
+    <rect x="462.0" y="74.0" width="156.0" height="132.0" rx="33.0" fill="#DE4A30"/><circle cx="507.0" cy="134.0" r="18.0" fill="#182A46"/><circle cx="573.0" cy="134.0" r="18.0" fill="#182A46"/><rect x="532.5" y="26.0" width="15.0" height="48.0" fill="#182A46"/><circle cx="540" cy="20.0" r="21.0" fill="#E9B949"/>
+  </g>
+  <g id="fall1" data-show="0.80,1.00">
+    <rect x="462.0" y="234.0" width="156.0" height="132.0" rx="33.0" fill="#DE4A30"/><circle cx="507.0" cy="294.0" r="18.0" fill="#182A46"/><circle cx="573.0" cy="294.0" r="18.0" fill="#182A46"/><rect x="532.5" y="186.0" width="15.0" height="48.0" fill="#182A46"/><circle cx="540" cy="180.0" r="21.0" fill="#E9B949"/>
+  </g>
+  <g id="hdl" data-show="0.05,4.35">
+    <rect x="390" y="440" width="300" height="70" rx="30" fill="none" stroke="#182A46" stroke-width="26"/>
+  </g>
+  <g id="bot" data-show="1.00,4.35" data-pivot="540,500" data-deg="4" data-freq="1.0" data-shape="sine">
+    <rect x="462.0" y="374.0" width="156.0" height="132.0" rx="33.0" fill="#DE4A30"/><circle cx="507.0" cy="434.0" r="18.0" fill="#182A46"/><circle cx="573.0" cy="434.0" r="18.0" fill="#182A46"/><rect x="532.5" y="326.0" width="15.0" height="48.0" fill="#182A46"/><circle cx="540" cy="320.0" r="21.0" fill="#E9B949"/>
+  </g>
+  <g id="box" data-show="0.05,4.35" data-pivot="540,850" data-deg="1" data-freq="0.5" data-shape="sine">
+    <rect x="230" y="520" width="620" height="330" rx="20" fill="#DE4A30"/><rect x="230" y="600" width="620" height="22" fill="#182A46"/>
+  </g>
+  <g id="wr" data-show="0.30,4.35" data-pivot="170,450" data-deg="5" data-freq="1.0" data-shape="sine">
+    <rect x="150" y="300" width="40" height="150" rx="10" fill="#182A46" transform="rotate(-30 170 375)"/><circle cx="130" cy="305" r="42" fill="none" stroke="#182A46" stroke-width="22"/>
+  </g>
+  <g id="yours" data-show="2.30,4.35" data-pivot="540,1011" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="313" y="909" width="454" height="102" rx="51" fill="#182A46"/><path d="M449 1007 L483 1007 L443 1045Z" fill="#182A46"/><text x="349" y="982" font-family="Libre Franklin" font-weight="800" font-size="60" fill="#F6EEDC">Your toolbox</text>
+  </g>
+</svg>

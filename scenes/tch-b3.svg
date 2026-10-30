@@ -1,0 +1,26 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.45">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="win" data-show="0.05,4.45" data-pivot="540,750" data-deg="1" data-freq="0.5" data-shape="sine">
+    <rect x="110" y="110" width="860" height="640" rx="24" fill="#FFFDF6"/>
+  </g>
+  <g id="q" data-show="0.20,4.45" data-pivot="660,280" data-deg="3" data-freq="0.8" data-shape="sine">
+    <rect x="400" y="160" width="520" height="120" rx="28" fill="#F6EEDC"/><path d="M556 278 L606 278 L566 340Z" fill="#F6EEDC"/><text x="434" y="238.72" font-family="Libre Franklin" font-weight="800" font-size="52" fill="#182A46">Dumb question?</text>
+  </g>
+  <g id="bot" data-show="0.90,4.45" data-pivot="230,540" data-deg="6" data-freq="1.2" data-shape="sine">
+    <rect x="162.39999999999998" y="422.8" width="135.20000000000002" height="114.4" rx="28.6" fill="#DE4A30"/><circle cx="201.4" cy="474.8" r="15.600000000000001" fill="#182A46"/><circle cx="258.6" cy="474.8" r="15.600000000000001" fill="#182A46"/><rect x="223.5" y="381.2" width="13.0" height="41.6" fill="#182A46"/><circle cx="230" cy="376.0" r="18.2" fill="#E9B949"/>
+  </g>
+  <g id="a" data-show="1.20,4.45" data-pivot="630,540" data-deg="3" data-freq="0.8" data-shape="sine">
+    <rect x="340" y="420" width="580" height="120" rx="28" fill="#F6EEDC"/><path d="M514 538 L564 538 L484 600Z" fill="#F6EEDC"/><text x="374" y="498.72" font-family="Libre Franklin" font-weight="800" font-size="52" fill="#182A46">Sure! Here's how</text>
+  </g>
+  <g id="ok" data-show="1.90,4.45" data-pivot="905,690" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="860" y="600" width="90" height="90" rx="8" fill="#DE4A30" transform="rotate(-4 905.0 645.0)"/>
+    <path d="M882 647 L899 663 L930 627" stroke="#F6EEDC" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="fine" data-show="2.40,4.45" data-pivot="540,936" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="319" y="824" width="442" height="112" rx="56" fill="#DE4A30"/><path d="M452 932 L486 932 L446 970Z" fill="#DE4A30"/><text x="358" y="904" font-family="Libre Franklin" font-weight="800" font-size="66" fill="#F6EEDC">Totally fine</text>
+  </g>
+</svg>
