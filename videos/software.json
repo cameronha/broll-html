@@ -1,7 +1,7 @@
 {
-  "src": "~/Downloads/buildingsoftwareaintit2026-10-30 14-11-30.mp4",
+  "src": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/softwareaintit.mov",
   "out_dir": "~/Claude-files/broll-html/56-software",
-  "crop_x": 500,
+  "crop_x": 8,
   "cut": [
     1.3,
     21.95
@@ -66,9 +66,10 @@
     "panel_x": 270,
     "tag": "Building software ain't it"
   },
-  "grade": "fixed",
+  "grade": "none",
   "base": [
     1.15,
     130
-  ]
+  ],
+  "raw_src": "~/Downloads/buildingsoftwareaintit2026-10-30 14-11-30.mp4"
 }
