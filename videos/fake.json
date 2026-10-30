@@ -62,7 +62,7 @@
       109.0
     ],
     "b1": [
-      "fke-b1-rev1.mp4",
+      "fke-b1-rev2.mp4",
       109.4,
       113.1
     ],
@@ -113,6 +113,5 @@
     "panel_x": 270,
     "tag": "Don't fake it on camera"
   },
-  "grade": "none",
-  "zoom_k": 1.1
+  "grade": "none"
 }

@@ -2,7 +2,7 @@
 
 usage: python3 tools/fake_scenes.py
 Times in ORIGINAL footage time (the five-video file) live in videos/fake.json. Cat at the lower right: titles left, under 500 px wide.
-b1 smile     a camera points at Cam; he smiles, drops it, forces it back on
+b1 smile     a camera points at Cam; he smiles, drops it, forces it back on (rev2: the tiny sweat drop read as a glitch, removed)
 b2 eyes      big eyes for "the algorithm": a robot with a fishing hook dangles a heart
 b3 thumb     a thumbnail frame: Cam's face gets more intense; red arrows and "!!!"
 b4 mood      first half: Cam amped up, a "Great" check; second half: Cam tired under a rain cloud
@@ -36,7 +36,6 @@ def smile():
     s += g("cam", camera(90, 380), (0.05, dur + 1), rig(220, 550, 1, 0.5))
     s += head(CAM_P, [(0.05, "neutral"), (0.5, "happy"), (1.6, "tired"), (2.4, "excited")], (700, 990), 1.0, False, "cam")
     s += g("rec", centered(220, 330, "REC", 44, ORANGE), (0.3, dur + 1))
-    s += g("drop", f'<path d="M930 380 Q950 420 930 440 Q905 420 930 380 Z" fill="#8CBDDC" stroke="{NAVY}" stroke-width="5"/>', (2.4, dur + 1), rig(930, 440, 6, 1.4))
     return s + "</svg>\n"
 
 

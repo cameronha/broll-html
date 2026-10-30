@@ -14,7 +14,4 @@
   <g id="rec" data-show="0.30,4.30">
     <text x="172" y="330" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#DE4A30">REC</text>
   </g>
-  <g id="drop" data-show="2.40,4.30" data-pivot="930,440" data-deg="6" data-freq="1.4" data-shape="sine">
-    <path d="M930 380 Q950 420 930 440 Q905 420 930 380 Z" fill="#8CBDDC" stroke="#182A46" stroke-width="5"/>
-  </g>
 </svg>
