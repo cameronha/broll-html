@@ -1,0 +1,79 @@
+{
+  "src": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/five different videos to edit - 1080WebShareName.mov",
+  "out_dir": "~/Claude-files/broll-html/57-five",
+  "crop_x": -20,
+  "base": [
+    1.15,
+    130
+  ],
+  "cut": [
+    0.9,
+    40.55
+  ],
+  "remove": [],
+  "zoom_y": 0,
+  "zooms": [
+    [
+      8.24,
+      11.8
+    ],
+    [
+      21.24,
+      24.1
+    ]
+  ],
+  "overlays": {
+    "t1": [
+      "pmt-t1-rev1.mov",
+      1.0,
+      3.3
+    ],
+    "b1": [
+      "pmt-b1-rev1.mp4",
+      3.3,
+      7.4
+    ],
+    "b2": [
+      "pmt-b2-rev1.mp4",
+      16.6,
+      20.8
+    ],
+    "b3": [
+      "pmt-b3-rev1.mp4",
+      24.1,
+      28.7
+    ],
+    "b4": [
+      "pmt-b4-rev1.mp4",
+      28.7,
+      32.7
+    ],
+    "t2": [
+      "pmt-t2-rev1.mov",
+      33.0,
+      35.6
+    ],
+    "b5": [
+      "pmt-b5-rev2.mp4",
+      35.8,
+      39.5
+    ]
+  },
+  "music": {
+    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/fred.mp3",
+    "start": 93.9,
+    "band": [
+      62.0,
+      150.7
+    ],
+    "under_db": 9
+  },
+  "thumb": {
+    "face_t": 23.0,
+    "panel_file": "pmt-b2-rev1.mp4",
+    "panel_t": -0.3,
+    "panel_x": 270,
+    "tag": "Prompting is dead"
+  },
+  "grade": "none"
+}
