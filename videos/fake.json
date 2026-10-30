@@ -1,0 +1,118 @@
+{
+  "src": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/five different videos to edit - 1080WebShareName.mov",
+  "out_dir": "~/Claude-files/broll-html/57-five",
+  "crop_x": -20,
+  "base": [
+    1.15,
+    130
+  ],
+  "cut": [
+    106.35,
+    154.25
+  ],
+  "remove": [
+    [
+      121.62,
+      122.51
+    ],
+    [
+      124.98,
+      125.85
+    ],
+    [
+      127.16,
+      128.11
+    ],
+    [
+      130.78,
+      131.49
+    ],
+    [
+      137.86,
+      138.71
+    ],
+    [
+      146.04,
+      146.81
+    ],
+    [
+      152.95,
+      153.6
+    ]
+  ],
+  "zoom_y": 0,
+  "zooms": [
+    [
+      122.4,
+      125.0
+    ],
+    [
+      134.42,
+      137.66
+    ],
+    [
+      149.4,
+      152.7
+    ]
+  ],
+  "overlays": {
+    "t1": [
+      "fke-t1-rev1.mov",
+      106.5,
+      109.0
+    ],
+    "b1": [
+      "fke-b1-rev1.mp4",
+      109.4,
+      113.1
+    ],
+    "b2": [
+      "fke-b2-rev1.mp4",
+      113.1,
+      118.0
+    ],
+    "b3": [
+      "fke-b3-rev2.mp4",
+      118.0,
+      121.62
+    ],
+    "b4": [
+      "fke-b4-rev2.mp4",
+      128.3,
+      134.42
+    ],
+    "t2": [
+      "fke-t2-rev1.mov",
+      138.75,
+      141.25
+    ],
+    "b5": [
+      "fke-b5-rev1.mp4",
+      141.54,
+      145.18
+    ],
+    "b6": [
+      "fke-b6-rev1.mp4",
+      145.18,
+      148.48
+    ]
+  },
+  "music": {
+    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/fred.mp3",
+    "start": 93.9,
+    "band": [
+      62.0,
+      150.7
+    ],
+    "under_db": 9
+  },
+  "thumb": {
+    "face_t": 129.5,
+    "panel_file": "fke-b3-rev2.mp4",
+    "panel_t": -0.3,
+    "panel_x": 270,
+    "tag": "Don't fake it on camera"
+  },
+  "grade": "none",
+  "zoom_k": 1.1
+}

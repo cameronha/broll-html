@@ -1,0 +1,19 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="2.5" data-transparent="1">
+  <g id="say-1.12" data-show="0.05,0.14" data-pivot="198,882" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="43" y="764" width="309" height="118" rx="11" fill="#182A46" transform="rotate(-2 198 823)"/>
+    <text x="75" y="855" font-family="Libre Franklin" font-weight="800" font-size="90" fill="#F6EEDC" transform="rotate(-2 198 823)">Say it</text>
+  </g>
+  <g id="say-1.0" data-show="0.14,3.50" data-pivot="198,876" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="770" width="276" height="106" rx="10" fill="#182A46" transform="rotate(-2 198 823)"/>
+    <text x="88" y="852" font-family="Libre Franklin" font-weight="800" font-size="80" fill="#F6EEDC" transform="rotate(-2 198 823)">Say it</text>
+  </g>
+  <g id="mean-1.12" data-show="0.50,0.59" data-pivot="327,972" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="28" y="880" width="597" height="92" rx="11" fill="#DE4A30" transform="rotate(2 327 926)"/>
+    <text x="52" y="951" font-family="Libre Franklin" font-weight="800" font-size="69" fill="#F6EEDC" transform="rotate(2 327 926)">how you mean it</text>
+  </g>
+  <g id="mean-1.0" data-show="0.59,3.50" data-pivot="327,967" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="885" width="533" height="82" rx="10" fill="#DE4A30" transform="rotate(2 327 926)"/>
+    <text x="82" y="948" font-family="Libre Franklin" font-weight="800" font-size="62" fill="#F6EEDC" transform="rotate(2 327 926)">how you mean it</text>
+  </g>
+</svg>
