@@ -1,19 +1,27 @@
 <svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
      data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="2.7" data-transparent="1">
-  <g id="bld-1.12" data-show="0.05,0.14" data-pivot="434,872" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="15" y="754" width="837" height="118" rx="11" fill="#182A46" transform="rotate(-2 434 813)"/>
-    <text x="47" y="845" font-family="Libre Franklin" font-weight="800" font-size="90" fill="#F6EEDC" transform="rotate(-2 434 813)">Building software</text>
+  <g id="bld-1.12" data-show="0.05,0.14" data-pivot="229,781" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="40" y="674" width="379" height="106" rx="11" fill="#182A46" transform="rotate(-2 229 728)"/>
+    <text x="68" y="757" font-family="Libre Franklin" font-weight="800" font-size="81" fill="#F6EEDC" transform="rotate(-2 229 728)">Building</text>
   </g>
-  <g id="bld-1.0" data-show="0.14,3.70" data-pivot="434,866" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="60" y="760" width="747" height="106" rx="10" fill="#182A46" transform="rotate(-2 434 813)"/>
-    <text x="88" y="842" font-family="Libre Franklin" font-weight="800" font-size="80" fill="#F6EEDC" transform="rotate(-2 434 813)">Building software</text>
+  <g id="bld-1.0" data-show="0.14,3.70" data-pivot="229,775" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="680" width="338" height="95" rx="10" fill="#182A46" transform="rotate(-2 229 728)"/>
+    <text x="85" y="753" font-family="Libre Franklin" font-weight="800" font-size="72" fill="#F6EEDC" transform="rotate(-2 229 728)">Building</text>
   </g>
-  <g id="aint-1.12" data-show="1.40,1.49" data-pivot="268,1034" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="35" y="871" width="465" height="163" rx="11" fill="#DE4A30" transform="rotate(2 268 953)"/>
-    <text x="78" y="997" font-family="Libre Franklin" font-weight="800" font-size="123" fill="#F6EEDC" transform="rotate(2 268 953)">ain't it</text>
+  <g id="sw-1.12" data-show="0.35,0.44" data-pivot="244,886" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="38" y="779" width="411" height="106" rx="11" fill="#182A46" transform="rotate(1 244 833)"/>
+    <text x="66" y="862" font-family="Libre Franklin" font-weight="800" font-size="81" fill="#F6EEDC" transform="rotate(1 244 833)">software</text>
   </g>
-  <g id="aint-1.0" data-show="1.49,3.70" data-pivot="268,1025" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="60" y="880" width="415" height="145" rx="10" fill="#DE4A30" transform="rotate(2 268 953)"/>
-    <text x="98" y="992" font-family="Libre Franklin" font-weight="800" font-size="110" fill="#F6EEDC" transform="rotate(2 268 953)">ain't it</text>
+  <g id="sw-1.0" data-show="0.44,3.70" data-pivot="244,880" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="785" width="367" height="95" rx="10" fill="#182A46" transform="rotate(1 244 833)"/>
+    <text x="85" y="858" font-family="Libre Franklin" font-weight="800" font-size="72" fill="#F6EEDC" transform="rotate(1 244 833)">software</text>
+  </g>
+  <g id="aint-1.12" data-show="1.40,1.49" data-pivot="234,1024" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="39" y="888" width="389" height="136" rx="11" fill="#DE4A30" transform="rotate(2 234 956)"/>
+    <text x="75" y="993" font-family="Libre Franklin" font-weight="800" font-size="103" fill="#F6EEDC" transform="rotate(2 234 956)">ain't it</text>
+  </g>
+  <g id="aint-1.0" data-show="1.49,3.70" data-pivot="234,1016" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="895" width="347" height="121" rx="10" fill="#DE4A30" transform="rotate(2 234 956)"/>
+    <text x="92" y="989" font-family="Libre Franklin" font-weight="800" font-size="92" fill="#F6EEDC" transform="rotate(2 234 956)">ain't it</text>
   </g>
 </svg>

@@ -1,7 +1,7 @@
 """B-roll for "Building software ain't it" (2026-10-30 footage) -> scenes/sft-*.svg
 
 usage: python3 tools/software_scenes.py
-Times in ORIGINAL footage time live in videos/software.json. A cat sits at the lower right of this take: titles stay left.
+Times in ORIGINAL footage time live in videos/software.json. A cat sits at the lower right of this take: titles stay left and narrow (under 500 px), clear of the cat after the base zoom.
 b1 software  a laptop full of code wears a gold crown; the crown falls off and the code goes grey
 b2 want      the crown lands on a customer; a thought bubble with a heart ("what customers want")
 b3 habits    a customer thinks; a cart fills ("buying habits"); a red "Why?" bubble; a check
@@ -82,16 +82,17 @@ def habits():
 def t_know():
     dur = 1.6
     s = title_root(dur)
-    s += tag("know", "Know your", 60, 760, 86, -2, 0.05, dur + 1)[0]
-    s += tag("cust", "customer", 60, 880, 100, 2, 0.5, dur + 1, ORANGE, PAPER)[0]
+    s += tag("know", "Know your", 60, 770, 72, -2, 0.05, dur + 1)[0]
+    s += tag("cust", "customer", 60, 880, 80, 2, 0.5, dur + 1, ORANGE, PAPER)[0]
     return s + "</svg>\n"
 
 
 def t_aint():
     dur = 2.7
     s = title_root(dur)
-    s += tag("bld", "Building software", 60, 760, 80, -2, 0.05, dur + 1)[0]
-    s += tag("aint", "ain't it", 60, 880, 110, 2, 1.4, dur + 1, ORANGE, PAPER)[0]
+    s += tag("bld", "Building", 60, 680, 72, -2, 0.05, dur + 1)[0]
+    s += tag("sw", "software", 60, 785, 72, 1, 0.35, dur + 1)[0]
+    s += tag("aint", "ain't it", 60, 895, 92, 2, 1.4, dur + 1, ORANGE, PAPER)[0]
     return s + "</svg>\n"
 
 

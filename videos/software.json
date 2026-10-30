@@ -40,12 +40,12 @@
       16.5
     ],
     "t1": [
-      "sft-t1-rev1.mov",
+      "sft-t1-rev2.mov",
       16.7,
       18.3
     ],
     "t2": [
-      "sft-t2-rev1.mov",
+      "sft-t2-rev2.mov",
       18.3,
       21.0
     ]
@@ -66,5 +66,9 @@
     "panel_x": 270,
     "tag": "Building software ain't it"
   },
-  "grade": "fixed"
+  "grade": "fixed",
+  "base": [
+    1.15,
+    130
+  ]
 }

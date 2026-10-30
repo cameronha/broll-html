@@ -1,19 +1,19 @@
 <svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
      data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="1.6" data-transparent="1">
-  <g id="know-1.12" data-show="0.05,0.14" data-pivot="314,880" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="30" y="753" width="568" height="127" rx="11" fill="#182A46" transform="rotate(-2 314 817)"/>
-    <text x="63" y="851" font-family="Libre Franklin" font-weight="800" font-size="96" fill="#F6EEDC" transform="rotate(-2 314 817)">Know your</text>
+  <g id="know-1.12" data-show="0.05,0.14" data-pivot="272,871" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="35" y="764" width="475" height="106" rx="11" fill="#182A46" transform="rotate(-2 272 818)"/>
+    <text x="63" y="847" font-family="Libre Franklin" font-weight="800" font-size="81" fill="#F6EEDC" transform="rotate(-2 272 818)">Know your</text>
   </g>
-  <g id="know-1.0" data-show="0.14,2.60" data-pivot="314,874" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="60" y="760" width="507" height="114" rx="10" fill="#182A46" transform="rotate(-2 314 817)"/>
-    <text x="90" y="848" font-family="Libre Franklin" font-weight="800" font-size="86" fill="#F6EEDC" transform="rotate(-2 314 817)">Know your</text>
+  <g id="know-1.0" data-show="0.14,2.60" data-pivot="272,865" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="770" width="424" height="95" rx="10" fill="#182A46" transform="rotate(-2 272 818)"/>
+    <text x="85" y="843" font-family="Libre Franklin" font-weight="800" font-size="72" fill="#F6EEDC" transform="rotate(-2 272 818)">Know your</text>
   </g>
-  <g id="cust-1.12" data-show="0.50,0.59" data-pivot="330,1020" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="28" y="872" width="605" height="148" rx="11" fill="#DE4A30" transform="rotate(2 330 946)"/>
-    <text x="67" y="986" font-family="Libre Franklin" font-weight="800" font-size="112" fill="#F6EEDC" transform="rotate(2 330 946)">customer</text>
+  <g id="cust-1.12" data-show="0.50,0.59" data-pivot="275,992" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="34" y="874" width="482" height="118" rx="11" fill="#DE4A30" transform="rotate(2 275 933)"/>
+    <text x="66" y="965" font-family="Libre Franklin" font-weight="800" font-size="90" fill="#F6EEDC" transform="rotate(2 275 933)">customer</text>
   </g>
-  <g id="cust-1.0" data-show="0.59,2.60" data-pivot="330,1012" data-deg="1.5" data-freq="0.5" data-shape="sine">
-    <rect x="60" y="880" width="540" height="132" rx="10" fill="#DE4A30" transform="rotate(2 330 946)"/>
-    <text x="95" y="982" font-family="Libre Franklin" font-weight="800" font-size="100" fill="#F6EEDC" transform="rotate(2 330 946)">customer</text>
+  <g id="cust-1.0" data-show="0.59,2.60" data-pivot="275,986" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="880" width="430" height="106" rx="10" fill="#DE4A30" transform="rotate(2 275 933)"/>
+    <text x="88" y="962" font-family="Libre Franklin" font-weight="800" font-size="80" fill="#F6EEDC" transform="rotate(2 275 933)">customer</text>
   </g>
 </svg>

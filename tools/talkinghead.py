@@ -13,7 +13,7 @@ Steps (each one is what Cam approved on the Leon video, rev22, 2026-10-27):
   6. splice     the thumbnail as the first 3 frames (0.125 s, silent): X uses frame 1 as the preview
 
 The JSON (see videos/leon.json):
-  src, out_dir, crop_x, cut [in, out], remove [[a, b], ...] (optional: flubs cut out of the middle),
+  src, out_dir, crop_x, base [k, y] (optional), cut [in, out], remove [[a, b], ...] (optional: flubs cut out of the middle),
   overlays {key: [file, t0, t1]} in ORIGINAL footage time (an overlay may span a removed piece: it plays on, unbroken),
   music {file, start, band [hp, lp], under_db}, thumb {face_t, panel_file, panel_t, panel_x, tag}
 """
@@ -30,6 +30,14 @@ GRADE = ("eq=gamma=1.09:contrast=1.025:brightness=0.0075:saturation=1.06,"
 LOOK = "eq=gamma=1.1:saturation=1.08,curves=all='0/0 0.15/0.12 0.5/0.52 0.85/0.88 1/1',colorbalance=rm={rm:.3f}:bm=-0.02"
 WB_BOX = (800, 900, 300, 420)                              # y0, y1, x0, x1 in the 1080 square: the shirt, a near-neutral reference
 FACE_BOX = (180, 420, 420, 660)
+
+
+def square(v):
+    """The base square crop. "base": [k, y] zooms in k and puts the crop top at source y, for a take where Cam sits low
+    (2026-10-30 home footage: [1.15, 130]; Cam: headroom "way too low"). crop_x still centers the face."""
+    k, y = v.get("base", [1, 0])
+    w = round(1080 / k / 2) * 2
+    return f"crop={w}:{w}:{v['crop_x'] + (1080 - w) // 2}:{y}" + (",scale=1080:1080" if w != 1080 else "")
 
 
 def grade(v):
@@ -127,7 +135,7 @@ def snapped_zooms(v):
 
 def composite(v, src, out):
     d = os.path.expanduser(v["out_dir"]); v["_grade"] = grade(v); print("grade", v["_grade"])
-    ins, f, last = ["-i", src], [f"[0:v]crop=1080:1080:{v['crop_x']}:0,{v['_grade']}[s0]"], "s0"
+    ins, f, last = ["-i", src], [f"[0:v]{square(v)},{v['_grade']}[s0]"], "s0"
     if v.get("zooms"):                                     # jump-cut punch-ins: the footage cuts to a closer frame and back
         k, y = v.get("zoom_k", 1.2), v.get("zoom_y", 140)  # zoom_y: top of the crop; 140 = tight headroom (Cam: 30 had "too much headroom")
         w = round(1080 / k / 2) * 2
@@ -170,7 +178,7 @@ def thumbnail(v, tmp, out):
         face = os.path.join(d, t["face_file"])
     else:
         ff("-ss", str(t["face_t"]), "-i", os.path.expanduser(v["src"]), "-frames:v", "1",
-           "-vf", f"crop=1080:1080:{v['crop_x']}:0,{v['_grade']}", face)
+           "-vf", f"{square(v)},{v['_grade']}", face)
     seek = ["-sseof", str(t["panel_t"])] if t["panel_t"] < 0 else ["-ss", str(t["panel_t"])]
     ff(*seek, "-i", os.path.join(d, t["panel_file"]), "-frames:v", "1", panel)
     im = Image.new("RGBA", (1080, 1080), CREAM)
