@@ -1,0 +1,102 @@
+{
+  "src": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/five different videos to edit - 1080WebShareName.mov",
+  "out_dir": "~/Claude-files/broll-html/57-five",
+  "crop_x": -20,
+  "base": [
+    1.15,
+    130
+  ],
+  "cut": [
+    43.4,
+    100.5
+  ],
+  "remove": [],
+  "zoom_y": 0,
+  "zooms": [
+    [
+      49.7,
+      52.9
+    ],
+    [
+      66.9,
+      69.4
+    ],
+    [
+      77.1,
+      79.2
+    ],
+    [
+      91.0,
+      94.0
+    ]
+  ],
+  "overlays": {
+    "t1": [
+      "lnl-t1-rev1.mov",
+      43.6,
+      46.1
+    ],
+    "b1": [
+      "lnl-b1-rev1.mp4",
+      46.1,
+      49.4
+    ],
+    "b2": [
+      "lnl-b2-rev1.mp4",
+      52.9,
+      57.3
+    ],
+    "b3": [
+      "lnl-b3-rev4.mp4",
+      58.9,
+      62.6
+    ],
+    "b4": [
+      "lnl-b4-rev1.mp4",
+      62.6,
+      66.9
+    ],
+    "t2": [
+      "lnl-t2-rev1.mov",
+      69.5,
+      72.3
+    ],
+    "b5": [
+      "lnl-b5-rev2.mp4",
+      73.8,
+      77.1
+    ],
+    "b6": [
+      "lnl-b6-rev1.mp4",
+      80.1,
+      84.8
+    ],
+    "b7": [
+      "lnl-b7-rev3.mp4",
+      86.8,
+      91.0
+    ],
+    "b8": [
+      "lnl-b8-rev2.mp4",
+      94.0,
+      98.6
+    ]
+  },
+  "music": {
+    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/fred.mp3",
+    "start": 93.9,
+    "band": [
+      62.0,
+      150.7
+    ],
+    "under_db": 9
+  },
+  "thumb": {
+    "face_t": 60.0,
+    "panel_file": "lnl-b2-rev1.mp4",
+    "panel_t": -0.3,
+    "panel_x": 270,
+    "tag": "Host a lunch and learn"
+  },
+  "grade": "none"
+}
