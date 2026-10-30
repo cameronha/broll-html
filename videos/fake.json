@@ -113,5 +113,6 @@
     "panel_x": 270,
     "tag": "Don't fake it on camera"
   },
-  "grade": "none"
+  "grade": "none",
+  "voice_lufs": -18
 }

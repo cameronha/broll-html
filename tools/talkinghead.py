@@ -156,6 +156,7 @@ def composite(v, src, out):
 def voice(src, out, v=None):
     # "voice": "light" when Cam already did EQ/compression in Final Cut: loudness only, so the music level math still holds
     chain = "loudnorm=I=-16:TP=-1.5:LRA=11" if (v or {}).get("voice") == "light" else VOICE
+    chain = chain.replace("I=-16", f"I={(v or {}).get('voice_lufs', -16)}")   # voice_lufs -18: Cam found -16 "a little hot" (2026-10-30, five-video file)
     ff("-i", src, "-af", f"{chain},aresample=48000", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", out)
 
 
