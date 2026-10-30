@@ -1,0 +1,70 @@
+{
+  "src": "~/Downloads/buildingsoftwareaintit2026-10-30 14-11-30.mp4",
+  "out_dir": "~/Claude-files/broll-html/56-software",
+  "crop_x": 500,
+  "cut": [
+    1.3,
+    21.95
+  ],
+  "remove": [
+    [
+      2.1,
+      3.3
+    ]
+  ],
+  "zoom_y": 0,
+  "zooms": [
+    [
+      3.3,
+      5.0
+    ],
+    [
+      16.7,
+      18.3
+    ]
+  ],
+  "overlays": {
+    "b1": [
+      "sft-b1-rev1.mp4",
+      5.0,
+      8.7
+    ],
+    "b2": [
+      "sft-b2-rev4.mp4",
+      8.7,
+      12.0
+    ],
+    "b3": [
+      "sft-b3-rev2.mp4",
+      12.0,
+      16.5
+    ],
+    "t1": [
+      "sft-t1-rev1.mov",
+      16.7,
+      18.3
+    ],
+    "t2": [
+      "sft-t2-rev1.mov",
+      18.3,
+      21.0
+    ]
+  },
+  "music": {
+    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/fred.mp3",
+    "start": 93.9,
+    "band": [
+      62.0,
+      150.7
+    ],
+    "under_db": 9
+  },
+  "thumb": {
+    "face_t": 17.0,
+    "panel_file": "sft-b2-rev4.mp4",
+    "panel_t": -0.3,
+    "panel_x": 270,
+    "tag": "Building software ain't it"
+  },
+  "grade": "fixed"
+}
