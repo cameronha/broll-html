@@ -1,0 +1,22 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="4.0">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="easy" data-show="1.40,5.00" data-pivot="540,248" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="370" y="112" width="341" height="136" rx="68" fill="#182A46"/><path d="M472 244 L506 244 L466 282Z" fill="#182A46"/><text x="418" y="209" font-family="Libre Franklin" font-weight="800" font-size="80" fill="#F6EEDC">Easier</text>
+  </g>
+  <g id="tag1" data-show="0.05,5.00" data-pivot="330,470" data-deg="4" data-freq="0.9" data-shape="sine">
+    <path d="M260 470 L340 390 H820 V550 H340 Z" fill="#E9B949"/><circle cx="330" cy="470" r="16" fill="#F6EEDC"/><text x="400" y="510" font-family="Libre Franklin" font-weight="800" font-size="110" fill="#182A46">$$$$$</text>
+  </g>
+  <g id="x" data-show="2.60,5.00">
+    <line x1="480" y1="360" x2="700" y2="580" stroke="#DE4A30" stroke-width="26" stroke-linecap="round"/><line x1="700" y1="360" x2="480" y2="580" stroke="#DE4A30" stroke-width="26" stroke-linecap="round"/>
+  </g>
+  <g id="tag2" data-show="2.90,5.00" data-pivot="432,720" data-deg="8" data-freq="1.2" data-shape="sine">
+    <path d="M380 720 L440 660 H700 V780 H440 Z" fill="#DE4A30"/><circle cx="432" cy="720" r="13" fill="#F6EEDC"/><text x="500" y="755" font-family="Libre Franklin" font-weight="800" font-size="100" fill="#F6EEDC">$</text>
+  </g>
+  <g id="cheap" data-show="3.10,5.00" data-pivot="540,980" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="352" y="860" width="376" height="119" rx="60" fill="#DE4A30"/><path d="M465 976 L499 976 L459 1014Z" fill="#DE4A30"/><text x="394" y="945" font-family="Libre Franklin" font-weight="800" font-size="70" fill="#F6EEDC">Cheaper</text>
+  </g>
+</svg>

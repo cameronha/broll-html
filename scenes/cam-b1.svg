@@ -1,0 +1,40 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="4.2">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="q" data-show="0.05,5.20" data-pivot="540,191" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="276" y="89" width="529" height="102" rx="51" fill="#182A46"/><path d="M434 187 L468 187 L428 225Z" fill="#182A46"/><text x="312" y="162" font-family="Libre Franklin" font-weight="800" font-size="60" fill="#F6EEDC">Holds its value?</text>
+  </g>
+  <g id="c0" data-show="0.20,5.20" data-pivot="230,530" data-deg="2" data-freq="0.7" data-shape="sine">
+    <rect x="90" y="330" width="280" height="200" rx="16" fill="#FFFDF6"/><text x="140" y="445" font-family="Libre Franklin" font-weight="800" font-size="52" fill="#182A46">Coding</text>
+  </g>
+  <g id="hi0" data-show="0.50,3.00" data-pivot="160,560" data-deg="6" data-freq="1.1" data-shape="sine">
+    <path d="M130 600 L170 560 H330 V640 H170 Z" fill="#E9B949"/><circle cx="164" cy="600" r="9" fill="#F6EEDC"/><text x="192" y="616" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#182A46">$$$</text>
+  </g>
+  <g id="lo0" data-show="3.00,5.20" data-pivot="160,610" data-deg="6" data-freq="1.1" data-shape="sine">
+    <path d="M130 650 L170 610 H330 V690 H170 Z" fill="#F6EEDC"/><circle cx="164" cy="650" r="9" fill="#F6EEDC"/><text x="192" y="666" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#182A46">$</text>
+  </g>
+  <g id="c1" data-show="0.45,5.20" data-pivot="540,530" data-deg="2" data-freq="0.7" data-shape="sine">
+    <rect x="400" y="330" width="280" height="200" rx="16" fill="#FFFDF6"/><text x="448" y="445" font-family="Libre Franklin" font-weight="800" font-size="52" fill="#182A46">Editing</text>
+  </g>
+  <g id="hi1" data-show="0.75,3.30" data-pivot="470,560" data-deg="6" data-freq="1.1" data-shape="sine">
+    <path d="M440 600 L480 560 H640 V640 H480 Z" fill="#E9B949"/><circle cx="474" cy="600" r="9" fill="#F6EEDC"/><text x="502" y="616" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#182A46">$$$</text>
+  </g>
+  <g id="lo1" data-show="3.30,5.20" data-pivot="470,610" data-deg="6" data-freq="1.1" data-shape="sine">
+    <path d="M440 650 L480 610 H640 V690 H480 Z" fill="#F6EEDC"/><circle cx="474" cy="650" r="9" fill="#F6EEDC"/><text x="502" y="666" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#182A46">$</text>
+  </g>
+  <g id="c2" data-show="0.70,5.20" data-pivot="850,530" data-deg="2" data-freq="0.7" data-shape="sine">
+    <rect x="710" y="330" width="280" height="200" rx="16" fill="#FFFDF6"/><text x="762" y="445" font-family="Libre Franklin" font-weight="800" font-size="52" fill="#182A46">Design</text>
+  </g>
+  <g id="hi2" data-show="1.00,3.60" data-pivot="780,560" data-deg="6" data-freq="1.1" data-shape="sine">
+    <path d="M750 600 L790 560 H950 V640 H790 Z" fill="#E9B949"/><circle cx="784" cy="600" r="9" fill="#F6EEDC"/><text x="812" y="616" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#182A46">$$$</text>
+  </g>
+  <g id="lo2" data-show="3.60,5.20" data-pivot="780,610" data-deg="6" data-freq="1.1" data-shape="sine">
+    <path d="M750 650 L790 610 H950 V690 H790 Z" fill="#F6EEDC"/><circle cx="784" cy="650" r="9" fill="#F6EEDC"/><text x="812" y="666" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#182A46">$</text>
+  </g>
+  <g id="bot" data-show="2.60,5.20" data-pivot="540,930" data-deg="6" data-freq="1.2" data-shape="sine">
+    <rect x="456.8" y="789.6" width="166.4" height="140.8" rx="35.2" fill="#DE4A30"/><circle cx="504.8" cy="853.6" r="19.200000000000003" fill="#182A46"/><circle cx="575.2" cy="853.6" r="19.200000000000003" fill="#182A46"/><rect x="532.0" y="738.4" width="16.0" height="51.2" fill="#182A46"/><circle cx="540" cy="732.0" r="22.400000000000002" fill="#E9B949"/>
+  </g>
+</svg>

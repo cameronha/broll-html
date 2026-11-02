@@ -1,0 +1,32 @@
+{
+  "src": "~/Downloads/BUIING YOURSELF ON CAMERA2026-11-02 15-17-19.mp4",
+  "out_dir": "~/Claude-files/broll-html/59-camera",
+  "crop_x": 420,
+  "base": [1.15, 130],
+  "cut": [1.78, 61.9],
+  "remove": [[26.6, 27.4], [60.8, 61.3]],
+  "zoom_y": 0,
+  "zooms": [[27.4, 30.0], [40.5, 44.3], [50.4, 53.6]],
+  "overlays": {
+    "b1": ["cam-b1-rev1.mp4", 2.4, 6.6],
+    "t1": ["cam-t1-rev1.mov", 8.2, 10.5],
+    "b2": ["cam-b2-rev1.mp4", 11.0, 14.9],
+    "t2": ["cam-t2-rev1.mov", 17.4, 19.9],
+    "b3": ["cam-b3-rev1.mp4", 20.0, 24.0],
+    "b4": ["cam-b4-rev2.mp4", 30.0, 32.9],
+    "b5": ["cam-b5-rev1.mp4", 32.9, 36.3],
+    "b6": ["cam-b6-rev1.mp4", 36.3, 40.5],
+    "b7": ["cam-b7-rev1.mp4", 44.3, 50.4],
+    "t3": ["cam-t3-rev1.mov", 53.6, 56.3],
+    "t4": ["cam-t4-rev1.mov", 56.4, 59.6]
+  },
+  "music": {
+    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/fred.mp3",
+    "start": 93.9,
+    "band": [62.0, 150.7],
+    "under_db": 9
+  },
+  "thumb": {"face_t": 20.3, "panel_file": "cam-b7-rev1.mp4", "panel_t": -0.3, "panel_x": 90, "tag": "Be yourself"},
+  "grade": "fixed",
+  "voice_lufs": -18
+}
