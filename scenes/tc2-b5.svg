@@ -1,0 +1,34 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.0">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="ask" data-show="0.05,4.00" data-pivot="540,246" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="398" y="94" width="283" height="153" rx="76" fill="#182A46"/><path d="M483 242 L517 242 L477 280Z" fill="#182A46"/><text x="452" y="202" font-family="Libre Franklin" font-weight="800" font-size="90" fill="#F6EEDC">Ask</text>
+  </g>
+  <g id="p0" data-show="0.35,4.00" data-pivot="300,476" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="149" y="364" width="302" height="112" rx="56" fill="#DE4A30" transform="rotate(-3 300 420)"/><path d="M240 472 L274 472 L234 510Z" fill="#DE4A30" transform="rotate(-3 300 420)"/><text x="188" y="444" font-family="Libre Franklin" font-weight="800" font-size="66" fill="#F6EEDC" transform="rotate(-3 300 420)">Claude</text>
+  </g>
+  <g id="p1" data-show="1.10,4.00" data-pivot="760,476" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="571" y="364" width="377" height="112" rx="56" fill="#8CBDDC" transform="rotate(3 760 420)"/><path d="M685 472 L719 472 L679 510Z" fill="#8CBDDC" transform="rotate(3 760 420)"/><text x="611" y="444" font-family="Libre Franklin" font-weight="800" font-size="66" fill="#182A46" transform="rotate(3 760 420)">ChatGPT</text>
+  </g>
+  <g id="p2" data-show="1.75,4.00" data-pivot="540,676" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="322" y="564" width="435" height="112" rx="56" fill="#E9B949" transform="rotate(-2 540 620)"/><path d="M453 672 L487 672 L447 710Z" fill="#E9B949" transform="rotate(-2 540 620)"/><text x="362" y="644" font-family="Libre Franklin" font-weight="800" font-size="66" fill="#182A46" transform="rotate(-2 540 620)">Any AI tool</text>
+  </g>
+  <g id="bot0" data-show="0.50,0.95" data-pivot="300,920" data-deg="5" data-freq="1.2" data-shape="sine">
+    <rect x="232.39999999999998" y="802.8" width="135.20000000000002" height="114.4" rx="28.6" fill="#DE4A30"/><circle cx="271.4" cy="854.8" r="15.600000000000001" fill="#182A46"/><circle cx="328.6" cy="854.8" r="15.600000000000001" fill="#182A46"/><rect x="293.5" y="761.2" width="13.0" height="41.6" fill="#182A46"/><circle cx="300" cy="756.0" r="18.2" fill="#E9B949"/>
+  </g>
+  <g id="bot1" data-show="0.95,1.40" data-pivot="420,880" data-deg="5" data-freq="1.2" data-shape="sine">
+    <rect x="352.4" y="762.8" width="135.20000000000002" height="114.4" rx="28.6" fill="#DE4A30"/><circle cx="391.4" cy="814.8" r="15.600000000000001" fill="#182A46"/><circle cx="448.6" cy="814.8" r="15.600000000000001" fill="#182A46"/><rect x="413.5" y="721.2" width="13.0" height="41.6" fill="#182A46"/><circle cx="420" cy="716.0" r="18.2" fill="#E9B949"/>
+  </g>
+  <g id="bot2" data-show="1.40,1.85" data-pivot="540,920" data-deg="5" data-freq="1.2" data-shape="sine">
+    <rect x="472.4" y="802.8" width="135.20000000000002" height="114.4" rx="28.6" fill="#DE4A30"/><circle cx="511.4" cy="854.8" r="15.600000000000001" fill="#182A46"/><circle cx="568.6" cy="854.8" r="15.600000000000001" fill="#182A46"/><rect x="533.5" y="761.2" width="13.0" height="41.6" fill="#182A46"/><circle cx="540" cy="756.0" r="18.2" fill="#E9B949"/>
+  </g>
+  <g id="bot3" data-show="1.85,2.30" data-pivot="660,880" data-deg="5" data-freq="1.2" data-shape="sine">
+    <rect x="592.4" y="762.8" width="135.20000000000002" height="114.4" rx="28.6" fill="#DE4A30"/><circle cx="631.4" cy="814.8" r="15.600000000000001" fill="#182A46"/><circle cx="688.6" cy="814.8" r="15.600000000000001" fill="#182A46"/><rect x="653.5" y="721.2" width="13.0" height="41.6" fill="#182A46"/><circle cx="660" cy="716.0" r="18.2" fill="#E9B949"/>
+  </g>
+  <g id="bot4" data-show="2.30,4.00" data-pivot="760,920" data-deg="5" data-freq="1.2" data-shape="sine">
+    <rect x="692.4" y="802.8" width="135.20000000000002" height="114.4" rx="28.6" fill="#DE4A30"/><circle cx="731.4" cy="854.8" r="15.600000000000001" fill="#182A46"/><circle cx="788.6" cy="854.8" r="15.600000000000001" fill="#182A46"/><rect x="753.5" y="761.2" width="13.0" height="41.6" fill="#182A46"/><circle cx="760" cy="756.0" r="18.2" fill="#E9B949"/>
+  </g>
+</svg>

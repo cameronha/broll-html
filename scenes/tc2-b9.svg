@@ -1,0 +1,37 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.7">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="not" data-show="0.30,4.70" data-pivot="540,219" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="235" y="121" width="610" height="99" rx="49" fill="#9AA0A6"/><path d="M418 215 L452 215 L412 253Z" fill="#9AA0A6"/><text x="270" y="191" font-family="Libre Franklin" font-weight="800" font-size="58" fill="#182A46">Won't always work</text>
+  </g>
+  <g id="x" data-show="1.00,4.70">
+    <line x1="820" y1="130" x2="900" y2="210" stroke="#DE4A30" stroke-width="26" stroke-linecap="round"/><line x1="900" y1="130" x2="820" y2="210" stroke="#DE4A30" stroke-width="26" stroke-linecap="round"/>
+  </g>
+  <g id="path" data-show="0.05,4.70">
+    <rect x="90" y="800" width="54" height="14" rx="7" fill="#182A46"/><rect x="180" y="800" width="54" height="14" rx="7" fill="#182A46"/><rect x="270" y="800" width="54" height="14" rx="7" fill="#182A46"/><rect x="360" y="800" width="54" height="14" rx="7" fill="#182A46"/><rect x="450" y="800" width="54" height="14" rx="7" fill="#182A46"/><rect x="540" y="800" width="54" height="14" rx="7" fill="#182A46"/><rect x="630" y="800" width="54" height="14" rx="7" fill="#182A46"/><rect x="720" y="800" width="54" height="14" rx="7" fill="#182A46"/><rect x="810" y="800" width="54" height="14" rx="7" fill="#182A46"/><rect x="900" y="800" width="54" height="14" rx="7" fill="#182A46"/>
+  </g>
+  <g id="flag" data-show="2.00,4.70" data-pivot="308,820" data-deg="4" data-freq="1.0" data-shape="sine">
+    <rect x="300" y="420" width="16" height="400" fill="#182A46"/><path d="M316 430 L560 490 L316 550Z" fill="#DE4A30"/>
+  </g>
+  <g id="here" data-show="2.40,4.70" data-pivot="430,391" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="242" y="289" width="376" height="102" rx="51" fill="#182A46"/><path d="M355 387 L389 387 L349 425Z" fill="#182A46"/><text x="278" y="362" font-family="Libre Franklin" font-weight="800" font-size="60" fill="#F6EEDC">Start here</text>
+  </g>
+  <g id="bot0" data-show="1.40,1.85" data-pivot="920,800" data-deg="5" data-freq="1.2" data-shape="sine">
+    <rect x="852.4" y="682.8" width="135.20000000000002" height="114.4" rx="28.6" fill="#DE4A30"/><circle cx="891.4" cy="734.8" r="15.600000000000001" fill="#182A46"/><circle cx="948.6" cy="734.8" r="15.600000000000001" fill="#182A46"/><rect x="913.5" y="641.2" width="13.0" height="41.6" fill="#182A46"/><circle cx="920" cy="636.0" r="18.2" fill="#E9B949"/>
+  </g>
+  <g id="bot1" data-show="1.85,2.30" data-pivot="800,780" data-deg="5" data-freq="1.2" data-shape="sine">
+    <rect x="732.4" y="662.8" width="135.20000000000002" height="114.4" rx="28.6" fill="#DE4A30"/><circle cx="771.4" cy="714.8" r="15.600000000000001" fill="#182A46"/><circle cx="828.6" cy="714.8" r="15.600000000000001" fill="#182A46"/><rect x="793.5" y="621.2" width="13.0" height="41.6" fill="#182A46"/><circle cx="800" cy="616.0" r="18.2" fill="#E9B949"/>
+  </g>
+  <g id="bot2" data-show="2.30,2.75" data-pivot="680,800" data-deg="5" data-freq="1.2" data-shape="sine">
+    <rect x="612.4" y="682.8" width="135.20000000000002" height="114.4" rx="28.6" fill="#DE4A30"/><circle cx="651.4" cy="734.8" r="15.600000000000001" fill="#182A46"/><circle cx="708.6" cy="734.8" r="15.600000000000001" fill="#182A46"/><rect x="673.5" y="641.2" width="13.0" height="41.6" fill="#182A46"/><circle cx="680" cy="636.0" r="18.2" fill="#E9B949"/>
+  </g>
+  <g id="bot3" data-show="2.75,3.20" data-pivot="560,780" data-deg="5" data-freq="1.2" data-shape="sine">
+    <rect x="492.4" y="662.8" width="135.20000000000002" height="114.4" rx="28.6" fill="#DE4A30"/><circle cx="531.4" cy="714.8" r="15.600000000000001" fill="#182A46"/><circle cx="588.6" cy="714.8" r="15.600000000000001" fill="#182A46"/><rect x="553.5" y="621.2" width="13.0" height="41.6" fill="#182A46"/><circle cx="560" cy="616.0" r="18.2" fill="#E9B949"/>
+  </g>
+  <g id="bot4" data-show="3.20,4.70" data-pivot="440,800" data-deg="5" data-freq="1.2" data-shape="sine">
+    <rect x="372.4" y="682.8" width="135.20000000000002" height="114.4" rx="28.6" fill="#DE4A30"/><circle cx="411.4" cy="734.8" r="15.600000000000001" fill="#182A46"/><circle cx="468.6" cy="734.8" r="15.600000000000001" fill="#182A46"/><rect x="433.5" y="641.2" width="13.0" height="41.6" fill="#182A46"/><circle cx="440" cy="636.0" r="18.2" fill="#E9B949"/>
+  </g>
+</svg>
