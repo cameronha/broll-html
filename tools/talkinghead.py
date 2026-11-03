@@ -130,7 +130,14 @@ def snapped_zooms(v):
     for a, b in zip(marks, marks[1:]):
         if 0.001 < b - a < SNAP:
             print(f"  short framing {a:.2f}-{b:.2f} ({b - a:.2f} s)")
+    brs = sorted((edited(v, t0), edited(v, t1)) for n, t0, t1 in v["overlays"].values() if n.endswith(".mp4"))
+    for (a0, a1), (b0, b1) in zip(brs, brs[1:]):
+        if 0.001 < b0 - a1 < MIN_AROLL:
+            print(f"  SHORT A-ROLL between b-rolls {a1:.2f}-{b0:.2f} ({b0 - a1:.2f} s): butt them or widen the gap")
     return zs
+
+
+MIN_AROLL = 1.5   # the face between two b-rolls (Cam, teacher2 rev1: a 0.8 s and a 1.3 s flash "should never happen")
 
 
 def composite(v, src, out):
@@ -138,10 +145,11 @@ def composite(v, src, out):
     ins, f, last = ["-i", src], [f"[0:v]{square(v)},{v['_grade']}[s0]"], "s0"
     if v.get("zooms"):                                     # jump-cut punch-ins: the footage cuts to a closer frame and back
         k, y = v.get("zoom_k", 1.2), v.get("zoom_y", 140)  # zoom_y: top of the crop; 140 = tight headroom (Cam: 30 had "too much headroom")
-        w = round(1080 / k / 2) * 2
+        w = round(1080 / k / 2) * 2                        # zoom_k: as small as the backdrop allows (Cam, teacher2: 1.2 "a little too tight")
+        x = v.get("zoom_x", (1080 - w) // 2)
         on = "+".join(f"between(t,{a:.3f},{b:.3f})" for a, b in snapped_zooms(v))
         f[0] = f[0].replace("[s0]", "[w0]")
-        f += [f"[w0]split[w1][w2]", f"[w2]crop={w}:{w}:{(1080 - w) // 2}:{y},scale=1080:1080[z]",
+        f += [f"[w0]split[w1][w2]", f"[w2]crop={w}:{w}:{x}:{y},scale=1080:1080[z]",
               f"[w1][z]overlay=enable='{on}'[s0]"]
     for i, (k, (name, t0, t1)) in enumerate(v["overlays"].items(), 1):
         e0, e1 = edited(v, t0), edited(v, t1)

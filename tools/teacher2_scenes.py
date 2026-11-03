@@ -83,7 +83,7 @@ def screen(x, y):
 
 
 def history():
-    dur = 3.2
+    dur = 4.0                                                   # rev2: 4.0 s, butts onto "ask" (a 0.8 s face flash sat between them)
     s = root(dur, "1,0,0")
     icons = (book, bulb, screen, lambda x, y: robot(x, y, 3.0))
     n = 9
@@ -93,10 +93,10 @@ def history():
         for i, f in enumerate(icons):
             x = 260 + 380 * i + dx
             body += f'<circle cx="{x}" cy="644" r="18" fill="{NAVY}"/>' + f(x, 480)
-        t0, t1 = 0.05 + 0.22 * k, (0.05 + 0.22 * (k + 1) if k < n - 1 else dur + 1)
+        t0, t1 = 0.05 + 0.3 * k, (0.05 + 0.3 * (k + 1) if k < n - 1 else dur + 1)
         s += g(f"tl{k}", body, (t0, t1))
-    s += pill("first", 680, 820, "First time in history", 56, ORANGE, CREAM, (2.0, dur + 1))
-    s += bubble("me", 760, 170, 250, 110, "Ask me", 54, (2.5, dur + 1), (-1, 1))
+    s += pill("first", 680, 820, "First time in history", 56, ORANGE, CREAM, (2.75, dur + 1))
+    s += bubble("me", 760, 170, 250, 110, "Ask me", 54, (3.3, dur + 1), (-1, 1))
     return s + "</svg>\n"
 
 
@@ -116,12 +116,12 @@ def ask():
 
 
 def swamped():
-    dur = 3.1
+    dur = 4.4                                                   # rev2: 4.4 s, butts onto "tools"; every time below stretched x1.42
     s = root(dur, "1,0,0")
-    s += head(CAM_P, [(0.05, "neutral"), (1.4, "worried"), (2.3, "tired")], (540, 1010), 0.75, False, "cam")
-    for i, (p, x, y, t0, fl) in enumerate(((2, 150, 560, 0.1, False), (5, 930, 560, 0.25, True), (8, 150, 1010, 0.4, False), (3, 930, 1010, 0.55, True))):
+    s += head(CAM_P, [(0.05, "neutral"), (2.0, "worried"), (3.3, "tired")], (540, 1010), 0.75, False, "cam")
+    for i, (p, x, y, t0, fl) in enumerate(((2, 150, 560, 0.1, False), (5, 930, 560, 0.35, True), (8, 150, 1010, 0.6, False), (3, 930, 1010, 0.8, True))):
         s += head(p, [(t0, "confused")], (x, y), 0.36, fl, f"co{i}")
-    marks = ((380, 230, 0.8), (700, 200, 1.1), (330, 420, 1.4), (760, 400, 1.7), (540, 140, 2.0), (450, 330, 2.3), (640, 300, 2.5))
+    marks = ((380, 230, 1.1), (700, 200, 1.55), (330, 420, 2.0), (760, 400, 2.4), (540, 140, 2.85), (450, 330, 3.25), (640, 300, 3.6))
     for i, (x, y, t0) in enumerate(marks):                      # each "?" flies in from its coworker side, then sticks
         sx = -80 if x < 540 else 80
         s += g(f"qa{i}", centered(x + sx, y + 60, "?", 110, ORANGE), (t0, t0 + 0.12))
