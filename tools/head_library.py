@@ -19,6 +19,36 @@ ERODE = 7                         # px; thin lines (hoodie strings touching a be
 EXPRS = ["neutral", "happy", "excited", "skeptical", "confused", "tired", "worried", "surprised"]
 
 
+BEARD_Y = 400                     # below this (1080-px), the outline is beard: smooth it (Cam, 2026-11-02: "uneven on the outer edges")
+OPEN = 17                         # px; beard spikes and stray hairs narrower than this are cut off
+
+
+def clean_edge(a, al):
+    """Drop hoodie-orange blend pixels, smooth the beard outline, and recolor the edge band from the inside,
+    so a reddish beard (head v5) does not keep an orange fringe or jagged spikes."""
+    r, gr, b = a[..., 0], a[..., 1], a[..., 2]
+    rim = ~(np.asarray(Image.fromarray(((al > 128) * 255).astype(np.uint8)).filter(ImageFilter.MinFilter(25))) > 128)
+    al = al * ~((r - b > 140) & (r > 185) & rim)                        # orange near the outline only (hoodie blends), never the lips
+    m = Image.fromarray((al > 128).astype(np.uint8) * 255)
+    sm = np.asarray(m.filter(ImageFilter.MinFilter(OPEN)).filter(ImageFilter.MaxFilter(OPEN))
+                    .filter(ImageFilter.MaxFilter(5)).filter(ImageFilter.MinFilter(5))).astype(float)
+    lower = np.zeros_like(al); lower[BEARD_Y:] = 1
+    hard = np.where(lower > 0, sm, (al > 128) * 255.0)
+    ys, xs = np.nonzero(hard > 128)                                      # only the face blob (from the in-mask point nearest SEED): drops stray dots
+    k = np.argmin((xs - SEED[0]) ** 2 + (ys - SEED[1]) ** 2)
+    one = Image.fromarray(hard.astype(np.uint8)).copy(); ImageDraw.floodfill(one, (int(xs[k]), int(ys[k])), 128)
+    hard = (np.asarray(one) == 128) * 255.0
+    al = np.asarray(Image.fromarray(hard.astype(np.uint8)).filter(ImageFilter.GaussianBlur(1.2))).astype(float)
+    inner = np.asarray(Image.fromarray(hard.astype(np.uint8)).filter(ImageFilter.MinFilter(13))) > 128
+    w = Image.fromarray((inner * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(12))
+    wv = np.asarray(w).astype(float)[..., None]
+    col = np.dstack([np.asarray(Image.fromarray((a[..., i] * inner).astype(np.uint8)).filter(ImageFilter.GaussianBlur(12))) for i in range(3)])
+    fill = col / np.maximum(wv / 255, 1e-3)
+    band = ((~inner) & (wv[..., 0] > 3))[..., None]
+    a[:] = np.where(band, np.clip(fill, 0, 255), a)                     # edge pixels take the color from just inside
+    return al
+
+
 def cut(path):
     im = Image.open(path).convert("RGB").resize((1080, 1080), Image.LANCZOS)
     a = np.asarray(im).astype(float)
@@ -33,7 +63,9 @@ def cut(path):
     solid = alpha.point(lambda v: 255 if v > 128 else 0).filter(ImageFilter.MinFilter(ERODE))
     ImageDraw.floodfill(solid, SEED, 128)
     blob = solid.point(lambda v: 255 if v == 128 else 0).filter(ImageFilter.MaxFilter(ERODE))
-    al = np.minimum(np.asarray(alpha), np.asarray(blob))
+    al = np.minimum(np.asarray(alpha), np.asarray(blob)).astype(float)
+    al = clean_edge(a, al)
+    al = al.astype(np.uint8)
     ys, xs = np.nonzero(al > 128)
     x0, y0, x1, y1 = xs.min(), ys.min(), xs.max() + 1, ys.max() + 1
     rgba = Image.fromarray(np.dstack([a.astype(np.uint8), al]), "RGBA").crop((x0, y0, x1, y1))
