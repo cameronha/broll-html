@@ -1,6 +1,7 @@
 """Burned-in captions for a finished talking-head rev: one phrase at a time, top center (Cam's FCP caption style).
 
-usage: python3 tools/captions.py WORDS.srt IN.mp4 OUT.mp4 [--print]
+usage: python3 tools/captions.py WORDS.srt IN.mp4 OUT.mp4 [--print] [--mid Y]
+--mid 28 for the Nov 2026 home footage (the painting top is at y 57; Cam: center the captions in the strip above it).
 WORDS.srt = whisper-cli -osrt -ml 1 on IN's audio. Phrases break at . ? , and pauses, max MAXC characters.
 Caption PNGs + a concat list become a transparent qtrle track that is overlaid; audio is copied.
 """
@@ -69,7 +70,11 @@ def card(text, path):
 
 
 def main():
+    global TOP
     src, vin, vout = sys.argv[1:4]
+    if "--mid" in sys.argv:                            # center the caps on this row (the middle of the strip above the backdrop)
+        b = ImageFont.truetype(FONT, SIZE).getbbox("H")
+        TOP = round(float(sys.argv[sys.argv.index("--mid") + 1]) - (b[1] + b[3]) / 2)
     ph = phrases(words(src))
     if "--print" in sys.argv:
         for s, e, t in ph:
