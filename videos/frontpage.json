@@ -1,0 +1,108 @@
+{
+  "src": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/five vids on nov 2 - 1080WebShareName.mov",
+  "crop_x": 0,
+  "base": [
+    1,
+    0
+  ],
+  "zoom_y": 130,
+  "zoom_k": 1.308,
+  "zoom_x": 113,
+  "music": {
+    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/fred.mp3",
+    "start": 93.9,
+    "band": [
+      62.0,
+      150.7
+    ],
+    "under_db": 9
+  },
+  "grade": "none",
+  "voice_lufs": -18,
+  "raw_src": "~/Downloads/front page2026-11-02 15-27-42.mp4",
+  "raw_offset": 324.24,
+  "out_dir": "~/Claude-files/broll-html/61-frontpage",
+  "cut": [
+    325.96,
+    396.89
+  ],
+  "remove": [
+    [
+      381.24,
+      385.62
+    ]
+  ],
+  "zooms": [
+    [
+      348.44,
+      353.04
+    ],
+    [
+      368.54,
+      373.44
+    ],
+    [
+      394.24,
+      396.89
+    ]
+  ],
+  "overlays": {
+    "b1": [
+      "fp-b1-rev1.mp4",
+      328.64,
+      333.24
+    ],
+    "b2": [
+      "fp-b2-rev1.mp4",
+      335.24,
+      340.84
+    ],
+    "t1": [
+      "fp-t1-rev1.mov",
+      341.74,
+      344.14
+    ],
+    "b3": [
+      "fp-b3-rev1.mp4",
+      345.64,
+      348.44
+    ],
+    "b4": [
+      "fp-b4-rev1.mp4",
+      353.04,
+      359.24
+    ],
+    "t2": [
+      "fp-t2-rev1.mov",
+      359.24,
+      361.64
+    ],
+    "b5": [
+      "fp-b5-rev1.mp4",
+      363.74,
+      368.54
+    ],
+    "b6": [
+      "fp-b6-rev1.mp4",
+      373.44,
+      380.84
+    ],
+    "b7": [
+      "fp-b7-rev1.mp4",
+      386.74,
+      390.24
+    ],
+    "t3": [
+      "fp-t3-rev1.mov",
+      391.64,
+      394.24
+    ]
+  },
+  "thumb": {
+    "face_t": 396.54,
+    "panel_file": "fp-b6-rev1.mp4",
+    "panel_t": -0.3,
+    "panel_x": 270,
+    "tag": "Work with me"
+  }
+}

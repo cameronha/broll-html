@@ -1,0 +1,28 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="4.6">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="v0" data-show="0.30,5.60" data-pivot="300,460" data-deg="2" data-freq="0.7" data-shape="sine">
+    <rect x="90" y="200" width="420" height="260" rx="12" fill="#182A46"/><path d="M266 273 L359 330 L266 387Z" fill="#F6EEDC"/>
+  </g>
+  <g id="c0" data-show="2.90,5.60" data-pivot="420,462" data-deg="4" data-freq="1.2" data-shape="sine">
+    <ellipse cx="450" cy="422" rx="68" ry="43" fill="#FFFDF6"/><ellipse cx="482" cy="408" rx="32" ry="20" fill="#E0A060"/><path d="M382 394 L394 350 L414 379Z" fill="#E0A060"/><path d="M441 379 L454 347 L464 388Z" fill="#E0A060"/><circle cx="421" cy="394" r="40" fill="#FFFDF6"/><path d="M382 386 Q400 352 432 358 Q423 376 405 383Z" fill="#E0A060"/><circle cx="407" cy="394" r="4" fill="#182A46"/><circle cx="432" cy="394" r="4" fill="#182A46"/><path d="M416 406 L423 406 L420 410Z" fill="#D88C8C"/><path d="M412 415 Q420 419 428 415" stroke="#182A46" stroke-width="2" fill="none"/>
+  </g>
+  <g id="v1" data-show="0.80,5.60" data-pivot="770,420" data-deg="2" data-freq="0.7" data-shape="sine">
+    <rect x="560" y="160" width="420" height="260" rx="12" fill="#182A46"/><path d="M736 233 L829 290 L736 347Z" fill="#F6EEDC"/>
+  </g>
+  <g id="c1" data-show="3.30,5.60" data-pivot="890,422" data-deg="4" data-freq="1.2" data-shape="sine">
+    <ellipse cx="920" cy="382" rx="68" ry="43" fill="#FFFDF6"/><ellipse cx="952" cy="368" rx="32" ry="20" fill="#E0A060"/><path d="M852 354 L864 310 L884 339Z" fill="#E0A060"/><path d="M911 339 L924 307 L934 348Z" fill="#E0A060"/><circle cx="891" cy="354" r="40" fill="#FFFDF6"/><path d="M852 346 Q870 312 902 318 Q893 336 875 343Z" fill="#E0A060"/><circle cx="877" cy="354" r="4" fill="#182A46"/><circle cx="902" cy="354" r="4" fill="#182A46"/><path d="M886 366 L893 366 L890 370Z" fill="#D88C8C"/><path d="M882 375 Q890 379 898 375" stroke="#182A46" stroke-width="2" fill="none"/>
+  </g>
+  <g id="v2" data-show="1.30,5.60" data-pivot="530,820" data-deg="2" data-freq="0.7" data-shape="sine">
+    <rect x="320" y="560" width="420" height="260" rx="12" fill="#182A46"/><path d="M496 633 L589 690 L496 747Z" fill="#F6EEDC"/>
+  </g>
+  <g id="c2" data-show="3.70,5.60" data-pivot="650,822" data-deg="4" data-freq="1.2" data-shape="sine">
+    <ellipse cx="680" cy="782" rx="68" ry="43" fill="#FFFDF6"/><ellipse cx="712" cy="768" rx="32" ry="20" fill="#E0A060"/><path d="M612 754 L624 710 L644 739Z" fill="#E0A060"/><path d="M671 739 L684 707 L694 748Z" fill="#E0A060"/><circle cx="651" cy="754" r="40" fill="#FFFDF6"/><path d="M612 746 Q630 712 662 718 Q653 736 635 743Z" fill="#E0A060"/><circle cx="637" cy="754" r="4" fill="#182A46"/><circle cx="662" cy="754" r="4" fill="#182A46"/><path d="M646 766 L653 766 L650 770Z" fill="#D88C8C"/><path d="M642 775 Q650 779 658 775" stroke="#182A46" stroke-width="2" fill="none"/>
+  </g>
+  <g id="q" data-show="1.00,5.60" data-pivot="540,964" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="339" y="876" width="401" height="88" rx="44" fill="#182A46"/><path d="M460 960 L494 960 L454 998Z" fill="#182A46"/><text x="370" y="939" font-family="Libre Franklin" font-weight="800" font-size="52" fill="#F6EEDC">The cat thing</text>
+  </g>
+</svg>

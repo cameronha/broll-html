@@ -1,0 +1,49 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="3.4">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="line" data-show="0.05,4.40">
+    <rect x="140" y="520" width="800" height="18" rx="9" fill="#182A46"/>
+  </g>
+  <g id="s0" data-show="0.05,4.40" data-pivot="200,573" data-deg="2" data-freq="0.8" data-shape="sine">
+    <circle cx="200" cy="529" r="44" fill="#9AA0A6"/><text x="80" y="660" font-family="Libre Franklin" font-weight="800" font-size="54" fill="#182A46">Message</text>
+  </g>
+  <g id="s1" data-show="0.20,4.40" data-pivot="540,573" data-deg="2" data-freq="0.8" data-shape="sine">
+    <circle cx="540" cy="529" r="44" fill="#8CBDDC"/><text x="481" y="660" font-family="Libre Franklin" font-weight="800" font-size="54" fill="#182A46">Talk</text>
+  </g>
+  <g id="s2" data-show="0.35,4.40" data-pivot="880,573" data-deg="2" data-freq="0.8" data-shape="sine">
+    <circle cx="880" cy="529" r="44" fill="#DE4A30"/><text x="804" y="660" font-family="Libre Franklin" font-weight="800" font-size="54" fill="#182A46">Video</text>
+  </g>
+  <g id="mk0" data-show="0.40,0.80" data-pivot="200,470" data-deg="3" data-freq="1.0" data-shape="sine">
+    <path d="M200 470 L164 400 L236 400Z" fill="#E9B949"/>
+  </g>
+  <g id="mk1" data-show="0.80,1.20" data-pivot="370,470" data-deg="3" data-freq="1.0" data-shape="sine">
+    <path d="M370 470 L334 400 L406 400Z" fill="#E9B949"/>
+  </g>
+  <g id="mk2" data-show="1.20,1.60" data-pivot="540,470" data-deg="3" data-freq="1.0" data-shape="sine">
+    <path d="M540 470 L504 400 L576 400Z" fill="#E9B949"/>
+  </g>
+  <g id="mk3" data-show="1.60,2.00" data-pivot="710,470" data-deg="3" data-freq="1.0" data-shape="sine">
+    <path d="M710 470 L674 400 L746 400Z" fill="#E9B949"/>
+  </g>
+  <g id="mk4" data-show="2.00,4.40" data-pivot="880,470" data-deg="3" data-freq="1.0" data-shape="sine">
+    <path d="M880 470 L844 400 L916 400Z" fill="#E9B949"/>
+  </g>
+  <g id="cam" data-show="2.30,4.40" data-pivot="880,300" data-deg="3" data-freq="0.9" data-shape="sine">
+    <rect x="760" y="140" width="240" height="160" rx="20" fill="#182A46"/><circle cx="880" cy="225" r="54" fill="#8CBDDC"/><circle cx="880" cy="225" r="26" fill="#182A46"/>
+  </g>
+  <g id="rec0" data-show="2.60,2.75">
+    <circle cx="970" cy="170" r="14" fill="#DE4A30"/><text x="800" y="360" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#DE4A30">REC</text>
+  </g>
+  <g id="rec1" data-show="2.90,3.05">
+    <circle cx="970" cy="170" r="14" fill="#DE4A30"/><text x="800" y="360" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#DE4A30">REC</text>
+  </g>
+  <g id="rec2" data-show="3.20,3.35">
+    <circle cx="970" cy="170" r="14" fill="#DE4A30"/><text x="800" y="360" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#DE4A30">REC</text>
+  </g>
+  <g id="recl" data-show="3.20,4.40">
+    <circle cx="970" cy="170" r="14" fill="#DE4A30"/><text x="800" y="360" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#DE4A30">REC</text>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="9.8">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="bot" data-show="0.05,10.80" data-pivot="220,710" data-deg="6" data-freq="1.4" data-shape="sine">
+    <rect x="116.0" y="532.0" width="208.0" height="176.0" rx="44.0" fill="#DE4A30"/><circle cx="176.0" cy="612.0" r="24.0" fill="#182A46"/><circle cx="264.0" cy="612.0" r="24.0" fill="#182A46"/><rect x="210.0" y="468.0" width="20.0" height="64.0" fill="#182A46"/><circle cx="220" cy="460.0" r="28.0" fill="#E9B949"/>
+  </g>
+  <g id="ai" data-show="0.20,10.80" data-pivot="260,218" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="47" y="122" width="426" height="95" rx="48" fill="#182A46"/><path d="M175 214 L209 214 L169 252Z" fill="#182A46"/><text x="80" y="190" font-family="Libre Franklin" font-weight="800" font-size="56" fill="#F6EEDC">AI marketing</text>
+  </g>
+  <g id="ad0" data-show="0.60,10.80" data-pivot="600,366" data-deg="3" data-freq="1.0" data-shape="sine">
+    <rect x="420" y="280" width="360" height="86" rx="14" fill="#DE4A30" transform="rotate(-3 600 323)"/><text x="444" y="338" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#F6EEDC">Best ever!</text>
+  </g>
+  <g id="ad1" data-show="1.30,10.80" data-pivot="660,461" data-deg="3" data-freq="1.0" data-shape="sine">
+    <rect x="480" y="375" width="360" height="86" rx="14" fill="#FFFDF6" transform="rotate(2 660 418)"/><text x="504" y="433" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#182A46">#1 choice</text>
+  </g>
+  <g id="ad2" data-show="2.00,10.80" data-pivot="600,556" data-deg="3" data-freq="1.0" data-shape="sine">
+    <rect x="420" y="470" width="360" height="86" rx="14" fill="#DE4A30" transform="rotate(-2 600 513)"/><text x="444" y="528" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#F6EEDC">Amazing!</text>
+  </g>
+  <g id="ad3" data-show="2.70,10.80" data-pivot="660,651" data-deg="3" data-freq="1.0" data-shape="sine">
+    <rect x="480" y="565" width="360" height="86" rx="14" fill="#FFFDF6" transform="rotate(3 660 608)"/><text x="504" y="623" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#182A46">Guaranteed</text>
+  </g>
+  <g id="ad4" data-show="3.40,10.80" data-pivot="600,746" data-deg="3" data-freq="1.0" data-shape="sine">
+    <rect x="420" y="660" width="360" height="86" rx="14" fill="#DE4A30" transform="rotate(-1 600 703)"/><text x="444" y="718" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#F6EEDC">Life-changing</text>
+  </g>
+  <g id="ad5" data-show="4.10,10.80" data-pivot="660,841" data-deg="3" data-freq="1.0" data-shape="sine">
+    <rect x="480" y="755" width="360" height="86" rx="14" fill="#FFFDF6" transform="rotate(2 660 798)"/><text x="504" y="813" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#182A46">Act now!</text>
+  </g>
+  <g id="tmf" data-show="0.05,10.80">
+    <rect x="920" y="300" width="90" height="520" rx="45" fill="#FFFDF6" stroke="#182A46" stroke-width="10"/>
+  </g>
+  <g id="tm0" data-show="0.30,5.80">
+    <rect x="930" y="510" width="70" height="300" rx="35" fill="#DE4A30"/>
+  </g>
+  <g id="tm1" data-show="5.80,7.00">
+    <rect x="930" y="610" width="70" height="200" rx="35" fill="#DE4A30"/>
+  </g>
+  <g id="tm2" data-show="7.00,8.90">
+    <rect x="930" y="685" width="70" height="125" rx="35" fill="#DE4A30"/>
+  </g>
+  <g id="tm3" data-show="8.90,10.80">
+    <rect x="930" y="760" width="70" height="50" rx="35" fill="#DE4A30"/>
+  </g>
+  <g id="tml" data-show="0.05,10.80">
+    <text x="906" y="880" font-family="Libre Franklin" font-weight="800" font-size="44" fill="#182A46">Trust</text>
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="6.9">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="env0" data-show="0.10,0.60" data-pivot="190,740" data-deg="3" data-freq="1.0" data-shape="sine">
+    <rect x="80" y="600" width="220" height="136" rx="10" fill="#F6EEDC" stroke="#182A46" stroke-width="8"/><path d="M86 608 L190 679 L294 608" stroke="#182A46" stroke-width="8" fill="none"/><rect x="130" y="620" width="120" height="74" rx="12" fill="#DE4A30"/><path d="M180 641 L207 657 L180 674Z" fill="#F6EEDC"/>
+  </g>
+  <g id="env1" data-show="0.60,1.10" data-pivot="330,640" data-deg="3" data-freq="1.0" data-shape="sine">
+    <rect x="220" y="500" width="220" height="136" rx="10" fill="#F6EEDC" stroke="#182A46" stroke-width="8"/><path d="M226 508 L330 579 L434 508" stroke="#182A46" stroke-width="8" fill="none"/><rect x="270" y="520" width="120" height="74" rx="12" fill="#DE4A30"/><path d="M320 541 L347 557 L320 574Z" fill="#F6EEDC"/>
+  </g>
+  <g id="env2" data-show="1.10,1.60" data-pivot="470,560" data-deg="3" data-freq="1.0" data-shape="sine">
+    <rect x="360" y="420" width="220" height="136" rx="10" fill="#F6EEDC" stroke="#182A46" stroke-width="8"/><path d="M366 428 L470 499 L574 428" stroke="#182A46" stroke-width="8" fill="none"/><rect x="410" y="440" width="120" height="74" rx="12" fill="#DE4A30"/><path d="M460 461 L487 477 L460 494Z" fill="#F6EEDC"/>
+  </g>
+  <g id="env3" data-show="1.60,3.00" data-pivot="610,520" data-deg="3" data-freq="1.0" data-shape="sine">
+    <rect x="500" y="380" width="220" height="136" rx="10" fill="#F6EEDC" stroke="#182A46" stroke-width="8"/><path d="M506 388 L610 459 L714 388" stroke="#182A46" stroke-width="8" fill="none"/><rect x="550" y="400" width="120" height="74" rx="12" fill="#DE4A30"/><path d="M600 421 L627 437 L600 454Z" fill="#F6EEDC"/>
+  </g>
+  <g id="co" data-show="2.80,7.90" data-pivot="790,880" data-deg="1" data-freq="0.5" data-shape="sine">
+    <rect x="620" y="320" width="340" height="560" fill="#182A46"/><rect x="640" y="350" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="747" y="350" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="853" y="350" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="640" y="420" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="747" y="420" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="853" y="420" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="640" y="490" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="747" y="490" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="853" y="490" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="640" y="560" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="747" y="560" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="853" y="560" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="640" y="630" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="747" y="630" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="853" y="630" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="640" y="700" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="747" y="700" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="853" y="700" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="640" y="770" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="747" y="770" width="87" height="40" rx="4" fill="#8CBDDC"/><rect x="853" y="770" width="87" height="40" rx="4" fill="#8CBDDC"/>
+  </g>
+  <g id="cp" data-show="3.00,7.90" data-pivot="790,272" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="626" y="188" width="328" height="85" rx="42" fill="#DE4A30"/><path d="M724 268 L758 268 L718 306Z" fill="#DE4A30"/><text x="656" y="248" font-family="Libre Franklin" font-weight="800" font-size="50" fill="#F6EEDC">A company</text>
+  </g>
+  <g id="v1" data-show="5.20,5.70" data-pivot="320,430" data-deg="2" data-freq="0.8" data-shape="sine">
+    <rect x="120" y="300" width="400" height="130" rx="20" fill="#182A46"/><text x="156" y="392" font-family="Libre Franklin" font-weight="800" font-size="80" fill="#F6EEDC">1</text><text x="228" y="388" font-family="Libre Franklin" font-weight="800" font-size="52" fill="#E9B949">view</text>
+  </g>
+  <g id="v2" data-show="5.70,7.90" data-pivot="320,430" data-deg="2" data-freq="0.8" data-shape="sine">
+    <rect x="120" y="300" width="400" height="130" rx="20" fill="#182A46"/><text x="156" y="392" font-family="Libre Franklin" font-weight="800" font-size="80" fill="#F6EEDC">2</text><text x="228" y="388" font-family="Libre Franklin" font-weight="800" font-size="52" fill="#E9B949">views</text>
+  </g>
+  <g id="us" data-show="5.40,7.90" data-pivot="320,601" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="205" y="519" width="230" height="82" rx="41" fill="#182A46"/><path d="M274 597 L308 597 L268 635Z" fill="#182A46"/><text x="234" y="577" font-family="Libre Franklin" font-weight="800" font-size="48" fill="#F6EEDC">Usually</text>
+  </g>
+</svg>

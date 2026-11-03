@@ -1,0 +1,40 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="6.4">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="cam" data-show="0.05,7.40" data-pivot="890,860" data-deg="1" data-freq="0.5" data-shape="sine">
+    <rect x="760" y="420" width="260" height="170" rx="22" fill="#182A46"/><rect x="830" y="390" width="90" height="40" rx="8" fill="#182A46"/><circle cx="890" cy="505" r="60" fill="#8CBDDC"/><circle cx="890" cy="505" r="30" fill="#182A46"/><path d="M890 590 L830 860 M890 590 L950 860" stroke="#182A46" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  <g id="tr" data-show="1.50,7.40" data-pivot="300,248" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="75" y="152" width="450" height="95" rx="48" fill="#DE4A30"/><path d="M210 244 L244 244 L204 282Z" fill="#DE4A30"/><text x="108" y="220" font-family="Libre Franklin" font-weight="800" font-size="56" fill="#F6EEDC">Train your pet</text>
+  </g>
+  <g id="pk0" data-show="0.60,1.25" data-pivot="100,900" data-deg="3" data-freq="1.1" data-shape="sine">
+    <ellipse cx="160" cy="828" rx="120" ry="76" fill="#FFFDF6"/><ellipse cx="216" cy="804" rx="56" ry="36" fill="#E0A060"/><path d="M40 780 L60 700 L96 752Z" fill="#E0A060"/><path d="M144 752 L168 696 L184 768Z" fill="#E0A060"/><circle cx="108" cy="780" r="70" fill="#FFFDF6"/><path d="M40 764 Q72 704 128 716 Q112 748 80 760Z" fill="#E0A060"/><circle cx="108" cy="780" r="8" fill="#182A46"/><circle cx="152" cy="780" r="8" fill="#182A46"/><path d="M100 800 L112 800 L106 808Z" fill="#D88C8C"/><path d="M92 816 Q106 824 120 816" stroke="#182A46" stroke-width="3" fill="none"/>
+  </g>
+  <g id="pk1" data-show="1.25,1.90" data-pivot="200,880" data-deg="3" data-freq="1.1" data-shape="sine">
+    <ellipse cx="260" cy="808" rx="120" ry="76" fill="#FFFDF6"/><ellipse cx="316" cy="784" rx="56" ry="36" fill="#E0A060"/><path d="M140 760 L160 680 L196 732Z" fill="#E0A060"/><path d="M244 732 L268 676 L284 748Z" fill="#E0A060"/><circle cx="208" cy="760" r="70" fill="#FFFDF6"/><path d="M140 744 Q172 684 228 696 Q212 728 180 740Z" fill="#E0A060"/><circle cx="208" cy="760" r="8" fill="#182A46"/><circle cx="252" cy="760" r="8" fill="#182A46"/><path d="M200 780 L212 780 L206 788Z" fill="#D88C8C"/><path d="M192 796 Q206 804 220 796" stroke="#182A46" stroke-width="3" fill="none"/>
+  </g>
+  <g id="pk2" data-show="1.90,2.55" data-pivot="300,900" data-deg="3" data-freq="1.1" data-shape="sine">
+    <ellipse cx="360" cy="828" rx="120" ry="76" fill="#FFFDF6"/><ellipse cx="416" cy="804" rx="56" ry="36" fill="#E0A060"/><path d="M240 780 L260 700 L296 752Z" fill="#E0A060"/><path d="M344 752 L368 696 L384 768Z" fill="#E0A060"/><circle cx="308" cy="780" r="70" fill="#FFFDF6"/><path d="M240 764 Q272 704 328 716 Q312 748 280 760Z" fill="#E0A060"/><circle cx="308" cy="780" r="8" fill="#182A46"/><circle cx="352" cy="780" r="8" fill="#182A46"/><path d="M300 800 L312 800 L306 808Z" fill="#D88C8C"/><path d="M292 816 Q306 824 320 816" stroke="#182A46" stroke-width="3" fill="none"/>
+  </g>
+  <g id="pk3" data-show="2.55,3.20" data-pivot="400,880" data-deg="3" data-freq="1.1" data-shape="sine">
+    <ellipse cx="460" cy="808" rx="120" ry="76" fill="#FFFDF6"/><ellipse cx="516" cy="784" rx="56" ry="36" fill="#E0A060"/><path d="M340 760 L360 680 L396 732Z" fill="#E0A060"/><path d="M444 732 L468 676 L484 748Z" fill="#E0A060"/><circle cx="408" cy="760" r="70" fill="#FFFDF6"/><path d="M340 744 Q372 684 428 696 Q412 728 380 740Z" fill="#E0A060"/><circle cx="408" cy="760" r="8" fill="#182A46"/><circle cx="452" cy="760" r="8" fill="#182A46"/><path d="M400 780 L412 780 L406 788Z" fill="#D88C8C"/><path d="M392 796 Q406 804 420 796" stroke="#182A46" stroke-width="3" fill="none"/>
+  </g>
+  <g id="pk4" data-show="3.20,7.40" data-pivot="500,900" data-deg="3" data-freq="1.1" data-shape="sine">
+    <ellipse cx="560" cy="828" rx="120" ry="76" fill="#FFFDF6"/><ellipse cx="616" cy="804" rx="56" ry="36" fill="#E0A060"/><path d="M440 780 L460 700 L496 752Z" fill="#E0A060"/><path d="M544 752 L568 696 L584 768Z" fill="#E0A060"/><circle cx="508" cy="780" r="70" fill="#FFFDF6"/><path d="M440 764 Q472 704 528 716 Q512 748 480 760Z" fill="#E0A060"/><circle cx="508" cy="780" r="8" fill="#182A46"/><circle cx="552" cy="780" r="8" fill="#182A46"/><path d="M500 800 L512 800 L506 808Z" fill="#D88C8C"/><path d="M492 816 Q506 824 520 816" stroke="#182A46" stroke-width="3" fill="none"/>
+  </g>
+  <g id="rec0" data-show="3.40,3.70">
+    <circle cx="985" cy="445" r="14" fill="#DE4A30"/>
+  </g>
+  <g id="rec1" data-show="4.00,4.30">
+    <circle cx="985" cy="445" r="14" fill="#DE4A30"/>
+  </g>
+  <g id="rec2" data-show="4.60,4.90">
+    <circle cx="985" cy="445" r="14" fill="#DE4A30"/>
+  </g>
+  <g id="vp" data-show="5.00,7.40" data-pivot="700,372" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="492" y="288" width="417" height="85" rx="42" fill="#182A46"/><path d="M617 368 L651 368 L611 406Z" fill="#182A46"/><text x="522" y="348" font-family="Libre Franklin" font-weight="800" font-size="50" fill="#F6EEDC">Video proposal</text>
+  </g>
+</svg>

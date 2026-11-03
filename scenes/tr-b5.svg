@@ -1,0 +1,62 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="5.5">
+  <g id="floor" data-static="1">
+    <rect x="-40" y="746" width="1160" height="380" fill="#6E9FC4"/>
+    <rect x="-40" y="797" width="1160" height="330" fill="#5A8BB3"/>
+  </g>
+  <g id="bad" data-show="0.05,6.50" data-pivot="540,470" data-deg="1" data-freq="0.5" data-shape="sine">
+    <rect x="290" y="110" width="500" height="360" rx="20" fill="#FFFDF6"/><text x="330" y="180" font-family="Libre Franklin" font-weight="800" font-size="50" fill="#DE4A30">Doesn't work</text>
+  </g>
+  <g id="good" data-show="1.80,6.50" data-pivot="540,920" data-deg="1" data-freq="0.5" data-shape="sine">
+    <rect x="290" y="520" width="500" height="400" rx="20" fill="#FFFDF6"/><text x="330" y="590" font-family="Libre Franklin" font-weight="800" font-size="54" fill="#182A46">Good</text>
+  </g>
+  <g id="bl0" data-show="0.40,6.50">
+    <rect x="330" y="230" width="300" height="18" rx="9" fill="#9AA0A6"/>
+  </g>
+  <g id="bx0" data-show="0.60,6.50">
+    <line x1="688" y1="216" x2="732" y2="260" stroke="#DE4A30" stroke-width="26" stroke-linecap="round"/><line x1="732" y1="216" x2="688" y2="260" stroke="#DE4A30" stroke-width="26" stroke-linecap="round"/>
+  </g>
+  <g id="bl1" data-show="0.80,6.50">
+    <rect x="330" y="300" width="250" height="18" rx="9" fill="#9AA0A6"/>
+  </g>
+  <g id="bx1" data-show="1.00,6.50">
+    <line x1="688" y1="286" x2="732" y2="330" stroke="#DE4A30" stroke-width="26" stroke-linecap="round"/><line x1="732" y1="286" x2="688" y2="330" stroke="#DE4A30" stroke-width="26" stroke-linecap="round"/>
+  </g>
+  <g id="bl2" data-show="1.20,6.50">
+    <rect x="330" y="370" width="300" height="18" rx="9" fill="#9AA0A6"/>
+  </g>
+  <g id="bx2" data-show="1.40,6.50">
+    <line x1="688" y1="356" x2="732" y2="400" stroke="#DE4A30" stroke-width="26" stroke-linecap="round"/><line x1="732" y1="356" x2="688" y2="400" stroke="#DE4A30" stroke-width="26" stroke-linecap="round"/>
+  </g>
+  <g id="gl0" data-show="2.20,6.50">
+    <rect x="330" y="650" width="300" height="18" rx="9" fill="#9AA0A6"/>
+  </g>
+  <g id="gk0" data-show="2.40,6.5" data-pivot="707,684" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="680" y="630" width="54" height="54" rx="8" fill="#DE4A30" transform="rotate(-4 707.0 657.0)"/>
+    <path d="M693 658 L703 668 L722 646" stroke="#F6EEDC" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="gl1" data-show="2.90,6.50">
+    <rect x="330" y="716" width="250" height="18" rx="9" fill="#9AA0A6"/>
+  </g>
+  <g id="gk1" data-show="3.10,6.5" data-pivot="707,750" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="680" y="696" width="54" height="54" rx="8" fill="#DE4A30" transform="rotate(-4 707.0 723.0)"/>
+    <path d="M693 724 L703 734 L722 712" stroke="#F6EEDC" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="gl2" data-show="3.60,6.50">
+    <rect x="330" y="782" width="300" height="18" rx="9" fill="#9AA0A6"/>
+  </g>
+  <g id="gk2" data-show="3.80,6.5" data-pivot="707,816" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="680" y="762" width="54" height="54" rx="8" fill="#DE4A30" transform="rotate(-4 707.0 789.0)"/>
+    <path d="M693 790 L703 800 L722 778" stroke="#F6EEDC" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="gl3" data-show="4.20,6.50">
+    <rect x="330" y="848" width="250" height="18" rx="9" fill="#9AA0A6"/>
+  </g>
+  <g id="gk3" data-show="4.40,6.5" data-pivot="707,882" data-deg="2" data-freq="0.6" data-shape="sine">
+    <rect x="680" y="828" width="54" height="54" rx="8" fill="#DE4A30" transform="rotate(-4 707.0 855.0)"/>
+    <path d="M693 856 L703 866 L722 844" stroke="#F6EEDC" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="true" data-show="4.80,6.50" data-pivot="820,999" data-deg="4" data-freq="1.1" data-shape="sine">
+    <rect x="638" y="921" width="363" height="78" rx="39" fill="#182A46"/><path d="M747 995 L781 995 L741 1033Z" fill="#182A46"/><text x="666" y="977" font-family="Libre Franklin" font-weight="800" font-size="46" fill="#F6EEDC">Probably true</text>
+  </g>
+</svg>
