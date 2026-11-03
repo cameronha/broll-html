@@ -143,8 +143,14 @@ def jump():
     dur = 6.4
     s = root(dur, "1,0,0")
     s += g("win", window(160, 120, 760, 620, "Proposal video", WHITE, NAVY), (0.05, dur + 1), rig(540, 740, 1, 0.5))
-    s += head(CAM_P, [(0.05, "neutral"), (1.0, "surprised"), (3.0, "happy")], (430, 735), 0.62, False, "cam")
-    s += steps("pk", lambda x, y: cat(x, y, 1.05), [(1060, 1080), (960, 920), (840, 800), (760, 735)], 0.3, 1.0, dur, r=lambda x, y: rig(x - 60, y, 3, 1.1))
+    # the real camera frame: the dotted blue painting, Cam in his tan jacket over a dark tee, the mic
+    dots = "".join(f'<circle cx="{280 + 46 * (i % 12) + 23 * ((i // 12) % 2)}" cy="{210 + 44 * (i // 12)}" r="17" fill="{["#A9C2D6", "#6F8FAE", "#C9D8E2"][(i * 7) % 3]}"/>' for i in range(96))
+    s += g("art", f'<rect x="262" y="186" width="556" height="374" rx="6" fill="#86A3BE"/>' + dots, (0.05, dur + 1), rig(540, 560, 1, 0.4))
+    s += g("body", '<path d="M290 740 L305 660 Q320 605 430 592 L500 585 L540 640 L580 585 L650 592 Q760 605 775 660 L790 740Z" fill="#A88F6A"/>'
+                   '<path d="M500 585 L540 640 L580 585 Q540 600 500 585Z" fill="#3B3B3B"/><path d="M500 585 L520 660 L540 640Z M580 585 L560 660 L540 640Z" fill="#8E7756"/>'
+                   '<rect x="533" y="700" width="14" height="40" fill="#222"/><circle cx="540" cy="690" r="36" fill="#222"/>', (0.05, dur + 1), rig(540, 740, 1, 0.5))
+    s += head(CAM_P, [(0.05, "neutral"), (1.0, "surprised"), (3.0, "happy")], (540, 570), 0.62, False, "cam")
+    s += steps("pk", lambda x, y: cat(x, y, 0.8), [(-40, 1080), (90, 900), (230, 790), (330, 740)], 0.3, 1.0, dur, r=lambda x, y: rig(x - 60, y, 3, 1.1))
     s += g("rs", f'<rect x="250" y="800" width="300" height="110" rx="20" fill="{GREY}"/>' + centered(400, 875, "Restart?", 50, NAVY), (2.6, dur + 1), rig(400, 910, 2, 0.8))
     s += xmark("x", 400, 855, (4.3, dur + 1), 60)
     s += g("play", f'<circle cx="760" cy="855" r="60" fill="{ORANGE}"/><path d="M740 825 L790 855 L740 885Z" fill="{CREAM}"/>', (5.0, dur + 1), rig(760, 915, 4, 1.0))

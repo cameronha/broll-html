@@ -15,7 +15,7 @@
       62.0,
       150.7
     ],
-    "under_db": 9
+    "under_db": 6
   },
   "grade": "none",
   "voice_lufs": -18,
@@ -87,11 +87,6 @@
     ]
   ],
   "overlays": {
-    "b1": [
-      "pk-b1-rev1.mp4",
-      3.85,
-      8.6
-    ],
     "t1": [
       "pk-t1-rev1.mov",
       9.0,
@@ -133,7 +128,7 @@
       78.5
     ],
     "b9": [
-      "pk-b9-rev1.mp4",
+      "pk-b9-rev2.mp4",
       81.6,
       88.0
     ],
@@ -170,7 +165,7 @@
   },
   "thumb": {
     "face_t": 135.9,
-    "panel_file": "pk-b9-rev1.mp4",
+    "panel_file": "pk-b9-rev2.mp4",
     "panel_t": -0.3,
     "panel_x": 270,
     "tag": "Secret weapon"
