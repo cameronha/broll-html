@@ -33,7 +33,7 @@ def videos():
     s = root(dur, "1,0,0")
     for i, (x, y, t, tc) in enumerate(((90, 200, 0.3, 2.9), (560, 160, 0.8, 3.3), (320, 560, 1.3, 3.7))):
         s += g(f"v{i}", video_card(x, y, 420), (t, dur + 1), rig(x + 210, y + 260, 2, 0.7))
-        s += g(f"c{i}", cat(x + 360, y + 262, 0.45), (tc, dur + 1), rig(x + 330, y + 262, 4, 1.2))
+        s += g(f"c{i}", cat(x + 380, y + 262, 0.62), (tc, dur + 1), rig(x + 330, y + 262, 4, 1.2))
     s += pill("q", 540, 1010 - 90, "The cat thing", 52, NAVY, CREAM, (1.0, dur + 1))
     return s + "</svg>\n"
 
@@ -144,7 +144,7 @@ def jump():
     s = root(dur, "1,0,0")
     s += g("win", window(160, 120, 760, 620, "Proposal video", WHITE, NAVY), (0.05, dur + 1), rig(540, 740, 1, 0.5))
     s += head(CAM_P, [(0.05, "neutral"), (1.0, "surprised"), (3.0, "happy")], (430, 735), 0.62, False, "cam")
-    s += steps("pk", lambda x, y: cat(x, y, 0.7), [(1040, 1060), (960, 900), (860, 800), (790, 735)], 0.3, 1.0, dur, r=lambda x, y: rig(x - 60, y, 3, 1.1))
+    s += steps("pk", lambda x, y: cat(x, y, 1.05), [(1060, 1080), (960, 920), (840, 800), (760, 735)], 0.3, 1.0, dur, r=lambda x, y: rig(x - 60, y, 3, 1.1))
     s += g("rs", f'<rect x="250" y="800" width="300" height="110" rx="20" fill="{GREY}"/>' + centered(400, 875, "Restart?", 50, NAVY), (2.6, dur + 1), rig(400, 910, 2, 0.8))
     s += xmark("x", 400, 855, (4.3, dur + 1), 60)
     s += g("play", f'<circle cx="760" cy="855" r="60" fill="{ORANGE}"/><path d="M740 825 L790 855 L740 885Z" fill="{CREAM}"/>', (5.0, dur + 1), rig(760, 915, 4, 1.0))
@@ -167,7 +167,7 @@ def views():
 def forwarded():
     dur = 10.7
     s = root(dur, "1,0,0")
-    s += g("win", window(80, 120, 420, 330, "Video", WHITE, NAVY) + cat(330, 440, 0.45), (0.05, dur + 1), rig(290, 450, 1, 0.5))
+    s += g("win", window(80, 120, 420, 330, "Video", WHITE, NAVY) + cat(360, 450, 0.62), (0.05, dur + 1), rig(290, 450, 1, 0.5))
     for i, (v, t0) in enumerate(((2, 0.05), (5, 4.4), (12, 5.0), (20, 5.6), (30, 6.1))):
         t1 = (0.05, 4.4, 5.0, 5.6, 6.1, dur + 1)[i + 1]
         s += g(f"n{i}", counter(560, 200, v, 440), (t0, t1), rig(780, 330, 2 + i, 0.9 + 0.1 * i))
@@ -200,7 +200,7 @@ def train():
             f'<path d="M890 590 L830 860 M890 590 L950 860" stroke="{NAVY}" stroke-width="14" stroke-linecap="round"/>')
     s += g("cam", camr, (0.05, dur + 1), rig(890, 860, 1, 0.5))
     s += pill("tr", 300, 200, "Train your pet", 56, ORANGE, CREAM, (1.5, dur + 1))
-    s += steps("pk", lambda x, y: cat(x, y, 0.8, 30), [(160, 900), (260, 880), (360, 900), (460, 880), (560, 900)], 0.6, 3.2, dur, r=lambda x, y: rig(x - 60, y, 3, 1.1))
+    s += steps("pk", lambda x, y: cat(x, y, 1.1, 30), [(160, 900), (260, 880), (360, 900), (460, 880), (560, 900)], 0.6, 3.2, dur, r=lambda x, y: rig(x - 60, y, 3, 1.1))
     for k in range(3):
         s += g(f"rec{k}", f'<circle cx="985" cy="445" r="14" fill="{ORANGE}"/>', (3.4 + 0.6 * k, 3.7 + 0.6 * k))
     s += pill("vp", 700, 330, "Video proposal", 50, NAVY, CREAM, (5.0, dur + 1))

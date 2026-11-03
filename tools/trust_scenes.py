@@ -22,7 +22,7 @@ from stupid_scenes import bubble
 from teacher2_scenes import steps, window, lines
 from nov2_parts import two, gym, tripod_phone, dumbbell, meter, heart, doc, BLUE, WHITE
 
-MGR = 3            # the general manager
+MGR = 9            # the general manager
 
 
 def gym_scene():
@@ -43,7 +43,7 @@ def direct():
     s = root(dur, "1,0,0")
     s += head(MGR, [(0.05, "neutral"), (1.4, "skeptical")], (250, 1010), 0.75, False, "mgr")
     s += bubble("say", 90, 160, 520, 130, "Honestly...", 66, (0.1, dur + 1), (-1, 1))
-    for i, (p, x, y, t) in enumerate(((2, 640, 640, 2.6), (8, 840, 600, 2.9), (5, 950, 900, 3.2), (2, 700, 960, 3.4))):
+    for i, (p, x, y, t) in enumerate(((2, 640, 640, 2.6), (1, 840, 600, 2.9), (3, 950, 900, 3.2), (5, 700, 960, 3.4))):
         s += head(p, [(t, "happy")], (x, y), 0.32, True, f"y{i}")
     s += pill("yc", 800, 220, "Young crowd", 56, NAVY, CREAM, (3.6, dur + 1))
     return s + "</svg>\n"
@@ -61,7 +61,7 @@ def tripods():
     bench = f'<rect x="200" y="640" width="680" height="70" rx="20" fill="{NAVY}"/><rect x="260" y="710" width="40" height="160" fill="{NAVY}"/><rect x="780" y="710" width="40" height="160" fill="{NAVY}"/>'
     s += g("bench", bench, (5.6, dur + 1), rig(540, 870, 1, 0.5))
     for i, (x, t) in enumerate(((330, 5.9), (520, 6.2), (700, 6.5), (430, 6.8))):
-        s += g(f"drop{i}", f'<path d="M{x} 520 Q{x - 30} 580 {x} 600 Q{x + 30} 580 {x} 520Z" fill="{BLUE}"/>', (t, dur + 1), rig(x, 600, 6, 1.3))
+        s += g(f"drop{i}", f'<path d="M{x} 520 Q{x - 30} 580 {x} 600 Q{x + 30} 580 {x} 520Z" fill="#3E78A8"/>', (t, dur + 1), rig(x, 600, 6, 1.3))
     spray = f'<rect x="820" y="300" width="110" height="200" rx="18" fill="{WHITE}"/><rect x="845" y="250" width="60" height="60" fill="{GREY}"/><rect x="890" y="250" width="70" height="24" fill="{GREY}"/>'
     s += g("spray", spray + label(832, 420, "Wipe", 36, NAVY), (6.9, dur + 1), rig(875, 500, 3, 0.9))
     s += xmark("x", 875, 380, (7.4, dur + 1), 90)
@@ -71,7 +71,7 @@ def tripods():
 def older():
     dur = 5.1
     s = root(dur, "1,0,0")
-    for i, (p, x, t) in enumerate(((2, 560, 0.1), (8, 760, 0.25), (5, 960, 0.4))):
+    for i, (p, x, t) in enumerate(((2, 560, 0.1), (1, 760, 0.25), (3, 960, 0.4))):
         s += head(p, [(t, "happy")], (x, 1010), 0.34, True, f"y{i}")
     s += head(CAM_P, [(0.05, "neutral"), (1.4, "skeptical"), (3.0, "happy")], (260, 1010), 0.65, False, "cam")
     s += pill("old", 270, 380, "A bit older", 54, NAVY, CREAM, (1.2, dur + 1))
