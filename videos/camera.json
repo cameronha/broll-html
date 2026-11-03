@@ -1,10 +1,10 @@
 {
-  "src": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/five vids on nov 2 - 1080WebShareName.mov",
+  "src": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/five vids on nov 2 - 1080WebShareName.mov",
   "out_dir": "~/Claude-files/broll-html/59-camera",
-  "crop_x": -10,
+  "crop_x": 0,
   "base": [
-    1.15,
-    130
+    1,
+    0
   ],
   "cut": [
     477.58,
@@ -20,7 +20,7 @@
       537.1
     ]
   ],
-  "zoom_y": 0,
+  "zoom_y": 130,
   "zooms": [
     [
       503.2,
@@ -93,7 +93,7 @@
     ]
   },
   "music": {
-    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/fred.mp3",
+    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/fred.mp3",
     "start": 93.9,
     "band": [
       62.0,
@@ -110,5 +110,7 @@
   },
   "grade": "none",
   "voice_lufs": -18,
-  "raw_offset": 475.8
+  "raw_offset": 475.8,
+  "zoom_k": 1.308,
+  "zoom_x": 113
 }

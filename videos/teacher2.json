@@ -3,10 +3,10 @@
   "raw_src": "~/Downloads/tool is the teacher2026-11-02 15-23-49.mp4",
   "raw_offset": 398.48,
   "out_dir": "~/Claude-files/broll-html/60-teacher2",
-  "crop_x": -10,
+  "crop_x": 0,
   "base": [
-    1.15,
-    130
+    1,
+    0
   ],
   "cut": [
     400.7,
@@ -30,7 +30,7 @@
       456.14
     ]
   ],
-  "zoom_y": 0,
+  "zoom_y": 130,
   "zooms": [
     [
       408.58,
@@ -129,6 +129,6 @@
   },
   "grade": "none",
   "voice_lufs": -18,
-  "zoom_k": 1.14,
-  "zoom_x": 61
+  "zoom_k": 1.308,
+  "zoom_x": 113
 }
