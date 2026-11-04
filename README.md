@@ -1,12 +1,43 @@
 # broll-html
 
-Turn a square talking-head video into a finished short: animated cut-paper b-roll, paper-tag titles, punch-in jump cuts, tight pause cuts, a music bed, burned-in captions and a split-frame thumbnail.
+Turn a talking-head video into a finished short: animated cut-paper illustrations over the boring parts, title tags, zoom-in jump cuts, tightened pauses, background music, captions and a thumbnail.
 
-Everything is code. B-roll scenes are SVG files written by small Python scripts, rendered frame by frame in a headless browser, then composited onto the footage with ffmpeg. One JSON file per video holds every edit decision, so a new rev is one command.
+![A 7-second clip from a finished video](docs/demo.gif)
 
-Built by Cam Houser ([camhouser.com](https://camhouser.com)) with Claude Code. This is a working personal pipeline, shared as-is. Expect to read code.
+**Left: the video as recorded. Right: the same moment, finished.**
 
-## What you need
+![Before and after](docs/before-after.jpg)
+
+**The illustrations are drawn for each video, from what you say.** These four come from a video about a cat who jumped into a sales pitch:
+
+![Four illustration frames](docs/broll-frames.jpg)
+
+**Each video also gets a thumbnail:**
+
+![Thumbnail](docs/thumbnail.jpg)
+
+Built by Cam Houser ([camhouser.com](https://camhouser.com)) with Claude Code. Free to use (MIT license).
+
+## The easy way: let Claude do it
+
+You do not need to know how to code. You do need a Mac and the **Claude desktop app** with **Claude Code** (a paid Claude plan), because the work happens on your computer: Claude installs the tools, runs them, and shows you the result.
+
+1. Install the Claude desktop app from [claude.ai/download](https://claude.ai/download) and open the **Code** tab.
+2. Paste this:
+   > Set up https://github.com/cameronha/broll-html on my Mac. Follow the README, install everything it needs, and copy skill/SKILL.md into my Claude skills. Ask me before anything that costs money.
+3. Record a video of yourself talking. Landscape or square both work (the result is cropped to square), 30 seconds to 2 minutes, with you in the middle of the frame. Phone videos shot upright (portrait) do not work yet.
+4. Tell Claude where the file is and say: *"Give this video the talking-head b-roll treatment."*
+5. Watch the first version, then say what to change in plain words ("the music is too loud", "cut the part where I stumble", "make that drawing show a calendar"). Each change takes a few minutes.
+
+The first setup takes about 30 minutes, mostly downloads. The skill file was written for Cam's videos (his cartoon face, his music); Claude will ask you about yours.
+
+**Can I just paste this link into ChatGPT or claude.ai chat instead?** A chat can read this page and walk you through it, but it cannot run anything on your computer. You would type each command into the Terminal app yourself and paste the errors back. It works, slowly. Claude Code does those steps for you.
+
+## For developers
+
+Everything is code. B-roll scenes are SVG files written by small Python scripts, rendered frame by frame in a headless browser, then composited onto the footage with ffmpeg. One JSON file per video holds every edit decision, so a new rev is one command. Expect to read code.
+
+### What you need
 
 macOS was the only tested platform.
 
@@ -21,7 +52,7 @@ macOS was the only tested platform.
 
 Optional, only to make new cartoon heads: a fal.ai API key and the [paper-collage-animation](https://github.com/cameronha/paper-collage-animation) repo next to this one (`tools/cast/cast.py`, about 5 US cents per image).
 
-## Paths
+### Paths
 
 Video JSON files use three variables, so nothing is tied to one machine:
 
@@ -37,8 +68,9 @@ BROLL_MEDIA=~/videos/exports
 BROLL_RAW=~/videos/raw
 ```
 
-## How a video gets made
+### How a video gets made
 
+0. **Get the code:** `git clone https://github.com/cameronha/broll-html && cd broll-html`. The input is a 1080p landscape or square video; the output is square 1080x1080.
 1. **Transcribe** the take for word timings:
    ```
    ffmpeg -i TAKE.mov -ar 16000 -ac 1 audio.wav
@@ -62,11 +94,11 @@ BROLL_RAW=~/videos/raw
    ```
    `--mid` is the row (in pixels) the caption text centers on.
 
-## Using it with Claude Code
+### The Claude Code skill
 
 `skill/SKILL.md` is the Claude Code skill that runs this pipeline end to end: it knows the house rules (beat length, framing, music level, trim tightness, caption placement) learned over a dozen videos. Copy it to `~/.claude/skills/talking-head-broll/SKILL.md`, hand Claude a video file, and ask for the treatment. The skill is written for Cam's setup (his face, his cast, his file names); edit those parts for yours.
 
-## Layout
+### Layout
 
 ```
 svgpieces.py, render.py, render.html   SVG -> rigged pieces -> video frames (Playwright)
