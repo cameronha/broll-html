@@ -83,4 +83,4 @@ skill/SKILL.md                         the Claude Code skill
 
 ## Rights
 
-The cartoon head `assets/heads/p10` is Cam Houser's likeness. Do not use it to depict him. The other heads are generated, invented people.
+Code: MIT (see LICENSE). The cartoon head `assets/heads/p10` is Cam Houser's likeness and is not covered by the license: do not use it to depict him. The other heads are generated, invented people.
