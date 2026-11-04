@@ -8,6 +8,17 @@ description: Turn one of Cam's talking-head videos into a finished post with cut
 Repo: `~/Coding/broll-html` (PUBLIC GitHub repo cameronha/broll-html since 2026-11-04, README for outsiders; `git push` after commits and tags). This skill is backed up in the repo as `skill/SKILL.md`: after each edit here, `cp` it there and commit. Eight videos done; each has `videos/NAME.json` + `tools/NAME_scenes.py` (leon, linkedin, investors, slop, stupid, report, trash, repetition). Outputs in `~/Claude-files/broll-html/NN-NAME/`.
 Replies to Cam stay in STE (see CLAUDE.md). Titles are short labels, not prose. A clean take takes about 4 minutes to rev1; one with flub cuts about 13.
 
+## If you are not Cam (read this first)
+
+This skill was written for Cam Houser's videos. Most of it (beat length, framing, trims, captions, the 1.5 s face rule) applies to anyone. Change these parts:
+
+- **The speaker's cartoon head.** `CAM_P = 10` in `tools/leon_scenes.py` is Cam's likeness. Never draw the user as p10. Ask the user: use one of the invented heads p1 to p9 for them, or make their own likeness with `tools/cast/cast.py` (needs a fal.ai key and about 40 US cents; ask before spending). Then set `CAM_P` to that number.
+- **Music.** Cam's track (fred.mp3) is not in the repo. Ask the user for a music file, or leave `music` out of the video JSON (the build then skips the music bed).
+- **Paths.** Write the user's folders into `paths.local` (see README). Ignore the Dropbox notes below.
+- **Replies.** The "STE" reply style and "Cam's voice" rules are Cam's own preferences. Talk to the user normally.
+- **Color.** Cam grades in Final Cut. For a new user, use `"grade": "fixed"` (or `"none"` if they already graded).
+- **First run.** Start with a short clip (30 to 60 s) and two or three beats, so the user sees a result in about 15 minutes.
+
 ## Finding Cam's files
 
 Video JSON paths use `$BROLL_RAW`, `$BROLL_MEDIA` and `$BROLL_OUT` (Cam's values are in the git-ignored `paths.local`; `tools/render1.sh` renders one scene). Raw takes are in `~/Downloads`. His Final Cut exports ("NAME - 1080WebShareName.mov") land in the DROPBOX Downloads folder: `~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads`. He often misspells or shortens names: run `ls -t` on both folders, or `mdfind -onlyin ~ "kMDItemFSName == '*word*'c"`. In zsh, a glob with no match aborts the whole command; never put two globs in one `ls`.

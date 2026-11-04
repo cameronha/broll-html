@@ -180,6 +180,8 @@ def voice(src, out, v=None):
 
 
 def music(src, v, out):
+    if not v.get("music") or not os.path.exists(P(v["music"]["file"])):   # no track: skip the music bed
+        print("  no music file: skipping the music bed"); subprocess.run(["cp", src, out], check=True); return
     m = v["music"]; mf = P(m["file"]); D = duration(src)
     band = f"highpass=f={m['band'][0]},lowpass=f={m['band'][1]}"
     gain = mean_db(src) - m["under_db"] - mean_db(mf, "-ss", str(m["start"]), "-t", str(D))
