@@ -1,6 +1,6 @@
 {
-  "src": "~/Downloads/agentweekin leon2026-10-16 16-35-37.mp4",
-  "out_dir": "~/Claude-files/broll-html/45-leon",
+  "src": "$BROLL_RAW/agentweekin leon2026-10-16 16-35-37.mp4",
+  "out_dir": "$BROLL_OUT/45-leon",
   "crop_x": 420,
   "cut": [
     0.88,
@@ -69,7 +69,7 @@
     ]
   },
   "music": {
-    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/fred.mp3",
+    "file": "$BROLL_MEDIA/fred.mp3",
     "start": 93.9,
     "band": [
       62.0,

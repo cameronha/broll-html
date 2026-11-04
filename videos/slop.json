@@ -1,6 +1,6 @@
 {
-  "src": "~/Downloads/slop2026-08-20 12-51-16.mp4",
-  "out_dir": "~/Claude-files/broll-html/48-slop",
+  "src": "$BROLL_RAW/slop2026-08-20 12-51-16.mp4",
+  "out_dir": "$BROLL_OUT/48-slop",
   "crop_x": 492,
   "cut": [
     1.9,
@@ -88,7 +88,7 @@
     ]
   },
   "music": {
-    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/fred.mp3",
+    "file": "$BROLL_MEDIA/fred.mp3",
     "start": 93.9,
     "band": [
       62.0,

@@ -1,8 +1,8 @@
 """Pose-cut motion comic: 3 generated poses, registered on the feet, phone prop behind the grip hand."""
-import subprocess, sys, tempfile
+import os, subprocess, sys, tempfile
 import numpy as np
 from PIL import Image, ImageDraw
-sys.path.insert(0, "/Users/cameronhouser/Coding/broll-html/tools")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import puppet_test as P
 from motion_comic_test import boil
 SRC, OUT, MODE = sys.argv[1], sys.argv[2], sys.argv[3]       # MODE = cut | dissolve

@@ -1,5 +1,5 @@
 """Hand-style sheet: four poses (open, fist, point, grip a page) in six hand designs
--> ~/Claude-files/broll-html/28-hands/hands-sheet.jpg
+-> $BROLL_OUT/28-hands/hands-sheet.jpg
 
 usage: python3 tools/hand_styles.py
 Everything except the hand stays fixed (Rubens-lite pen, light skin, ochre sleeve), so the sheet
@@ -16,7 +16,7 @@ from rubens_scene import pen, fine, circ, oval, INK
 from playwright.sync_api import sync_playwright
 from PIL import Image, ImageDraw, ImageFont
 
-OUT = os.path.expanduser("~/Claude-files/broll-html/28-hands")
+OUT = os.path.join(os.environ.get("BROLL_OUT", os.path.expanduser("~/broll-out")), "28-hands")
 SKIN = R.SKIN = "#F6DDB0"
 POSES = ("open", "fist", "point", "grip")
 

@@ -5,7 +5,7 @@ Files: 45-leon/title-{t}-rev{N}.mov (alpha) and 45-leon/beat{b}-rev{N}.mp4.
 """
 import os, subprocess, sys
 
-D = os.path.expanduser("~/Claude-files/broll-html/45-leon")
+D = os.path.join(os.environ.get("BROLL_OUT", os.path.expanduser("~/broll-out")), "45-leon")
 SRC = os.path.expanduser("~/Downloads/agentweekin leon2026-10-16 16-35-37.mp4")
 TIMES = {"t1": (3.45, 6.31), "t3": (16.6, 19.3), "t2": (20.5, 24.0), "0": (6.31, 8.44), "t4": (8.9, 11.2), "1a": (11.2, 12.66),   # rev12+: short cuts
          "1b": (12.66, 14.2), "2": (28.28, 30.84), "t5": (32.2, 36.9), "3": (37.07, 39.72),

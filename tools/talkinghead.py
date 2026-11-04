@@ -18,7 +18,18 @@ The JSON (see videos/leon.json):
   music {file, start, band [hp, lp], under_db}, thumb {face_t, panel_file, panel_t, panel_x, tag}
 """
 import json, os, subprocess, sys, tempfile
+_LOCAL = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "paths.local")   # optional, git-ignored: KEY=path lines
+if os.path.exists(_LOCAL):
+    for _l in open(_LOCAL):
+        if "=" in _l and not _l.startswith("#"):
+            _k, _d = _l.strip().split("=", 1); os.environ.setdefault(_k, os.path.expanduser(_d))
+for _k, _d in (("BROLL_OUT", "~/broll-out"), ("BROLL_MEDIA", "~/Downloads"), ("BROLL_RAW", "~/Downloads")):
+    os.environ.setdefault(_k, os.path.expanduser(_d))   # paths in videos/*.json use $BROLL_OUT, $BROLL_MEDIA, $BROLL_RAW
 from PIL import Image, ImageDraw, ImageFont
+
+
+def P(x):
+    return os.path.expanduser(os.path.expandvars(x))
 
 # GRADE: the fixed half-strength grade of the first five videos. It is the DEFAULT again (Cam, 2026-10-28: the measured look C
 # was "not great" on the stupid video and "bad" on the León video; "do it the way u did before"). "grade": "auto" in the json = grade(v).
@@ -51,7 +62,7 @@ def grade(v):
     import numpy as np
     a, b = v["cut"]; px = []
     for i in range(5):
-        r = subprocess.run(["ffmpeg", "-loglevel", "error", "-ss", f"{a + (b - a) * (i + 0.5) / 5:.2f}", "-i", os.path.expanduser(v["src"]),
+        r = subprocess.run(["ffmpeg", "-loglevel", "error", "-ss", f"{a + (b - a) * (i + 0.5) / 5:.2f}", "-i", P(v["src"]),
                             "-frames:v", "1", "-vf", f"crop=1080:1080:{v['crop_x']}:0", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"],
                            capture_output=True, check=True)
         px.append(np.frombuffer(r.stdout, np.uint8).reshape(1080, 1080, 3).astype(float))
@@ -111,7 +122,7 @@ def edit(v, out):
         f.append(f"[0:v]trim={a}:{b},setpts=PTS-STARTPTS[v{i}]")
         f.append(f"[0:a]atrim={a}:{b},asetpts=PTS-STARTPTS,afade=t=in:d=0.015,afade=t=out:st={b - a - 0.015:.3f}:d=0.015[a{i}]")
     f.append("".join(f"[v{i}][a{i}]" for i in range(len(parts))) + f"concat=n={len(parts)}:v=1:a=1[v][a]")
-    ff("-i", os.path.expanduser(v["src"]), "-filter_complex", ";".join(f), "-map", "[v]", "-map", "[a]",
+    ff("-i", P(v["src"]), "-filter_complex", ";".join(f), "-map", "[v]", "-map", "[a]",
        "-c:v", "libx264", "-crf", "14", "-pix_fmt", "yuv420p", "-c:a", "pcm_s16le", out)
 
 
@@ -141,7 +152,7 @@ MIN_AROLL = 1.5   # the face between two b-rolls (Cam, teacher2 rev1: a 0.8 s an
 
 
 def composite(v, src, out):
-    d = os.path.expanduser(v["out_dir"]); v["_grade"] = grade(v); print("grade", v["_grade"])
+    d = P(v["out_dir"]); v["_grade"] = grade(v); print("grade", v["_grade"])
     ins, f, last = ["-i", src], [f"[0:v]{square(v)},{v['_grade']}[s0]"], "s0"
     if v.get("zooms"):                                     # jump-cut punch-ins: the footage cuts to a closer frame and back
         k, y = v.get("zoom_k", 1.2), v.get("zoom_y", 140)  # zoom_y: top of the crop; 140 = tight headroom (Cam: 30 had "too much headroom")
@@ -169,7 +180,7 @@ def voice(src, out, v=None):
 
 
 def music(src, v, out):
-    m = v["music"]; mf = os.path.expanduser(m["file"]); D = duration(src)
+    m = v["music"]; mf = P(m["file"]); D = duration(src)
     band = f"highpass=f={m['band'][0]},lowpass=f={m['band'][1]}"
     gain = mean_db(src) - m["under_db"] - mean_db(mf, "-ss", str(m["start"]), "-t", str(D))
     ff("-i", src, "-ss", str(m["start"]), "-i", mf, "-filter_complex",
@@ -181,12 +192,12 @@ def music(src, v, out):
 
 
 def thumbnail(v, tmp, out):
-    t = v["thumb"]; d = os.path.expanduser(v["out_dir"])
+    t = v["thumb"]; d = P(v["out_dir"])
     face, panel = os.path.join(tmp, "face.png"), os.path.join(tmp, "panel.png")
     if t.get("face_file"):                                 # a still Cam picked (e.g. from another video): square, 1080, used as is
         face = os.path.join(d, t["face_file"])
     else:
-        ff("-ss", str(t["face_t"]), "-i", os.path.expanduser(v["src"]), "-frames:v", "1",
+        ff("-ss", str(t["face_t"]), "-i", P(v["src"]), "-frames:v", "1",
            "-vf", f"{square(v)},{v['_grade']}", face)
     seek = ["-sseof", str(t["panel_t"])] if t["panel_t"] < 0 else ["-ss", str(t["panel_t"])]
     ff(*seek, "-i", os.path.join(d, t["panel_file"]), "-frames:v", "1", panel)
@@ -210,7 +221,7 @@ def splice(thumb, src, out):
 if __name__ == "__main__":
     cfg, rev = sys.argv[1], sys.argv[2]
     v = json.load(open(cfg)); name = os.path.splitext(os.path.basename(cfg))[0]
-    d = os.path.expanduser(v["out_dir"]); v["_grade"] = grade(v); print("grade", v["_grade"])
+    d = P(v["out_dir"]); v["_grade"] = grade(v); print("grade", v["_grade"])
     with tempfile.TemporaryDirectory() as tmp:
         steps = [os.path.join(tmp, n) for n in ("0-edit.mov", "1-comp.mp4", "2-voice.mp4", "3-music.mp4")]
         edit(v, steps[0]); print("edit", keep(v))

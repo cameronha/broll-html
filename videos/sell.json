@@ -1,5 +1,5 @@
 {
-  "src": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/five vids on nov 2 - 1080WebShareName.mov",
+  "src": "$BROLL_MEDIA/five vids on nov 2 - 1080WebShareName.mov",
   "crop_x": 0,
   "base": [
     1,
@@ -9,7 +9,7 @@
   "zoom_k": 1.15,
   "zoom_x": 56,
   "music": {
-    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/fred.mp3",
+    "file": "$BROLL_MEDIA/fred.mp3",
     "start": 93.9,
     "band": [
       62.0,
@@ -19,9 +19,9 @@
   },
   "grade": "none",
   "voice_lufs": -18,
-  "raw_src": "~/Downloads/when to sell with video2026-11-02 15-31-15.mp4",
+  "raw_src": "$BROLL_RAW/when to sell with video2026-11-02 15-31-15.mp4",
   "raw_offset": 255.72,
-  "out_dir": "~/Claude-files/broll-html/62-sell",
+  "out_dir": "$BROLL_OUT/62-sell",
   "cut": [
     256.57,
     323.57

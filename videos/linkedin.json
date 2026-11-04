@@ -1,6 +1,6 @@
 {
-  "src": "~/Downloads/dl linkedin connections 2026-10-16 16-30-27.mp4",
-  "out_dir": "~/Claude-files/broll-html/46-linkedin",
+  "src": "$BROLL_RAW/dl linkedin connections 2026-10-16 16-30-27.mp4",
+  "out_dir": "$BROLL_OUT/46-linkedin",
   "crop_x": 420,
   "cut": [
     1.3,
@@ -69,7 +69,7 @@
     ]
   },
   "music": {
-    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/fred.mp3",
+    "file": "$BROLL_MEDIA/fred.mp3",
     "start": 93.9,
     "band": [
       62.0,

@@ -1,7 +1,7 @@
 """Facilitation video, Rubens-lite look: five literal scenes -> scenes/fac-{room,needs,slides,feedback,good}.svg
 
 usage: python3 tools/facilitation_scenes.py
-Beats (source seconds in ~/Claude-files/facilitation-edit): room 20-28 "they don't know how to run a room",
+Beats (source seconds in the source video): room 20-28 "they don't know how to run a room",
 needs 34-39 "wildly disparate interests", slides 46-58 "stands in front of a room and shows slides",
 feedback 72-77 "the feedback from the two big players", good 77-91 "who is doing this well".
 Rule: show the meaning, not the words (no puns on idioms). Reuses rubens_scene's people, pen and wash.

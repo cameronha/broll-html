@@ -1,6 +1,6 @@
 {
-  "src": "~/Downloads/askingstupid questions2026-08-13 10-42-46.mp4",
-  "out_dir": "~/Claude-files/broll-html/49-stupid",
+  "src": "$BROLL_RAW/askingstupid questions2026-08-13 10-42-46.mp4",
+  "out_dir": "$BROLL_OUT/49-stupid",
   "crop_x": 432,
   "cut": [2.72, 47.2],
   "remove": [[21.5, 22.05], [42.2, 42.9], [45.85, 46.4]],
@@ -15,7 +15,7 @@
     "t3": ["stu-t3-rev1.mov", 31.6, 36.6],
     "b4": ["stu-b4-rev4.mp4", 38.4, 41.6]
   },
-  "music": {"file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/fred.mp3",
+  "music": {"file": "$BROLL_MEDIA/fred.mp3",
             "start": 93.9, "band": [62.0, 150.7], "under_db": 9},
   "thumb": {"face_t": 46.9, "panel_file": "stu-b4-rev4.mp4", "panel_t": -0.3, "panel_x": 100, "tag": "“I don’t know.”"}
 }

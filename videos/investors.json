@@ -1,6 +1,6 @@
 {
-  "src": "~/Downloads/dont ask to meet investors 2026-08-20 13-02-30.mp4",
-  "out_dir": "~/Claude-files/broll-html/47-investors",
+  "src": "$BROLL_RAW/dont ask to meet investors 2026-08-20 13-02-30.mp4",
+  "out_dir": "$BROLL_OUT/47-investors",
   "crop_x": 440,
   "cut": [
     9.27,
@@ -104,7 +104,7 @@
     ]
   },
   "music": {
-    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/fred.mp3",
+    "file": "$BROLL_MEDIA/fred.mp3",
     "start": 93.9,
     "band": [
       62.0,

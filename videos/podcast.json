@@ -1,6 +1,6 @@
 {
-  "src": "~/Downloads/the fake podcast 2025-04-29 09-19-31.mov",
-  "out_dir": "~/Claude-files/broll-html/53-podcast",
+  "src": "$BROLL_RAW/the fake podcast 2025-04-29 09-19-31.mov",
+  "out_dir": "$BROLL_OUT/53-podcast",
   "crop_x": 420,
   "cut": [
     0.45,
@@ -127,7 +127,7 @@
     ]
   },
   "music": {
-    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/fred.mp3",
+    "file": "$BROLL_MEDIA/fred.mp3",
     "start": 93.9,
     "band": [
       62.0,

@@ -1,5 +1,5 @@
 """Pose sheet: the pitching founder in six postures, from stiff to exaggerated
--> ~/Claude-files/broll-html/30-poses/poses-sheet.jpg
+-> $BROLL_OUT/30-poses/poses-sheet.jpg
 
 usage: python3 tools/pose_styles.py
 Face, hands, clothes and pen stay fixed; only posture changes. The body is split at the hip: the legs
@@ -14,7 +14,7 @@ import rubens_scene as R
 from playwright.sync_api import sync_playwright
 from PIL import Image, ImageDraw, ImageFont
 
-OUT = os.path.expanduser("~/Claude-files/broll-html/30-poses")
+OUT = os.path.join(os.environ.get("BROLL_OUT", os.path.expanduser("~/broll-out")), "30-poses")
 HIP = (760, 606)
 
 

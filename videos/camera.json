@@ -1,6 +1,6 @@
 {
-  "src": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/five vids on nov 2 - 1080WebShareName.mov",
-  "out_dir": "~/Claude-files/broll-html/59-camera",
+  "src": "$BROLL_MEDIA/five vids on nov 2 - 1080WebShareName.mov",
+  "out_dir": "$BROLL_OUT/59-camera",
   "crop_x": 0,
   "base": [
     1,
@@ -93,7 +93,7 @@
     ]
   },
   "music": {
-    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/fred.mp3",
+    "file": "$BROLL_MEDIA/fred.mp3",
     "start": 93.9,
     "band": [
       62.0,

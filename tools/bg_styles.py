@@ -1,4 +1,4 @@
-"""Background sheet: the pitch scene on eight backgrounds -> ~/Claude-files/broll-html/31-backgrounds/bg-sheet.jpg
+"""Background sheet: the pitch scene on eight backgrounds -> $BROLL_OUT/31-backgrounds/bg-sheet.jpg
 
 usage: python3 tools/bg_styles.py
 The figures (v9 faces, nub hands, light skin, ochre clothes, pen) stay fixed; only what sits behind them changes.
@@ -13,7 +13,7 @@ from rubens_scene import pen, fine, hatch, INK, FILL, ACCENT
 from playwright.sync_api import sync_playwright
 from PIL import Image, ImageDraw, ImageFont
 
-OUT = os.path.expanduser("~/Claude-files/broll-html/31-backgrounds")
+OUT = os.path.join(os.environ.get("BROLL_OUT", os.path.expanduser("~/broll-out")), "31-backgrounds")
 SAGE, SKY, CREAM = "#D3DCC8", "#D6E2E3", "#F2DDB6"
 
 

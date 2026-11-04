@@ -1,6 +1,6 @@
 {
-  "src": "~/Downloads/use the tools2025-04-29 08-33-13.mov",
-  "out_dir": "~/Claude-files/broll-html/54-tools",
+  "src": "$BROLL_RAW/use the tools2025-04-29 08-33-13.mov",
+  "out_dir": "$BROLL_OUT/54-tools",
   "crop_x": 420,
   "cut": [
     0.45,
@@ -74,7 +74,7 @@
     ]
   },
   "music": {
-    "file": "~/3 day startup Dropbox/Cam Houser/My Mac (Cameron\u2019s MacBook Air)/Downloads/fred.mp3",
+    "file": "$BROLL_MEDIA/fred.mp3",
     "start": 93.9,
     "band": [
       62.0,

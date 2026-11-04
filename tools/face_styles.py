@@ -1,5 +1,5 @@
 """Face-style sheet: the skeptic and the founder, head and shoulders, in eight face designs
--> ~/Claude-files/broll-html/27-faces/faces-sheet.jpg
+-> $BROLL_OUT/27-faces/faces-sheet.jpg
 
 usage: python3 tools/face_styles.py
 Everything except the face stays fixed (Rubens-lite pen, light skin, ochre clothes), so the sheet
@@ -15,7 +15,7 @@ from rubens_scene import pen, fine, hatch, circ, oval, INK
 from playwright.sync_api import sync_playwright
 from PIL import Image, ImageDraw, ImageFont
 
-OUT = os.path.expanduser("~/Claude-files/broll-html/27-faces")
+OUT = os.path.join(os.environ.get("BROLL_OUT", os.path.expanduser("~/broll-out")), "27-faces")
 SKIN = R.SKIN = "#F6DDB0"
 SPIKY = "M-120 -20 Q-125 -130 -5 -138 Q125 -140 130 -30 L105 -62 L85 -28 L60 -72 L35 -34 L10 -76 L-15 -40 L-45 -76 L-65 -38 L-90 -66 Z"
 HAIR = {"sk": R.HAIR["cap"], "fo": SPIKY}

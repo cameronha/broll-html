@@ -5,12 +5,12 @@ description: Turn one of Cam's talking-head videos into a finished post with cut
 
 # Talking-head b-roll (save points `save-leon-rev22`, `save-report-rev5`, `save-trash-rev3`; updated 2026-10-28)
 
-Repo: `~/Coding/broll-html` (private GitHub repo cameronha/broll-html; `git push` after commits and tags). This skill is backed up in the repo as `skill/SKILL.md`: after each edit here, `cp` it there and commit. Eight videos done; each has `videos/NAME.json` + `tools/NAME_scenes.py` (leon, linkedin, investors, slop, stupid, report, trash, repetition). Outputs in `~/Claude-files/broll-html/NN-NAME/`.
+Repo: `~/Coding/broll-html` (PUBLIC GitHub repo cameronha/broll-html since 2026-11-04, README for outsiders; `git push` after commits and tags). This skill is backed up in the repo as `skill/SKILL.md`: after each edit here, `cp` it there and commit. Eight videos done; each has `videos/NAME.json` + `tools/NAME_scenes.py` (leon, linkedin, investors, slop, stupid, report, trash, repetition). Outputs in `~/Claude-files/broll-html/NN-NAME/`.
 Replies to Cam stay in STE (see CLAUDE.md). Titles are short labels, not prose. A clean take takes about 4 minutes to rev1; one with flub cuts about 13.
 
 ## Finding Cam's files
 
-Raw takes are in `~/Downloads`. His Final Cut exports ("NAME - 1080WebShareName.mov") land in the DROPBOX Downloads folder: `~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads`. He often misspells or shortens names: run `ls -t` on both folders, or `mdfind -onlyin ~ "kMDItemFSName == '*word*'c"`. In zsh, a glob with no match aborts the whole command; never put two globs in one `ls`.
+Video JSON paths use `$BROLL_RAW`, `$BROLL_MEDIA` and `$BROLL_OUT` (Cam's values are in the git-ignored `paths.local`; `tools/render1.sh` renders one scene). Raw takes are in `~/Downloads`. His Final Cut exports ("NAME - 1080WebShareName.mov") land in the DROPBOX Downloads folder: `~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads`. He often misspells or shortens names: run `ls -t` on both folders, or `mdfind -onlyin ~ "kMDItemFSName == '*word*'c"`. In zsh, a glob with no match aborts the whole command; never put two globs in one `ls`.
 
 ## What is fixed (do not re-ask Cam)
 

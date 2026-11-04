@@ -20,7 +20,7 @@ os.environ["BROLL_BACKEND"] = "fal"
 import stylize as G
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.expanduser("~/Claude-files/broll-html/43-cast")
+OUT = os.path.join(os.environ.get("BROLL_OUT", os.path.expanduser("~/broll-out")), "43-cast")
 EXPR = {
     "happy": "a warm, closed-mouth smile, relaxed eyes, cheeks lifted",
     "excited": "an open-mouth smile showing teeth, eyebrows raised, eyes wide and bright",
