@@ -20,9 +20,11 @@ Built by Cam Houser ([camhouser.com](https://camhouser.com)) with Claude Code. F
 
 ## The easy way: let Claude do it
 
-You do not need to know how to code. You do need a Mac and the **Claude desktop app** with **Claude Code** (a paid Claude plan), because the work happens on your computer: Claude installs the tools, runs them, and shows you the result.
+**Requires a paid Claude plan (Pro or higher).** Claude Code is not on the free plan.
 
-1. Install the Claude desktop app from [claude.ai/download](https://claude.ai/download) and open the **Code** tab.
+You do not need to know how to code, and you do not need to open the Terminal. The tools run on your Mac, but Claude runs them for you: the **Code** tab in the Claude desktop app is Claude Code in a normal window. You chat; Claude installs the tools, runs them, and shows you the result. (If you already use Claude Code in the Terminal, that works the same way.)
+
+1. Install the Claude desktop app from [claude.ai/download](https://claude.ai/download), sign in with your paid plan, and open the **Code** tab.
 2. Paste this:
    > Set up https://github.com/cameronha/broll-html on my Mac. Follow the README, install everything it needs, and copy skill/SKILL.md into my Claude skills. Ask me before anything that costs money.
 3. Record a video of yourself talking. Landscape or square both work (the result is cropped to square), 30 seconds to 2 minutes, with you in the middle of the frame. Phone videos shot upright (portrait) do not work yet.
