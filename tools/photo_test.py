@@ -7,7 +7,8 @@ from PIL import Image, ImageChops, ImageDraw, ImageFilter
 from pathlib import Path
 
 OUT = Path(sys.argv[1]); SRC = OUT / "src"
-FOOT = str(Path("~/3 day startup Dropbox/Cam Houser/My Mac (Cameron’s MacBook Air)/Downloads/five different videos to edit - 1080WebShareName.mov").expanduser())
+import os
+FOOT = str(Path(os.environ.get("BROLL_MEDIA", "~/Downloads"), "five different videos to edit - 1080WebShareName.mov").expanduser())
 T0, DUR, FPS, S = 54.8, 15.0, 24, 1080
 N = int(DUR * FPS)
 NAVY, CREAM, RED, BLUE = "#182A46", "#F6EEDC", "#DE4A30", "#8CBDDC"
