@@ -6,7 +6,7 @@ b2 tv        STAGED  Cam on the couch, a game on TV
 b3 feeds     navy    four people, each a phone with a different thing; the things change
 b4 wall      STAGED  the whole stand, everyone the same way; a TEXAS banner drops
 b5 nophone   blue    a phone gets an X; fans look up
-b6 friends   cream   an old TV, six friends on a couch; "Finale"; 2004
+b6 friends   cream   an old TV, six faceless friends on a couch; "Finale"; 2004
 b7 sets      cream   ten TV sets: three show the same show, "30%"; then every set shows a different thing
 b8 five      STAGED  Cam and a fan high-five
 t1 In the / moment      t2 Go see / live sports
@@ -208,9 +208,13 @@ def friends():
     dur = 4.5
     s = root(dur, CREAM, (800, NAVY, shade(NAVY, .8)))
     s += g("tv", old_tv(90, 300), (0.05, dur + 1), rig(370, 770, 0.8, 0.5))
-    s += g("sofa", f'<rect x="150" y="540" width="350" height="70" rx="26" fill="{ORANGE}"/><rect x="134" y="590" width="382" height="60" rx="22" fill="{shade(ORANGE)}"/>', (0.2, dur + 1))
-    for i, p in enumerate((3, 9, 5, 2, 1, 6)):
-        s += head(p, [(0.35 + i * 0.12, "happy"), (3.3 + i * 0.06, "excited")], (176 + i * 60, 560), 0.17, i < 3, f"fr{i}", deg=3)
+    s += g("sofa-back", f'<rect x="150" y="540" width="350" height="70" rx="26" fill="{ORANGE}"/>', (0.2, dur + 1))
+    for i in range(6):                     # six faceless friends: silhouettes, not our cast (the cast heads read as the stadium fans)
+        x, long_hair, h = 176 + i * 60, i in (0, 2, 5), (0, 8, -4, 10, 4, -2)[i]
+        fig = (f'<rect x="{x - 25}" y="{478 - h}" width="50" height="{56 if long_hair else 30}" rx="22" fill="{NAVY}"/>' if long_hair else "") \
+            + f'<circle cx="{x}" cy="{500 - h}" r="22" fill="{NAVY}"/><rect x="{x - 27}" y="{524 - h}" width="54" height="90" rx="20" fill="{NAVY}"/>'
+        s += g(f"fr{i}", fig, (0.35 + i * 0.12, dur + 1), rig(x, 610, 5, 1.0 + (i % 3) * 0.3, "snap"))
+    s += g("sofa", f'<rect x="134" y="590" width="382" height="60" rx="22" fill="{shade(ORANGE)}"/>', (0.2, dur + 1))
     s += pill("fin", 800, 330, "Finale", 70, ORANGE, CREAM, (1.3, dur + 1), 3)
     s += g("cal", f'<rect x="680" y="470" width="300" height="270" rx="14" fill="{WHITE}"/><rect x="680" y="470" width="300" height="70" rx="14" fill="{ORANGE}"/>'
                   f'<circle cx="740" cy="470" r="14" fill="{NAVY}"/><circle cx="920" cy="470" r="14" fill="{NAVY}"/>' + centered(830, 690, "2004", 104, NAVY),
