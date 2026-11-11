@@ -1,0 +1,19 @@
+<svg data-bg-boil="0.5" data-jitter="1.0" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"
+     data-bg="#8CBDDC" data-finish="cut" data-variants="3" data-border="0" data-zoom="1,0,0" data-dur="2.6" data-transparent="1">
+  <g id="ta-1.12" data-show="0.05,0.14" data-pivot="219,672" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="41" y="554" width="356" height="118" rx="11" fill="#182A46" transform="rotate(-2 219 613)"/>
+    <text x="72" y="645" font-family="Libre Franklin" font-weight="800" font-size="90" fill="#F6EEDC" transform="rotate(-2 219 613)">Go see</text>
+  </g>
+  <g id="ta-1.0" data-show="0.14,3.60" data-pivot="219,666" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="560" width="318" height="106" rx="10" fill="#182A46" transform="rotate(-2 219 613)"/>
+    <text x="88" y="642" font-family="Libre Franklin" font-weight="800" font-size="80" fill="#F6EEDC" transform="rotate(-2 219 613)">Go see</text>
+  </g>
+  <g id="tb-1.12" data-show="0.45,0.54" data-pivot="264,773" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="36" y="669" width="456" height="103" rx="11" fill="#DE4A30" transform="rotate(2 264 721)"/>
+    <text x="63" y="749" font-family="Libre Franklin" font-weight="800" font-size="78" fill="#F6EEDC" transform="rotate(2 264 721)">live sports</text>
+  </g>
+  <g id="tb-1.0" data-show="0.54,3.60" data-pivot="264,767" data-deg="1.5" data-freq="0.5" data-shape="sine">
+    <rect x="60" y="675" width="407" height="92" rx="10" fill="#DE4A30" transform="rotate(2 264 721)"/>
+    <text x="84" y="746" font-family="Libre Franklin" font-weight="800" font-size="70" fill="#F6EEDC" transform="rotate(2 264 721)">live sports</text>
+  </g>
+</svg>

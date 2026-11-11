@@ -145,6 +145,15 @@ def snapped_zooms(v):
     for (a0, a1), (b0, b1) in zip(brs, brs[1:]):
         if 0.001 < b0 - a1 < MIN_AROLL:
             print(f"  SHORT A-ROLL between b-rolls {a1:.2f}-{b0:.2f} ({b0 - a1:.2f} s): butt them or widen the gap")
+    # The FIRST shot of Cam is always the widest frame: it sets the scene (Cam, 2026-11-11). Drop any punch-in on it.
+    f0 = 0.0
+    for a, b in brs:
+        if a <= f0 + 0.05:
+            f0 = max(f0, b)
+    f1 = min([a for a, b in brs if a > f0 + 0.05], default=total)
+    for z in [z for z in zs if z[0] < f1 - 0.01 and z[1] > f0 + 0.01]:
+        print(f"  FIRST SHOT WIDE: dropped the punch-in {z[0]:.2f}-{z[1]:.2f} (first face shot is {f0:.2f}-{f1:.2f})")
+        zs.remove(z)
     return zs
 
 
